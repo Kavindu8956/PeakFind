@@ -11,7 +11,7 @@
 
 
     <ViewFlipper
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="0dp"
         android:id="@+id/v_flipper"
         android:layout_width="match_parent"
         android:layout_height="185dp">
@@ -36,7 +36,7 @@
         android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="115dp"
-        android:layout_marginTop="195dp"
+        android:layout_marginTop="145dp"
         android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/star" />
 
@@ -44,17 +44,17 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="265dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="215dp"
         android:text="@string/text2"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/bb1"
         android:textSize="18sp" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="317dp"
+        android:layout_marginTop="270dp"
         android:background="?android:attr/listDivider"
         android:visibility="visible" />
 
@@ -62,7 +62,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="240dp"
         android:layout_marginLeft="10dp"
         android:text="@string/text3"
         android:textColor="@android:color/holo_green_dark"
@@ -73,14 +73,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
-        android:layout_marginTop="265dp"
-        android:layout_marginEnd="300dp"
+        android:layout_marginTop="215dp"
         android:layout_marginBottom="300dp"
         android:autoLink="web"
         android:background="#00641F1F"
         android:singleLine="false"
         android:text="@string/text4"
-        android:textColor="@android:color/holo_blue_light"
+        android:textColor="@color/darkblue"
         android:textIsSelectable="false"
         android:textSize="18sp" />
 
@@ -88,17 +87,17 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="270dp"
         android:text="@string/text5"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/darkblue"
         android:textSize="22sp" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="41dp"
         android:layout_height="36dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/parking" />
 
@@ -107,14 +106,14 @@
         android:layout_width="30dp"
         android:layout_height="36dp"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         app:srcCompat="@drawable/food" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="38dp"
         android:layout_height="34dp"
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="335dp"
         android:layout_marginLeft="10dp"
         app:srcCompat="@drawable/wifi" />
 
@@ -123,7 +122,7 @@
         android:layout_width="28dp"
         android:layout_height="39dp"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="385dp"
+        android:layout_marginTop="335dp"
         app:srcCompat="@drawable/car" />
 
     <TextView
@@ -131,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginTop="305dp"
         android:text="@string/text6"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
@@ -141,7 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="340dp"
         android:text="@string/text8"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
@@ -151,7 +150,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="255dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginTop="305dp"
         android:text="@string/text7"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
@@ -162,7 +161,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="255dp"
-        android:layout_marginTop="390dp"
+        android:layout_marginTop="340dp"
         android:text="@string/text9"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
@@ -171,7 +170,7 @@
         android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="417dp"
+        android:layout_marginTop="370dp"
         android:background="?android:attr/listDivider"
         android:visibility="visible" />
 
@@ -180,10 +179,10 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="421dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="371dp"
         android:text="@string/text10"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/darkblue"
         android:textSize="22sp" />
 
 
@@ -191,7 +190,7 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="400dp"
         android:layout_marginLeft="10dp"
         android:text="@string/text11"
         android:textColor="@android:color/background_dark"
@@ -203,7 +202,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="400dp"
         android:text="@string/text12"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
@@ -212,7 +211,7 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="422dp"
         android:layout_marginLeft="10dp"
         android:text="@string/text13"
         android:textColor="@android:color/background_dark"
@@ -223,7 +222,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="215dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="422dp"
         android:text="@string/text14"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp" />
@@ -232,7 +231,7 @@
         android:id="@+id/divider4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="501dp"
+        android:layout_marginTop="450dp"
         android:background="?android:attr/listDivider"
         android:visibility="visible" />
 
@@ -241,7 +240,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="610dp"
+        android:layout_marginTop="560dp"
         android:text="@string/text15"
         android:textSize="18sp" />
 
@@ -249,7 +248,7 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="460dp"
         android:layout_marginLeft="10dp"
         android:text="@string/text17"
         android:textColor="@android:color/background_dark"
@@ -259,7 +258,7 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="480dp"
         android:text="@string/text18"
         android:layout_marginLeft="10dp"
         android:textColor="@android:color/background_dark"
@@ -271,7 +270,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="625dp"
+        android:layout_marginTop="575dp"
         android:text="@string/text19"
         android:textSize="18sp" />
 
@@ -280,7 +279,7 @@
         android:layout_width="211dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
-        android:layout_marginTop="555dp"
+        android:layout_marginTop="505dp"
         android:background="@drawable/custom_button"
         android:text="@string/text20"
         android:textColor="@android:color/background_light"

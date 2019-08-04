@@ -7,33 +7,14 @@
     android:background="@drawable/room3"
     tools:context=".Activity2">
     
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbar"
-        android:background="#33ccff">
-    </androidx.appcompat.widget.Toolbar>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="10dp"
-        android:shadowColor="@android:color/holo_blue_dark"
-        android:text="@string/text1"
-        android:textAlignment="gravity"
-        android:textColor="@android:color/background_dark"
-        android:textColorHighlight="@android:color/background_dark"
-        android:textStyle="bold"
-        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="364dp"
         android:layout_height="41dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/input_shape"
         android:text="@string/text25"
         android:textAlignment="center"
@@ -45,7 +26,7 @@
         android:layout_width="364dp"
         android:layout_height="43dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/input_shape"
         android:text="@string/text26"
         android:textAlignment="center"
@@ -57,7 +38,7 @@
         android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="110dp"
         android:background="@drawable/custom_button2"
         android:text="@string/text21"
         android:textColor="@android:color/background_light"
@@ -70,7 +51,7 @@
         android:layout_width="361dp"
         android:layout_height="49dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="165dp"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
@@ -83,7 +64,7 @@
         android:layout_width="54dp"
         android:layout_height="36dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/input_shape"
         android:textAlignment="center" />
 
@@ -92,7 +73,7 @@
         android:layout_width="76dp"
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/input_shape"
         android:text="@string/text27"
         android:textAlignment="center"
@@ -104,7 +85,7 @@
         android:layout_width="77dp"
         android:layout_height="36dp"
         android:layout_marginStart="220dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/input_shape"
         android:text="@string/text28"
         android:textAlignment="center"
@@ -116,7 +97,7 @@
         android:layout_width="52dp"
         android:layout_height="34dp"
         android:layout_marginStart="300dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="220dp"
         android:background="@drawable/input_shape" />
 
     <TextView
@@ -124,7 +105,7 @@
         android:layout_width="171dp"
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="270dp"
         android:background="@drawable/input_shape"
         android:text="@string/text29"
         android:textAlignment="center"
@@ -136,7 +117,7 @@
         android:layout_width="182dp"
         android:layout_height="40dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="270dp"
         android:background="@drawable/input_shape"
         android:textAlignment="center" />
 
@@ -145,7 +126,7 @@
         android:layout_width="171dp"
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="320dp"
         android:background="@drawable/input_shape"
         android:text="@string/text30"
         android:textAlignment="center"
@@ -157,7 +138,7 @@
         android:layout_width="182dp"
         android:layout_height="40dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="320dp"
         android:background="@drawable/input_shape"
         android:textAlignment="center" />
 
@@ -166,7 +147,7 @@
         android:layout_width="98dp"
         android:layout_height="41dp"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="370dp"
         android:text="@string/text33"
         android:textColor="@android:color/background_dark"
         android:textSize="20sp" />
@@ -176,7 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="210dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="370dp"
         app:srcCompat="@drawable/twopersons" />
 
     <TextView
@@ -184,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="400dp"
         android:text="@string/text31"
         android:textAlignment="textStart"
         android:textColor="@android:color/background_dark"
@@ -195,7 +176,7 @@
         android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:layout_marginStart="285dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="400dp"
         app:srcCompat="@drawable/doublebed" />
 
     <TextView
@@ -203,7 +184,7 @@
         android:layout_width="369dp"
         android:layout_height="32dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="430dp"
         android:text="@string/text34"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
@@ -214,7 +195,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="450dp"
         android:text="@string/text35"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
@@ -225,7 +206,7 @@
         android:layout_width="363dp"
         android:layout_height="38dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="490dp"
         android:text="@string/text36"
         android:textAlignment="center"
         android:textSize="20sp" />
@@ -235,7 +216,7 @@
         android:layout_width="367dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="565dp"
+        android:layout_marginTop="515dp"
         android:text="@string/text15"
         android:textAlignment="center"
         android:textColor="@android:color/background_dark"
@@ -246,19 +227,12 @@
         android:layout_width="366dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="590dp"
+        android:layout_marginTop="540dp"
         android:background="@drawable/custom_button"
         android:text="@string/text20"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="43dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/back" />
 
 
     <ImageView

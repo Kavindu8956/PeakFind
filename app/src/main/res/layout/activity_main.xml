@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/dd1">
+    android:background="@drawable/unnamed">
 
     <LinearLayout
         android:clipToPadding="false"
@@ -218,7 +218,7 @@
             android:layout_marginLeft="38dp"
             android:layout_marginTop="38dp"
             android:text="Select Location"
-            android:background="@color/bb1"
+            android:background="@drawable/custombutton"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"/>
 

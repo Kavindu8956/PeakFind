@@ -34,6 +34,12 @@
         <activity android:name=".CabUserActivity">
 
         </activity>
+        <activity android:name=".CabOwnerUpload"></activity>
+
+        <activity android:name=".CabOwnerEditActivity" />
+        <activity android:name=".CabOwnerActivity">
+            
+        </activity>
     </application>
 
 </manifest>

@@ -72,4 +72,5 @@
         <item>four</item>
     </string-array>
     <string name="NAME">NAME</string>
+    <string name="button2">DELETE</string>
 </resources>

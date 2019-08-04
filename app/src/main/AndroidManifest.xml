@@ -19,6 +19,8 @@
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".CabActivity" />
+        <activity android:name=".HotelSelect" />
+        <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
         <activity android:name=".MainActivity">
 

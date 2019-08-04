@@ -18,7 +18,6 @@
         </activity>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
-        <activity android:name=".CabActivity" />
         <activity android:name=".HotelSelect" />
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
@@ -28,6 +27,11 @@
         <activity android:name=".Activity3"></activity>
         <activity android:name=".Activity2" />
         <activity android:name=".HotelInfoActivity">
+
+        </activity>
+        <activity android:name=".CabUserBookActivity"></activity>
+        <activity android:name=".CabUserDetailsActivity" />
+        <activity android:name=".CabUserActivity">
 
         </activity>
     </application>

@@ -71,4 +71,5 @@
         <item>three</item>
         <item>four</item>
     </string-array>
+    <string name="NAME">NAME</string>
 </resources>

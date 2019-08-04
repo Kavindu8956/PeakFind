@@ -65,4 +65,10 @@
     <string name="text35">LKR 15,500</string>
     <string name="text36">+LKR 1,200 taxes and charges</string>
     <string name="text40">Nanayakkara123@gmail.com</string>
+    <string-array name="Name">
+        <item>One</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
 </resources>

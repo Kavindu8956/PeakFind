@@ -38,8 +38,14 @@
 
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".CabOwnerActivity">
-            
+
+
+
         </activity>
+        <activity android:name=".HotelOwnerActivity">
+        </activity>
+        <activity android:name=".Resturent_Form"></activity>
+        <activity android:name=".ImageUpdate"></activity>
     </application>
 
 </manifest>

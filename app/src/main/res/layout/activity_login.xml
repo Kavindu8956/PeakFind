@@ -16,24 +16,24 @@
         app:srcCompat="@drawable/peakfind4" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/mnum"
         android:layout_width="267dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="350dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Username" />
+        android:hint="User Name"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/ps"
         android:layout_width="266dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="430dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Password" />
+        android:hint="Password"
+        android:inputType="textPersonName" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -58,6 +58,7 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="500dp"
         android:background="@drawable/custombutton"
+        android:onClick="onLogin"
         android:text="Login"
         android:textColor="@color/cardview_light_background"
         android:textSize="24sp" />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Resturent_Form"
-    android:background="@drawable/background">
+    android:background="@drawable/img4">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,3 +1,68 @@
 <resources>
     <string name="app_name">Peak&amp;Find</string>
+
+    <string name="text1">Amari Galle</string>
+    <string name="text2">Galle, 4.2Km from center:</string>
+    <string name="text3">Breakfast Included</string>
+    <string name="text4">Show on map</string>
+    <string name="text5">Facilities</string>
+    <string name="text6">Free Parking</string>
+    <string name="text7">Food And Drink</string>
+    <string name="text8">Free WiFi</string>
+    <string name="text9">Car Hire</string>
+    <string name="text10">Activity And Entertainment</string>
+    <string name="text11"> * Fitness Centre</string>
+    <string name="text12"> * Spa Centre</string>
+    <string name="text13"> * Massage Centre</string>
+    <string name="text14"> * Outdoor Pool</string>
+    <string name="text15">+0912244667</string>
+    <string name="text16">No account needed! Booking takes just two minutes</string>
+    <string name="text17">Confirmation is immediate.</string>
+    <string name="text18">No booking fees!</string>
+    <string name="text19">523c Colombo - Galle Main Rd, Galle</string>
+    <string name="text20">RESERVE</string>
+    <string name="text21">Check-in-date</string>
+    <string name="text22">Check-out-date</string>
+    <string name="text23">Customer Name:</string>
+    <string name="text24">Contact Number:</string>
+    <string name="text25">S.D.L.Nanayakkara</string>
+    <string name="text26">0775602520</string>
+
+    <string-array name="Adults">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="text27">Adults</string>
+
+    <string-array name="Children">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="text28">Children</string>
+    <string name="text29">Select Your Room</string>
+    <string-array name="Rooms">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Family</item>
+        <item>Luxury</item>
+    </string-array>
+    <string name="text30">Number Of Rooms</string>
+
+    <string-array name="roomNo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string name="text31">1 extra-large double bed</string>
+    <string name="text32">Has a balcony</string>
+    <string name="text33">Price for:</string>
+    <string name="text34">Price of one room for one night</string>
+    <string name="text35">LKR 15,500</string>
+    <string name="text36">+LKR 1,200 taxes and charges</string>
+    <string name="text40">Nanayakkara123@gmail.com</string>
 </resources>

@@ -4,15 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fuck4"
+    android:background="@drawable/unnamed"
     tools:context=".HotelInfoActivity" >
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbar"
-        android:background="#33ccff">
-    </androidx.appcompat.widget.Toolbar>
+
 
 
     <ViewFlipper
@@ -291,20 +286,7 @@
         android:textColor="@android:color/background_light"
         android:textSize="24sp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/back" />
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="63dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginTop="7dp"
-        app:srcCompat="@drawable/pro" />
+
 </RelativeLayout>
 
 

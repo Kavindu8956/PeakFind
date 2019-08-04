@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/fuck4"
+    android:background="@drawable/unnamed"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity3">
@@ -28,7 +28,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="135dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button2"
         android:isScrollContainer="true"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
@@ -51,7 +51,7 @@
         android:layout_marginTop="185dp"
         android:text="@string/text25"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/cardview_light_background"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="174dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -64,7 +64,7 @@
         android:layout_marginTop="215dp"
         android:text="@string/text15"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/cardview_light_background"
         android:textSize="20sp" />
 
     <TextView
@@ -75,7 +75,7 @@
         android:layout_marginTop="235dp"
         android:text="@string/text40"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/cardview_light_background"
         android:textSize="20sp" />
 
     <Button
@@ -90,7 +90,7 @@
         android:text="Edit profile"
         android:textAlignment="center"
 
-        />
+        android:textColor="@color/cardview_light_background" />
 
 
     <TextView

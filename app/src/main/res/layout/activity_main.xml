@@ -13,6 +13,7 @@
         android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal"
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
@@ -27,6 +28,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:onClick="hotel"
+                android:background="@drawable/custombutton3"
                 android:orientation="vertical">
 
                 <ImageView
@@ -71,6 +73,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:onClick="cab"
+                android:background="@drawable/custombutton3"
                 android:orientation="vertical">
 
                 <ImageView
@@ -124,6 +127,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:onClick="shoppingmall"
+                android:background="@drawable/custombutton3"
                 android:orientation="vertical">
 
                 <ImageView
@@ -168,6 +172,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:onClick="weather"
+                android:background="@drawable/custombutton3"
                 android:orientation="vertical">
 
                 <ImageView

@@ -27,8 +27,16 @@ public class HotelInfoActivity extends AppCompatActivity {
         for(int i=0;i<images.length;i++){
             flipperImages(images[i]);
         }
-        
 
+        button=(Button)findViewById(R.id.button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HotelInfoActivity.this,Activity2.class);
+                startActivity(intent);
+            }
+        });
     }
     public void openActivity2(){
         Intent intent= new Intent(this, Activity2.class);

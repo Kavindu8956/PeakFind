@@ -9,8 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HotelSelect"></activity>
-        <activity android:name=".UbdateReservation" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,10 +20,14 @@
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".CabActivity" />
         <activity android:name=".HotelActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Activity3" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".Activity3"></activity>
         <activity android:name=".Activity2" />
-        <activity android:name=".HotelInfoActivity" />
+        <activity android:name=".HotelInfoActivity">
+
+        </activity>
     </application>
 
 </manifest>

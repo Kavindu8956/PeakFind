@@ -12,6 +12,8 @@
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
     <color name="bb1">#949494</color>
+    <color name="colorAccent1">#000</color>
+    <color name="red">#ff00</color>
 
 
     <color name="black_overlay">#66000000</color>

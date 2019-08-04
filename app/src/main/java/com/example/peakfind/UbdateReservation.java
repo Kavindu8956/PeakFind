@@ -1,6 +1,8 @@
 package com.example.peakfind;
 
-import android.app.DatePickerDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,19 +13,16 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
-
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
-
+public class UbdateReservation extends AppCompatActivity {
 
     private Button button1;
+    private Button button2;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.activity_ubdate_reservation);
         Button button=(Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,10 +36,10 @@ public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnD
         Spinner spinner3=(Spinner)findViewById(R.id.spinner3);
         Spinner spinner4=(Spinner)findViewById(R.id.spinner4);
 
-        ArrayAdapter<String> my1=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Adults));
-        ArrayAdapter<String> my3=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Rooms));
-        ArrayAdapter<String> my2=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Children));
-        ArrayAdapter<String> my4=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.roomNo));
+        ArrayAdapter<String> my1=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Adults));
+        ArrayAdapter<String> my3=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Rooms));
+        ArrayAdapter<String> my2=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Children));
+        ArrayAdapter<String> my4=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.roomNo));
         my1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         my2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         my3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -50,16 +49,27 @@ public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnD
         spinner3.setAdapter(my3);
         spinner4.setAdapter(my4);
 
-        button1=(Button)findViewById(R.id.button4);
+        button1=(Button)findViewById(R.id.button3);
         button1.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
-                Intent intent3=new Intent(Activity2.this,Activity3.class);
-                startActivity(intent3);
+                Intent intent1=new Intent(UbdateReservation.this,Activity3.class);
+                startActivity(intent1);
             }
         });
+
+        button2=(Button)findViewById(R.id.button5);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2=new Intent(UbdateReservation.this,Activity3.class);
+                startActivity(intent2);
+            }
+        });
+
     }
 
-    @Override
+
     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
         Calendar c1=Calendar.getInstance();
         c1.set(Calendar.YEAR,year);
@@ -71,6 +81,4 @@ public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnD
         textView1.setText(checkInDate);
 
     }
-
-
 }

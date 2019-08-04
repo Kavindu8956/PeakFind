@@ -13,7 +13,7 @@
         android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="45dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
@@ -223,7 +223,7 @@
             android:layout_marginLeft="38dp"
             android:layout_marginTop="38dp"
             android:text="Select Location"
-            android:background="@drawable/custombutton"
+            android:background="@drawable/custombutton3"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"/>
 

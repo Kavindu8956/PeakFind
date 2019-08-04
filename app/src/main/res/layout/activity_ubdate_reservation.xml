@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/room3"
     tools:context=".Activity2">
-    
+
 
 
     <TextView
@@ -222,16 +222,24 @@
         android:textColor="@android:color/background_dark"
         android:textSize="20sp" />
 
+
     <Button
-        android:id="@+id/button4"
-        android:layout_width="366dp"
+        android:id="@+id/button3"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="535dp"
         android:background="@drawable/custombutton3"
-        android:text="@string/text20"
-        android:textColor="@android:color/background_dark"
-        android:textSize="30sp" />
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="535dp"
+        android:background="@drawable/custombutton3"
+        android:text="Delete" />
 
 
 </RelativeLayout>

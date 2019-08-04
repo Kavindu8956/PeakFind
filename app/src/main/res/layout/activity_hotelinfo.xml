@@ -24,13 +24,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="110dp"
-        android:text="@string/text1"
+        android:layout_marginTop="10dp"
+        android:text="Galadari Hotel"
         android:textColor="@android:color/black"
         android:textSize="30sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -280,9 +279,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="94dp"
         android:layout_marginTop="505dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custombutton3"
         android:text="@string/text20"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/darkblue"
         android:textSize="24sp" />
 
 

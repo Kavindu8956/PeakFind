@@ -8,37 +8,15 @@
     tools:context=".Activity3">
 
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/toolbar"
-        android:background="#33ccff">
-    </androidx.appcompat.widget.Toolbar>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:background="#003d66"
-        android:layout_marginTop="55dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="135dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/custom_button2"
-        android:isScrollContainer="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="132dp"
         android:layout_height="119dp"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="5dp"
         app:srcCompat="@drawable/prof"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
@@ -48,10 +26,10 @@
         android:layout_width="311dp"
         android:layout_height="40dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="185dp"
+        android:layout_marginTop="125dp"
         android:text="@string/text25"
         android:textAlignment="center"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@android:color/background_dark"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="174dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -61,10 +39,10 @@
         android:layout_width="312dp"
         android:layout_height="32dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="155dp"
         android:text="@string/text15"
         android:textAlignment="center"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@android:color/background_dark"
         android:textSize="20sp" />
 
     <TextView
@@ -72,10 +50,10 @@
         android:layout_width="308dp"
         android:layout_height="30dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="175dp"
         android:text="@string/text40"
         android:textAlignment="center"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@android:color/background_dark"
         android:textSize="20sp" />
 
     <Button
@@ -84,19 +62,19 @@
         android:layout_height="38dp"
         android:layout_gravity="center"
         android:layout_marginLeft="138dp"
-        android:layout_marginTop="262dp"
+        android:layout_marginTop="202dp"
         android:layout_weight="1"
         android:background="@drawable/custombutton3"
         android:text="Edit profile"
         android:textAlignment="center"
 
-        android:textColor="@color/cardview_light_background" />
+        android:textColor="@android:color/background_dark" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="315dp"
+        android:layout_marginTop="255dp"
         android:layout_marginLeft="30dp"
         android:layout_weight="1"
         android:text="Reserved Hotels"
@@ -109,7 +87,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp">
+        android:layout_marginTop="280dp">
     <TableRow
         android:layout_marginTop="0dp">
 
@@ -170,7 +148,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/detailsButton"
+                android:id="@+id/detailbutton"
                 android:layout_width="122dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
@@ -249,7 +227,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="485dp"
+        android:layout_marginTop="425dp"
         android:layout_marginLeft="30dp"
         android:layout_weight="1"
         android:text="Picked Vehicles"
@@ -262,7 +240,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="515dp">
+        android:layout_marginTop="455dp">
         <TableRow
             android:layout_marginTop="0dp">
 
@@ -369,21 +347,7 @@
 
     </TableLayout>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_marginLeft="310dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/custombutton3"
-        android:text="LogOut" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="38dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/custombutton3"
-        android:text="Home" />
+
+
 </RelativeLayout>

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hotel(View v) {
-        Intent intentHotel = new Intent(MainActivity.this,HotelActivity.class);
+        Intent intentHotel = new Intent(MainActivity.this,HotelSelect.class);
         startActivity(intentHotel);
     }
 

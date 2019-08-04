@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context=".HotelSelect">
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="276dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/custombutton3"
+        android:text="View All Hotels"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="279dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/custombutton3"
+        android:text="View For Reserve Hotels"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="291dp"
+        android:layout_height="306dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="55dp"
+        app:srcCompat="@drawable/peakfind4" />
+</RelativeLayout>

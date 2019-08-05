@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MapActivity"></activity>
-        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".UserProfileActivity"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,21 +22,20 @@
         <activity android:name=".HotelSelect" />
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".UserDetailsActivity" />
-        <activity android:name=".ReservationFormActivity" />
-        <activity android:name=".HotelInfoActivity" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Activity3" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".HotelInfoActivity"></activity>
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
-        <activity android:name=".CabUserActivity" />
+        <activity android:name=".CabUserActivity"></activity>
         <activity android:name=".CabOwnerUpload" />
         <activity android:name=".CabOwnerEditActivity" />
-        <activity android:name=".CabOwnerActivity" />
-        <activity android:name=".HotelOwnerActivity" />
+        <activity android:name=".CabOwnerActivity"></activity>
+        <activity android:name=".HotelOwnerActivity"></activity>
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
-        <activity android:name=".UserProfileActivity" />
-        <activity android:name=".MapActivity"/>
+        <activity android:name=".UserProfileActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed">
+    tools:context=".UserProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="156dp"
+        android:layout_height="138dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/prof"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/textp1"
+        android:textColor="@color/colorAccent1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="372dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/text25" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/textp2"
+        android:textColor="@color/colorAccent1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="340dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/text40" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="420dp"
+        android:text="@string/texy3"
+        android:textColor="@color/colorAccent1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="460dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/text15" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="218dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btn"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

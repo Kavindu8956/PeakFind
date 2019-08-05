@@ -73,4 +73,8 @@
     </string-array>
     <string name="NAME">NAME</string>
     <string name="button2">DELETE</string>
+    <string name="textp1">Name:</string>
+    <string name="textp2">E-mail:</string>
+    <string name="texy3">Phone Number:</string>
+    <string name="btn">Save Change</string>
 </resources>

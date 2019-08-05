@@ -17,12 +17,8 @@ public class CabUserDetailsActivity extends AppCompatActivity {
 
 
 
-       Button button = (Button)findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View view){
-                Intent intent = new Intent(CabUserDetailsActivity.this, CabUserBookActivity.class);
-                startActivity(intent);
-            }
-        });
+
+
+
     }
 }

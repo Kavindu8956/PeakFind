@@ -29,6 +29,14 @@ public class Resturent_Form extends AppCompatActivity {
         });
 
 
+        b=(Button)findViewById(R.id.button4);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Resturent_Form.this,HotelOwnerActivity.class);
+                startActivity(i);
+            }
+        });
 
 
     }

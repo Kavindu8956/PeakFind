@@ -228,7 +228,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="540dp"
-        android:background="@drawable/custombutton3"
+        android:background="@drawable/custombutton"
         android:text="@string/text20"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp" />

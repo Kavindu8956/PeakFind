@@ -11,6 +11,7 @@ public class Activity3 extends AppCompatActivity {
 
     private Button button;
     private Button button1;
+    private Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,14 @@ public class Activity3 extends AppCompatActivity {
             //   @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Activity3.this,UserProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        button2=(Button)findViewById(R.id.editButton9) ;
+        button2.setOnClickListener(new View.OnClickListener() {
+            //   @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Activity3.this,LoginActivity.class);
                 startActivity(intent);
             }
         });

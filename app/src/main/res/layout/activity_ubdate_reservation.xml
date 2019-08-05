@@ -229,7 +229,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="535dp"
-        android:background="@drawable/custombutton3"
+        android:background="@drawable/custombutton"
         android:text="Update" />
 
     <Button
@@ -238,7 +238,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="220dp"
         android:layout_marginTop="535dp"
-        android:background="@drawable/custombutton3"
+        android:background="@drawable/custombutton"
         android:text="Delete" />
 
 

@@ -13,10 +13,11 @@
         android:layout_height="68dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="400dp"
-        android:background="@drawable/custombutton3"
+        android:background="@drawable/custombutton"
         android:text="View All Hotels"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="63dp"
+
         tools:layout_editor_absoluteY="96dp" />
 
     <Button
@@ -25,7 +26,7 @@
         android:layout_height="74dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="500dp"
-        android:background="@drawable/custombutton3"
+        android:background="@drawable/custombutton"
         android:text="View For Reserve Hotels"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="63dp"

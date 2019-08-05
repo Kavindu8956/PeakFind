@@ -336,6 +336,7 @@
             android:layout_height="wrap_content"
             android:onClick="hotelowner"
             android:text="Edit Profile"
+            android:background="@drawable/custombutton"
 
             android:textSize="20dp" />
 

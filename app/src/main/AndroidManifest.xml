@@ -36,6 +36,9 @@
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
         <activity android:name=".UserProfileActivity"/>
+        <activity android:name=".RegisterUserActivity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -39,4 +39,9 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent3);
         }
     }
+
+    public void Register2(View view) {
+        Intent register = new Intent(LoginActivity.this,RegisterUserActivity.class);
+        startActivity(register);
+    }
 }

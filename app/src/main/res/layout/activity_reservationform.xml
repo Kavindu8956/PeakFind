@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/room3"
-    tools:context=".Activity2">
+    tools:context=".ReservationFormActivity">
     
 
 

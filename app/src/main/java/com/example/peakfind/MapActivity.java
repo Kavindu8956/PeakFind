@@ -7,21 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class UserProfileActivity extends AppCompatActivity {
+public class MapActivity extends AppCompatActivity {
 
-    private Button b1;
+
+    private Button bt1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
-        b1=(Button)findViewById(R.id.button9) ;
-        b1.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_map);
+        bt1=(Button)findViewById(R.id.button8);
+        bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i1=new Intent(UserProfileActivity.this, UserDetailsActivity.class);
+                Intent i1=new Intent(MapActivity.this,MainActivity.class);
                 startActivity(i1);
             }
         });
-            //   @Override
-
     }
 }

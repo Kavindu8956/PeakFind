@@ -5,7 +5,7 @@
     android:background="@drawable/unnamed"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity3">
+    tools:context=".UserDetailsActivity">
 
 
 

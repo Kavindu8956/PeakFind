@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -17,13 +16,13 @@ import androidx.fragment.app.DialogFragment;
 import java.text.DateFormat;
 import java.util.Calendar;
 
-public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
+public class ReservationFormActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
 
     private Button button1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.activity_reservationform);
         Button button=(Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,10 +36,10 @@ public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnD
         Spinner spinner3=(Spinner)findViewById(R.id.spinner3);
         Spinner spinner4=(Spinner)findViewById(R.id.spinner4);
 
-        ArrayAdapter<String> my1=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Adults));
-        ArrayAdapter<String> my3=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Rooms));
-        ArrayAdapter<String> my2=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Children));
-        ArrayAdapter<String> my4=new ArrayAdapter<String>(Activity2.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.roomNo));
+        ArrayAdapter<String> my1=new ArrayAdapter<String>(ReservationFormActivity.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Adults));
+        ArrayAdapter<String> my3=new ArrayAdapter<String>(ReservationFormActivity.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Rooms));
+        ArrayAdapter<String> my2=new ArrayAdapter<String>(ReservationFormActivity.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Children));
+        ArrayAdapter<String> my4=new ArrayAdapter<String>(ReservationFormActivity.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.roomNo));
         my1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         my2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         my3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -53,7 +52,7 @@ public class Activity2 extends AppCompatActivity implements DatePickerDialog.OnD
         button1=(Button)findViewById(R.id.button4);
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent3=new Intent(Activity2.this,Activity3.class);
+                Intent intent3=new Intent(ReservationFormActivity.this, UserDetailsActivity.class);
                 startActivity(intent3);
             }
         });

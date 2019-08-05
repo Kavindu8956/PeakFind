@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Activity3 extends AppCompatActivity {
+public class UserDetailsActivity extends AppCompatActivity {
 
     private Button button;
     private Button button1;
@@ -15,12 +15,12 @@ public class Activity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_4);
+        setContentView(R.layout.activity_userdetails);
         button=(Button)findViewById(R.id.detailbutton) ;
        button.setOnClickListener(new View.OnClickListener() {
         //   @Override
           public void onClick(View view) {
-            Intent intent=new Intent(Activity3.this,UbdateReservation.class);
+            Intent intent=new Intent(UserDetailsActivity.this,UbdateReservation.class);
                startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class Activity3 extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             //   @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity3.this,UserProfileActivity.class);
+                Intent intent=new Intent(UserDetailsActivity.this,UserProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class Activity3 extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             //   @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Activity3.this,LoginActivity.class);
+                Intent intent=new Intent(UserDetailsActivity.this,LoginActivity.class);
                 startActivity(intent);
             }
         });

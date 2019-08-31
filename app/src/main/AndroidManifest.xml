@@ -22,7 +22,9 @@
         <activity android:name=".HotelSelect" />
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".RegisterUserActivity" />
         <activity android:name=".MapActivity" />

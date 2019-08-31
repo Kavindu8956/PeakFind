@@ -39,7 +39,7 @@
         <activity android:name=".HotelOwnerActivity"></activity>
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
-        <activity android:name=".UserProfileActivity"/>
+
     </application>
 
 </manifest>

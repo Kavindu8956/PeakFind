@@ -135,13 +135,13 @@
                     android:layout_height="64dp"
                     android:background="@drawable/cerclebackgroundpink"
                     android:padding="10dp"
-                    android:src="@drawable/ic_shopping_cart_black_24dp" />
+                    android:src="@drawable/prof" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Shopping Mall"
+                    android:text="My Profile"
                     android:textStyle="bold" />
 
                 <View
@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="View Shops Details"
+                    android:text="View &amp; Edit My Details"
                     android:textColor="@android:color/darker_gray" />
             </LinearLayout>
 

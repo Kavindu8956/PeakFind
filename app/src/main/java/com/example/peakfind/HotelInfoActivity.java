@@ -33,7 +33,7 @@ public class HotelInfoActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(HotelInfoActivity.this,Activity2.class);
+                Intent intent=new Intent(HotelInfoActivity.this, ReservationFormActivity.class);
                 startActivity(intent);
             }
         });

@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -53,7 +52,7 @@ public class UbdateReservation extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1=new Intent(UbdateReservation.this,Activity3.class);
+                Intent intent1=new Intent(UbdateReservation.this, UserDetailsActivity.class);
                 startActivity(intent1);
             }
         });
@@ -62,7 +61,7 @@ public class UbdateReservation extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2=new Intent(UbdateReservation.this,Activity3.class);
+                Intent intent2=new Intent(UbdateReservation.this, UserDetailsActivity.class);
                 startActivity(intent2);
             }
         });

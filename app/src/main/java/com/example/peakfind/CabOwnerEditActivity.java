@@ -13,7 +13,7 @@ public class CabOwnerEditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cabowneredit);
-
+/*
         Button button = (Button)findViewById(R.id.button4);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -29,6 +29,6 @@ public class CabOwnerEditActivity extends AppCompatActivity {
                 Intent intent = new Intent(CabOwnerEditActivity.this, CabOwnerActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }

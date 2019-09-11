@@ -57,7 +57,7 @@ public class UbdateReservation extends AppCompatActivity {
             }
         });
 
-        button2=(Button)findViewById(R.id.button5);
+        button2=(Button)findViewById(R.id.btnRegister);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

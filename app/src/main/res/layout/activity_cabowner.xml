@@ -321,6 +321,7 @@
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="17dp"
         android:background="#00AEFF"
+        android:onClick="ccabedit"
         android:text="EDIT"
         android:textColor="#0B164E"
         app:layout_constraintBottom_toBottomOf="parent"

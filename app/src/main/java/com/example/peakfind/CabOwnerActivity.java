@@ -26,10 +26,6 @@ public class CabOwnerActivity extends AppCompatActivity {
         });
 
 
+    }
 
-
-
-
-
-}
 }

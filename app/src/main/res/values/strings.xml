@@ -77,4 +77,7 @@
     <string name="textp2">E-mail:</string>
     <string name="texy3">Phone Number:</string>
     <string name="btn">Save Change</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
 </resources>

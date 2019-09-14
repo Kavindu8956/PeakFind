@@ -2,8 +2,6 @@ package com.example.peakfind;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,7 +13,8 @@ public class CabUserDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cabuserdetails);
 
 
-
+        Intent intent = new Intent(CabUserDetailsActivity.this, CabUserBookActivity.class);
+        startActivity(intent);
 
 
 

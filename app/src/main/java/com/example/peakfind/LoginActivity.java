@@ -113,7 +113,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             Intent intent2 = new Intent(LoginActivity.this, HotelOwnerActivity.class);
             startActivity(intent2);
         } else if (str1.equals("cab")) {
-            Intent intent3 = new Intent(LoginActivity.this, CabOwnerActivity.class);
+            Intent intent3 = new Intent(LoginActivity.this, CabOwnerEditActivity.class);
             startActivity(intent3);
         }
     }

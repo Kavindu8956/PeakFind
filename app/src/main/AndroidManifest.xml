@@ -25,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UserInsertActivity"></activity>
 
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />

@@ -84,4 +84,5 @@
     <string name="cab">Cab</string>
     <string name="hotel">Hotel</string>
     <string name="login">Login</string>
+    <string name="add">Add</string>
 </resources>

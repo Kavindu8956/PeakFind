@@ -25,7 +25,7 @@ public class ChooseTypeActivity extends AppCompatActivity {
     }
 
     public void cabbtn(View view) {
-        Intent intent3 = new Intent(ChooseTypeActivity.this, CabOwnerActivity.class);
+        Intent intent3 = new Intent(ChooseTypeActivity.this, CabOwnerEditActivity.class);
         startActivity(intent3);
     }
 

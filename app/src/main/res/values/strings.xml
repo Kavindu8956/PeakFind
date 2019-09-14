@@ -80,4 +80,8 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
+    <string name="customer">Customert</string>
+    <string name="cab">Cab</string>
+    <string name="hotel">Hotel</string>
+    <string name="login">Login</string>
 </resources>

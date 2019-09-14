@@ -1,6 +1,5 @@
 package com.example.peakfind;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,15 +11,14 @@ public class CabOwnerActivity extends AppCompatActivity {
 
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cabowner);
 
-        Button button1 = (Button)findViewById(R.id.button3);
-        button1.setOnClickListener(new View.OnClickListener(){
+
+        Button button = (Button)findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(CabOwnerActivity.this, CabOwnerEditActivity.class);
                 startActivity(intent);
@@ -28,4 +26,6 @@ public class CabOwnerActivity extends AppCompatActivity {
         });
 
 
-    }}
+    }
+
+}

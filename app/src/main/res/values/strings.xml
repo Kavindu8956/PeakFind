@@ -51,6 +51,10 @@
     <string name="password">Password</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
+    <string name="customer">Customer</string>
+    <string name="cab">Cab</string>
+    <string name="hotel">Hotel</string>
+    <string name="add">Add</string>
     <string-array name="Adults">
         <item>1</item>
         <item>2</item>
@@ -81,7 +85,4 @@
         <item>three</item>
         <item>four</item>
     </string-array>
-    <string name="customer">Customer</string>
-    <string name="cab">Cab</string>
-    <string name="hotel">Hotel</string>
 </resources>

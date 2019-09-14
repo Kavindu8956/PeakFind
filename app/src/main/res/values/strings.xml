@@ -28,49 +28,19 @@
     <string name="text25">S.D.L.Nanayakkara</string>
     <string name="text26">0775602520</string>
 
-    <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text27">Adults</string>
-
-    <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text28">Children</string>
-    <string name="text29">Select Your Room</string>
-    <string-array name="Rooms">
-        <item>Single</item>
-        <item>Double</item>
-        <item>Family</item>
-        <item>Luxury</item>
-    </string-array>
-    <string name="text30">Number Of Rooms</string>
 
-    <string-array name="roomNo">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
+    <string name="text29">Select Your Room</string>
+    <string name="text30">Number Of Rooms</string>
     <string name="text31">1 extra-large double bed</string>
     <string name="text32">Has a balcony</string>
     <string name="text33">Price for:</string>
+
     <string name="text34">Price of one room for one night</string>
     <string name="text35">LKR 15,500</string>
     <string name="text36">+LKR 1,200 taxes and charges</string>
     <string name="text40">Nanayakkara123@gmail.com</string>
-    <string-array name="Name">
-        <item>One</item>
-        <item>two</item>
-        <item>three</item>
-        <item>four</item>
-    </string-array>
     <string name="NAME">NAME</string>
     <string name="button2">DELETE</string>
     <string name="textp1">Name:</string>
@@ -80,4 +50,34 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
+    <string-array name="Adults">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="Children">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="Rooms">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Family</item>
+        <item>Luxury</item>
+    </string-array>
+    <string-array name="roomNo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="Name">
+        <item>One</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
 </resources>

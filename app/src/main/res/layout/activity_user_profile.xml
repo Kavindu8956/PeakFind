@@ -4,17 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/unnamed"><![CDATA[
+    android:background="@drawable/unnamed">
     tools:context=".UserProfileActivity">
 
-
-
-
-
-    ]]>
-
     <ImageView
-        android:id="@+id/imageViewProfile"
+        android:id="@+id/imageView14"
         android:layout_width="156dp"
         android:layout_height="138dp"
         android:layout_marginLeft="120dp"
@@ -34,7 +28,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/editText"
         android:layout_width="372dp"
         android:layout_height="55dp"
         android:layout_marginLeft="20dp"
@@ -84,7 +78,7 @@
         android:text="@string/text15" />
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/button9"
         android:layout_width="218dp"
         android:layout_height="71dp"
         android:layout_marginLeft="100dp"

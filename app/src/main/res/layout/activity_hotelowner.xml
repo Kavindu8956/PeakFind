@@ -100,14 +100,13 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="51dp"
-            android:text="         \n     Breakfast included"
-            android:textSize="15dp"
-            android:textColor="@color/red"
-            android:textStyle="normal"
-            android:layout_marginTop="3dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
             android:drawableLeft="@drawable/ic_restaurant_black_24dp"
-            />
+            android:text="         \n     Breakfast included"
+            android:textColor="@color/red"
+            android:textSize="15dp"
+            android:textStyle="normal" />
 
         <TextView
             android:id="@+id/textView4"
@@ -331,7 +330,7 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="hotelowner"

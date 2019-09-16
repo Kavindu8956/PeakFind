@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.peakfind">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".ImagesActivity"></activity>
+        <activity android:name=".Menu_Resturent" />
+        <activity android:name=".UserProfileActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,24 +26,21 @@
         <activity android:name=".HotelSelect" />
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".RegisterUserActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".ReservationFormActivity" />
-        <activity android:name=".HotelInfoActivity"></activity>
+        <activity android:name=".HotelInfoActivity" />
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
-        <activity android:name=".CabUserActivity"></activity>
+        <activity android:name=".CabUserActivity" />
         <activity android:name=".CabOwnerUpload" />
         <activity android:name=".CabOwnerEditActivity" />
-        <activity android:name=".CabOwnerActivity"></activity>
-        <activity android:name=".HotelOwnerActivity"></activity>
+        <activity android:name=".CabOwnerActivity" />
+        <activity android:name=".HotelOwnerActivity" />
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
-
     </application>
 
 </manifest>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".HotelUserTableReservation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/HotelTopic"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:text="Hotel Name"
+                android:textAlignment="center"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="413dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/googleg_standard_color_18"
+        android:scaleType="fitXY"
+        />
+
+        <LinearLayout
+
+            android:layout_width="400dp"
+            android:layout_height="41dp">
+
+            <Button
+                android:id="@+id/DatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/datebutton" />
+
+            <TextView
+                android:id="@+id/viewDate"
+                android:layout_width="280dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="400dp"
+            android:layout_height="41dp">
+
+            <TextView
+                android:id="@+id/DisplayTime"
+                android:layout_width="105dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/TimeSelect"
+                android:textAlignment="gravity"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerTime"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="400dp"
+            android:layout_height="41dp">
+
+            <TextView
+                android:id="@+id/DisplayPeople"
+                android:layout_width="105dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/Peopleselect"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerPeople"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="400dp"
+            android:layout_height="41dp">
+
+            <Button
+                android:id="@+id/MakeReserve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/Reservation" />
+
+
+    </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</ScrollView>

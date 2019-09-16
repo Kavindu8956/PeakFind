@@ -32,6 +32,11 @@
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ReservationFormActivity" />
         <activity android:name=".HotelInfoActivity"></activity>
+        <activity android:name=".HotelUserReservedTable">
+
+        </activity>
+        <activity android:name=".HotelUserTableReservation" />
+        <activity android:name=".HotelUserListView" />
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />

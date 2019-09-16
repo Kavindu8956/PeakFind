@@ -85,4 +85,37 @@
     <string name="hotel">Hotel</string>
     <string name="login">Login</string>
     <string name="add">Add</string>
+    <string name="setHotel">Enter Hotel Name</string>
+    <string name="setLoction">Enter Hotel Location</string>
+    <string name="GetHotelName">Hotel Name</string>
+    <string name="GetLocation">Hotel Location</string>
+    <string name="SaveButton">Save Details</string>
+    <string name="nextActivity">View List</string>
+    <string name="TableReserve">Reserve Table</string>
+    <string name="EventReserve">Reserve Event</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="datebutton">Select Date</string>
+
+    <string name="TimeSelect">Select Time</string>
+
+    <string name="Peopleselect">Select People</string>
+
+    <string name="Reservation">Make Reservation</string>
+    <string-array name="TableTime">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Tea Time</item>
+    </string-array>
+    <string-array name="People">
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>3 Persons</item>
+        <item>4 Persons</item>
+        <item>More than 5 persons</item>
+    </string-array>
+    <string name="UpdateBtn">Update Reservation</string>
+    <string name="deletebtn">Delete Reservation</string>
 </resources>

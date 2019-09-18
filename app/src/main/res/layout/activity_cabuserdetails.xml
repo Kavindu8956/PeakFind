@@ -141,7 +141,7 @@
         app:srcCompat="@drawable/bike" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEdit"
         android:layout_width="155dp"
         android:layout_height="48dp"
         android:layout_marginStart="146dp"

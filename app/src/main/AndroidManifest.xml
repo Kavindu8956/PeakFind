@@ -32,9 +32,7 @@
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ReservationFormActivity" />
         <activity android:name=".HotelInfoActivity"></activity>
-        <activity android:name=".HotelUserReservedTable">
-
-        </activity>
+        <activity android:name=".HotelUserReservedTable"></activity>
         <activity android:name=".HotelUserTableReservation" />
         <activity android:name=".HotelUserListView" />
 
@@ -50,6 +48,9 @@
         <activity android:name=".HotelOwnerActivity"></activity>
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".Menu_Resturent" />
+
 
 
     </application>

@@ -18,7 +18,7 @@ public class HotelOwnerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotelowner);
 /*
-        b =(Button) findViewById(R.id.button);
+        b =(Button) findViewById(R.id.btnEdit);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,7 +26,9 @@ public class HotelOwnerActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
 */
+
     }
 
     @Override
@@ -35,10 +37,12 @@ public class HotelOwnerActivity extends AppCompatActivity {
         inflater.inflate(R.menu.example_menu,menu);
         return true;
     }
-    public void hotelowner(View v) {
+    public void hotelowner(View view) {
         Intent intentHotelowner = new Intent(HotelOwnerActivity.this,Resturent_Form.class);
         startActivity(intentHotelowner);
     }
+
+
 
 
 }

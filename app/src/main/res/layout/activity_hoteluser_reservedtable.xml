@@ -22,7 +22,7 @@
                 android:layout_height="40dp"
                 android:text="Hotel Name"
                 android:textAlignment="center"
-                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColor="@color/colorAccent1"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -33,7 +33,7 @@
             android:layout_width="413dp"
             android:layout_height="225dp"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/googleg_standard_color_18"
+            app:srcCompat="@drawable/backg"
             android:scaleType="fitXY"
             />
 

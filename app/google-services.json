@@ -15,8 +15,6 @@
       },
       "oauth_client": [
         {
-<<<<<<< HEAD
-=======
           "client_id": "106631113254-arortj9iq45o0h5her34gbq2dv40eipn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -33,7 +31,6 @@
           }
         },
         {
->>>>>>> origin/master
           "client_id": "106631113254-ojk55m469h4e0uldup39dqlooin1mvqo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

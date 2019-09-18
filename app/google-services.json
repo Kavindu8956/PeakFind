@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "106631113254",
+    "firebase_url": "https://peakfind-b95eb.firebaseio.com",
+    "project_id": "peakfind-b95eb",
+    "storage_bucket": "peakfind-b95eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106631113254:android:204fdd33c6be3b2ff314e7",
+        "android_client_info": {
+          "package_name": "com.example.peakfind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106631113254-ojk55m469h4e0uldup39dqlooin1mvqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peakfind",
+            "certificate_hash": "b3a009619ea69c28e984009e25ad7f0816a2542d"
+          }
+        },
+        {
+          "client_id": "106631113254-ermknqvn03cntbjnc63ba00g7pmljoh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4PgAbWz5aUPLI6ELn_8FJs9bdRpLA34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106631113254-ermknqvn03cntbjnc63ba00g7pmljoh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

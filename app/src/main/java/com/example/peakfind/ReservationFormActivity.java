@@ -23,7 +23,7 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservationform);
-        Button button=(Button)findViewById(R.id.button2);
+        Button button=(Button)findViewById(R.id.btnLogin);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

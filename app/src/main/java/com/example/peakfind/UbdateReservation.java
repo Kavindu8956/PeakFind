@@ -22,7 +22,7 @@ public class UbdateReservation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ubdate_reservation);
-        Button button=(Button)findViewById(R.id.button2);
+        Button button=(Button)findViewById(R.id.btnLogin);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +48,7 @@ public class UbdateReservation extends AppCompatActivity {
         spinner3.setAdapter(my3);
         spinner4.setAdapter(my4);
 
-        button1=(Button)findViewById(R.id.button3);
+        button1=(Button)findViewById(R.id.btnRegister);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,7 +57,7 @@ public class UbdateReservation extends AppCompatActivity {
             }
         });
 
-        button2=(Button)findViewById(R.id.button5);
+        button2=(Button)findViewById(R.id.btnRegister);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

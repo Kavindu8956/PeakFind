@@ -15,6 +15,25 @@
       },
       "oauth_client": [
         {
+<<<<<<< HEAD
+=======
+          "client_id": "106631113254-arortj9iq45o0h5her34gbq2dv40eipn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peakfind",
+            "certificate_hash": "62f5f892dfcc88d6e5981b4dad36d73fac4aaa86"
+          }
+        },
+        {
+          "client_id": "106631113254-ahgupbdkqusp7au8rn12087btp8je2jd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peakfind",
+            "certificate_hash": "98894456e6518b1d5bccc784fed0ca716d5397b6"
+          }
+        },
+        {
+>>>>>>> origin/master
           "client_id": "106631113254-ojk55m469h4e0uldup39dqlooin1mvqo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

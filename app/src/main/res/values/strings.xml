@@ -77,20 +77,4 @@
     <string name="textp2">E-mail:</string>
     <string name="texy3">Phone Number:</string>
     <string name="btn">Save Change</string>
-
-
-
-    <array name="StarHotel">
-        <item>One Star</item>
-        <item>Two Star</item>
-        <item>Three Star</item>
-        <item>Four Star</item>
-        <item>Five Star</item>
-    </array>
-
-
-    <array name="Breakfast">
-        <item>Yes</item>
-        <item>No</item>
-    </array>
 </resources>

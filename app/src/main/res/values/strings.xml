@@ -28,49 +28,19 @@
     <string name="text25">S.D.L.Nanayakkara</string>
     <string name="text26">0775602520</string>
 
-    <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text27">Adults</string>
-
-    <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text28">Children</string>
-    <string name="text29">Select Your Room</string>
-    <string-array name="Rooms">
-        <item>Single</item>
-        <item>Double</item>
-        <item>Family</item>
-        <item>Luxury</item>
-    </string-array>
-    <string name="text30">Number Of Rooms</string>
 
-    <string-array name="roomNo">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
+    <string name="text29">Select Your Room</string>
+    <string name="text30">Number Of Rooms</string>
     <string name="text31">1 extra-large double bed</string>
     <string name="text32">Has a balcony</string>
     <string name="text33">Price for:</string>
+
     <string name="text34">Price of one room for one night</string>
     <string name="text35">LKR 15,500</string>
     <string name="text36">+LKR 1,200 taxes and charges</string>
     <string name="text40">Nanayakkara123@gmail.com</string>
-    <string-array name="Name">
-        <item>One</item>
-        <item>two</item>
-        <item>three</item>
-        <item>four</item>
-    </string-array>
     <string name="NAME">NAME</string>
     <string name="button2">DELETE</string>
     <string name="textp1">Name:</string>
@@ -84,4 +54,77 @@
     <string name="cab">Cab</string>
     <string name="hotel">Hotel</string>
     <string name="login">Login</string>
+    <string name="cabOwnerDetails">Cab Owner Details</string>
+    <string name="ownerName">OWNER NAME</string>
+    <string name="companyName">COMPANY NAME</string>
+    <string name="city">CITY</string>
+    <string name="mobileNo">MOBILE NO</string>
+    <string name="ownernametext">owner name</string>
+    <string name="companynametext">company name</string>
+    <string name="citytext">city</string>
+    <string name="mobilenotext">mobile no</string>
+    <string name="emailtext">e-mail</string>
+    <string name="entervehicletext">enter vehicle</string>
+    <string name="deletebtn">Delete</string>
+    <string name="editownername">OWNER NAME</string>
+    <string name="editcompanyname">COMPANY NAME</string>
+    <string name="editcity">CITY</string>
+    <string name="editmobileno">MOBILE NO</string>
+    <string name="editemail">E-MAIL</string>
+    <string name="editcabownerdetails">CAB SERVICE DETAILS</string>
+    <string name="save">SAVE</string>
+    <string name="edittextownername">owner name</string>
+    <string name="textcompanyname">company name</string>
+    <string name="citylayout">City:</string>
+    <string name="mobilelayout">Mobile:</string>
+    <string name="emaillayout">Email:</string>
+    <string name="buttobBook">BOOK</string>
+    <string name="vehicletype">VEHICLE TYPES</string>
+    <string name="taxibooking">TAXI BOOKING</string>
+    <string name="customername">CUSTOMER NAME</string>
+    <string name="pickuplocation">PICKUP LOCATION</string>
+    <string name="destination">DESTINATION</string>
+    <string name="pickupdate" />
+    <string name="pickupdates">PICKUP DATE</string>
+    <string name="pickuptime">PICKUP TIME</string>
+    <string name="mobileno">MOBILE NO</string>
+    <string name="vehicletypeS">VEHICLE TYPE</string>
+    <string name="pickuplocationtext">Pickup Location</string>
+    <string name="customernametext">Customer Name</string>
+    <string name="destinationtext">Destination</string>
+    <string name="pickupdatetext">Pickup Date</string>
+    <string name="picktimetext">Pickup Time</string>
+    <string name="mobilenumbertext">Mobile No</string>
+    <string name="vehicletypetext">Vehicle Type</string>
+    <string name="btnbooknow">Book Now</string>
+    <string-array name="Adults">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="Children">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="Rooms">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Family</item>
+        <item>Luxury</item>
+    </string-array>
+    <string-array name="roomNo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="Name">
+        <item>One</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
 </resources>

@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterUserActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".MapActivity" />
-        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".UserProfileActivity" />
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".HotelSelect" />
@@ -30,22 +30,19 @@
         <activity android:name=".HotelActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ReservationFormActivity" />
-        <activity android:name=".HotelInfoActivity"></activity>
+        <activity android:name=".HotelInfoActivity" />
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
-        <activity android:name=".CabUserActivity"></activity>
         <activity android:name=".CabOwnerUpload" />
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".show_cabownerdetails" />
-        <activity android:name=".CabOwnerActivity"></activity>
         <activity android:name=".CabOwnerUpdate" />
+        <activity android:name=".CabUserListShowActivity"></activity>
 
-        <activity android:name=".HotelOwnerActivity"></activity>
+        <activity android:name=".HotelOwnerActivity" />
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
-
-
     </application>
 
 </manifest>

@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".RegisterUserActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".MapActivity" />
-        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".UserProfileActivity"></activity>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".HotelSelect" />
@@ -25,12 +25,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UserInsertActivity"></activity>
 
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ReservationFormActivity" />
         <activity android:name=".HotelInfoActivity" />
+        <activity android:name=".HotelInfoActivity"></activity>
+        <activity android:name=".HotelUserReservedTable"></activity>
+        <activity android:name=".HotelUserTableReservation" />
+        <activity android:name=".HotelUserListView" />
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
@@ -43,6 +48,11 @@
         <activity android:name=".HotelOwnerActivity" />
         <activity android:name=".Resturent_Form" />
         <activity android:name=".ImageUpdate" />
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".Menu_Resturent" />
+
+
+
     </application>
 
 </manifest>

@@ -39,9 +39,6 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
 
     }
 
-    public void Register2(View view) {
-    }
-
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

@@ -29,19 +29,13 @@
 
         </activity>
 
-        <activity android:name=".LoginActivity" >
-
-        </activity>
+        <activity android:name=".LoginActivity" ></activity>
         <activity android:name=".LoginHotelOwnerActivity" />
         <activity android:name=".LoginCabOwnerActivity" />
-        <activity android:name=".RegisterUserActivity" >
-
-        </activity>
+        <activity android:name=".RegisterUserActivity" ></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".MapActivity" />
-        <activity android:name=".UserProfileActivity">
-
-        </activity>
+        <activity android:name=".UserProfileActivity"></activity>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".HotelSelect" />
@@ -52,9 +46,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserInsertActivity">
-
-        </activity>
+        <activity android:name=".UserInsertActivity"></activity>
 
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
@@ -67,7 +59,6 @@
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
-        <activity android:name=".CabUserActivity" />
         <activity android:name=".CabOwnerUpload" />
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".show_cabownerdetails" />

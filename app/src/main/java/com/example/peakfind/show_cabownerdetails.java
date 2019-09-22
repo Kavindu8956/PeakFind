@@ -18,12 +18,15 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class show_cabownerdetails extends AppCompatActivity {
+
 
 
     DatabaseReference dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails");
@@ -31,6 +34,8 @@ public class show_cabownerdetails extends AppCompatActivity {
 
     List<CabDetails> cabDetails;
     CabDetails cabdetails;
+
+
 
 
     public static final String Owner_Name = "owner name";
@@ -48,6 +53,8 @@ public class show_cabownerdetails extends AppCompatActivity {
     public static final String num_3 = "number 3";
     public static final String num_4 = "number 4";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,11 +64,14 @@ public class show_cabownerdetails extends AppCompatActivity {
 
         cabDetails = new ArrayList<>();
 
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 cabdetails = cabDetails.get(i);
+
                 Intent intent = new Intent(getApplicationContext(),CabOwnerUpdate.class);
 
                 intent.putExtra(Data_KEY,cabdetails.getKey());
@@ -82,9 +92,11 @@ public class show_cabownerdetails extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
+
+
+
+
 
     @Override
     protected void onStart() {
@@ -112,5 +124,15 @@ public class show_cabownerdetails extends AppCompatActivity {
             }
         });
     }
+
+
+
+
+
+
+
+
+
+
 }
 

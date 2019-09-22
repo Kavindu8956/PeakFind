@@ -20,6 +20,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.744" />
 
+    <Button
+        android:id="@+id/btndate"
+        android:layout_width="184dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/pickdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView63"
+        app:layout_constraintTop_toBottomOf="@+id/destination"
+        app:layout_constraintVertical_bias="0.0" />
+
     <EditText
         android:id="@+id/picklocation"
         android:layout_width="184dp"
@@ -49,20 +65,6 @@
         app:layout_constraintVertical_bias="0.319" />
 
     <EditText
-        android:id="@+id/pickdate"
-        android:layout_width="184dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:hint="@string/pickupdatetext"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
-
-    <EditText
         android:id="@+id/picktime"
         android:layout_width="184dp"
         android:layout_height="39dp"
@@ -74,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintVertical_bias="0.543" />
 
     <EditText
         android:id="@+id/mobileNo"
@@ -87,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601" />
 
     <EditText
         android:id="@+id/VehicleType"
@@ -101,7 +104,7 @@
         app:layout_constraintHorizontal_bias="0.929"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
+        app:layout_constraintVertical_bias="0.657" />
 
     <EditText
         android:id="@+id/cusname"
@@ -205,7 +208,7 @@
         app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintVertical_bias="0.531" />
 
     <TextView
         android:id="@+id/textView65"
@@ -220,7 +223,7 @@
         app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.592" />
 
     <TextView
         android:id="@+id/textView66"
@@ -235,6 +238,20 @@
         app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintVertical_bias="0.654" />
+
+    <TextView
+        android:id="@+id/pickdate"
+        android:layout_width="331dp"
+        android:layout_height="34dp"
+        android:hint="@string/date1"
+        android:textColor="#FA0C0B0B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -48,6 +49,7 @@ public class CabOwnerDetailsList extends ArrayAdapter<CabDetails> {
         TextView txtnum4 = (TextView) listView.findViewById(R.id.textView52);
 
 
+
         CabDetails cabdetails = cabOwnerDetailsList.get(position);
 
 
@@ -68,6 +70,8 @@ public class CabOwnerDetailsList extends ArrayAdapter<CabDetails> {
     txtnum2.setText(Integer.toString(cabdetails.getNum2()));
     txtnum3.setText(Integer.toString(cabdetails.getNum3()));
     txtnum4.setText(Integer.toString(cabdetails.getNum4()));
+
+
 
 
 

@@ -1,21 +1,31 @@
 package com.example.peakfind;
 
+import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class CabUserBookActivity extends AppCompatActivity {
+import java.text.DateFormat;
+import java.util.Calendar;
 
-    EditText CustomerName,PickupLocation,Destination,PickupDate,PickupTime,MobileNo,VehicleType;
-    Button btnbooknow;
+public class CabUserBookActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
+
+    EditText CustomerName,PickupLocation,Destination,PickupTime,MobileNo,VehicleType;
+
+    TextView PickupDate,CompanyName;
+    Button btnbooknow,btndate;
     DatabaseReference dbref;
     CabBookDetails cabBD;
 
@@ -27,6 +37,7 @@ public class CabUserBookActivity extends AppCompatActivity {
         PickupDate.setText("");
         PickupTime.setText("");
         VehicleType.setText("");
+        CompanyName.setText("");
     }
 
     @Override
@@ -36,17 +47,24 @@ public class CabUserBookActivity extends AppCompatActivity {
 
         dbref = FirebaseDatabase.getInstance().getReference("CabBookingDetails");
 
+
+
         CustomerName = (EditText)findViewById(R.id.cusname);
         PickupLocation = (EditText)findViewById(R.id.picklocation);
         Destination = (EditText)findViewById(R.id.destination);
         MobileNo = (EditText)findViewById(R.id.mobileNo);
-        PickupDate = (EditText)findViewById(R.id.pickdate);
+        PickupDate = (TextView) findViewById(R.id.pickdate);
         PickupTime = (EditText)findViewById(R.id.picktime);
         VehicleType = (EditText)findViewById(R.id.VehicleType);
 
         btnbooknow = (Button)findViewById(R.id.btnbooknow);
+        btndate = (Button)findViewById(R.id.btndate);
 
         cabBD = new CabBookDetails();
+
+        /*CompanyName = (TextView) findViewById(R.id.CabCompanyName);
+        Intent intent = getIntent();
+        final String Cname = intent.getStringExtra(CabUserListShowActivity.Cab_Company_Name);*/
 
         btnbooknow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,6 +95,7 @@ public class CabUserBookActivity extends AppCompatActivity {
                 }
                 else{
                    cabBD.setKey(dbref.push().getKey());
+                   cabBD.setCustomerName(CustomerName.getText().toString().trim());
                    cabBD.setDestination(Destination.getText().toString().trim());
                    cabBD.setPickupLocation(PickupLocation.getText().toString().trim());
                    cabBD.setPickupDate(PickupDate.getText().toString().trim());
@@ -89,8 +108,34 @@ public class CabUserBookActivity extends AppCompatActivity {
                     cleanData();
                 }
 
+
+
+
             }
         });
+
+        Button button = (Button)findViewById(R.id.btndate);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DialogFragment datePicker = new DatePickerFragment();
+                datePicker.show(getSupportFragmentManager(),"date picker");
+            }
+        });
+    }
+
+
+    @Override
+    public void onDateSet(DatePicker date, int year, int month, int dayOfMonth) {
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.YEAR,year);
+        c.set(Calendar.MONTH,month);
+        c.set(Calendar.DAY_OF_MONTH,dayOfMonth);
+        String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
+
+        TextView textView = (TextView)findViewById(R.id.pickdate);
+        textView.setText(currentDateString);
+
     }
 
     public void cleanData(){

@@ -37,6 +37,8 @@ public class CabDetails {
         this.num3 = num3;
         this.num4 = num4;
 
+
+
     }
 
     public String getKey() {
@@ -150,6 +152,8 @@ public class CabDetails {
     public void setNum4(int num4) {
         this.num4 = num4;
     }
+
+
 }
 
 

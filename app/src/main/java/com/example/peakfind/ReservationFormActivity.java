@@ -84,9 +84,8 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 addRoom();
-                Intent intent3=new Intent(ReservationFormActivity.this, HotelCustomerReservedList.class);
-                startActivity(intent3);
-
+                Intent intent2=new Intent(ReservationFormActivity.this, HotelCustomerReservedList.class);
+                startActivity(intent2);
             }
         });
     }

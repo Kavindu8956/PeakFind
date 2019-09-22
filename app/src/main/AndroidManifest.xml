@@ -48,7 +48,6 @@
         </activity>
         <activity android:name=".UserInsertActivity"></activity>
 
-        <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ReservationFormActivity" />
@@ -56,10 +55,12 @@
         <activity android:name=".HotelUserReservedTable"></activity>
         <activity android:name=".HotelUserTableReservation" />
         <activity android:name=".HotelUserListView" />
+        <activity android:name=".HotelCustomerReservedList" />
+        <activity android:name=".HotelUserReservedRoom" />
+
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
-        <activity android:name=".CabOwnerUpload" />
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".show_cabownerdetails" />
         <activity android:name=".CabOwnerUpdate" />

@@ -85,8 +85,8 @@
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="320dp"
-        android:text="@string/text27"
         android:background="@drawable/input_shape"
+        android:text="@string/peopleQuantity"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
 
@@ -97,7 +97,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="370dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text29"
+        android:text="@string/typeRoom"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
@@ -118,7 +118,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="420dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text30"
+        android:text="@string/quanRoom"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />

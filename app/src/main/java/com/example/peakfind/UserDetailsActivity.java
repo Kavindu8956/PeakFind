@@ -17,13 +17,7 @@ public class UserDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userdetails);
         button=(Button)findViewById(R.id.detailbutton) ;
-       button.setOnClickListener(new View.OnClickListener() {
-        //   @Override
-          public void onClick(View view) {
-            Intent intent=new Intent(UserDetailsActivity.this,UbdateReservation.class);
-               startActivity(intent);
-            }
-        });
+
         button1=(Button)findViewById(R.id.editButton) ;
         button1.setOnClickListener(new View.OnClickListener() {
             //   @Override

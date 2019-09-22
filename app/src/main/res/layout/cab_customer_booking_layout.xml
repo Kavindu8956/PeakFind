@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/customerNameview"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/customernameview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pickuplocationview"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/pickuplocationview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/destinationview"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="104dp"
+        android:text="@string/destinationview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pickupdateview"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="132dp"
+        android:text="@string/pickupdateview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="164dp"
+        android:text="@string/pickuptimeview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="196dp"
+        android:text="@string/mobilenoview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vehicletypeview"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="228dp"
+        android:text="@string/vehicletypeview"
+        android:textColor="#F70A0A0A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textcustomername"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textpickuplocation"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textdestination"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textpickupdate"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textpickuptime"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textmobileno"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textvehicletype"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/companynamebook"
+        android:layout_width="192dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

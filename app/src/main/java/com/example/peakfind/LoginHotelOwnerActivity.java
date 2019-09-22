@@ -1,8 +1,5 @@
 package com.example.peakfind;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -11,12 +8,15 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+public class LoginHotelOwnerActivity extends AppCompatActivity implements View.OnClickListener {
 
     FirebaseAuth mAuth;
     EditText editTextEmail,editTextPassword;
@@ -25,7 +25,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_loginhotelowner);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(LoginActivity.this, UserProfileActivity.class);
+                    Intent intent = new Intent(LoginHotelOwnerActivity.this, HotelOwnerActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }else {
@@ -100,7 +100,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
 
     }
-    /*
+/*
     @Override
     protected void onStart() {
         super.onStart();
@@ -109,8 +109,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             startActivity(new Intent(this,UserProfileActivity.class));
         }
     }
-
-     */
 
     /*
     public void onLogin(View view) {

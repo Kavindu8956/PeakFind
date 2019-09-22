@@ -13,6 +13,102 @@
     </array>
     <string name="app_name">Peak&amp;Find</string>
 
+    <string-array name="Children">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Rooms">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Family</item>
+        <item>Luxury</item>
+    </string-array>
+
+    <string-array name="roomNo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Name">
+        <item>One</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
+
+    <string-array name="TableTime">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Tea Time</item>
+    </string-array>
+    <string-array name="People">
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>3 Persons</item>
+        <item>4 Persons</item>
+        <item>More than 5 persons</item>
+    </string-array>
+
+    <array name="StarHotel">
+        <item>One Star</item>
+        <item>Two Star</item>
+        <item>Three Star</item>
+        <item>Four Star</item>
+        <item>Five Star</item>
+    </array>
+
+    <array name="Breakfast">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+    <string-array name="Adults">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="btnbooknow">Book Now</string>
+
+
+    <string name="editcompanyname">COMPANY NAME</string>
+    <string name="editcity">CITY</string>
+    <string name="editmobileno">MOBILE NO</string>
+    <string name="editemail">E-MAIL</string>
+    <string name="editcabownerdetails">CAB SERVICE DETAILS</string>
+    <string name="save">SAVE</string>
+    <string name="edittextownername">owner name</string>
+    <string name="textcompanyname">company name</string>
+    <string name="citylayout">City:</string>
+    <string name="mobilelayout">Mobile:</string>
+    <string name="emaillayout">Email:</string>
+    <string name="buttobBook">BOOK</string>
+    <string name="vehicletype">VEHICLE TYPES</string>
+    <string name="taxibooking">TAXI BOOKING</string>
+    <string name="customername">CUSTOMER NAME</string>
+    <string name="pickuplocation">PICKUP LOCATION</string>
+    <string name="destination">DESTINATION</string>
+    <string name="pickupdate" />
+    <string name="pickupdates">PICKUP DATE</string>
+    <string name="pickuptime">PICKUP TIME</string>
+    <string name="mobileno">MOBILE NO</string>
+    <string name="vehicletypeS">VEHICLE TYPE</string>
+    <string name="pickuplocationtext">Pickup Location</string>
+    <string name="customernametext">Customer Name</string>
+    <string name="destinationtext">Destination</string>
+    <string name="pickupdatetext">Pickup Date</string>
+    <string name="picktimetext">Pickup Time</string>
+    <string name="mobilenumbertext">Mobile No</string>
+    <string name="vehicletypetext">Vehicle Type</string>
+
+
     <string name="text1">Amari Galle</string>
     <string name="text2">Galle, 4.2Km from center:</string>
     <string name="text3">Breakfast Included</string>
@@ -78,12 +174,7 @@
     <string name="text35">LKR 15,500</string>
     <string name="text36">+LKR 1,200 taxes and charges</string>
     <string name="text40">Nanayakkara123@gmail.com</string>
-    <string-array name="Name">
-        <item>One</item>
-        <item>two</item>
-        <item>three</item>
-        <item>four</item>
-    </string-array>
+
     <string name="NAME">NAME</string>
     <string name="button2">DELETE</string>
     <string name="textp1">Name:</string>
@@ -119,6 +210,7 @@
     <string name="Peopleselect">Select People</string>
 
     <string name="Reservation">Make Reservation</string>
+
 
     <string name="UpdateBtn">Update Reservation</string>
 
@@ -179,14 +271,39 @@
     </string-array>
     <string name="UpdateBtn">Update Reservation</string>
     <string name="deletebtn">Delete Reservation</string>
-    <array name="StarHotel">
-        <item>One Star</item>
-        <item>Two Star</item>
-        <item>Three Star</item>
-        <item>Four Star</item>
-        <item>Five Star</item>
-    </array>
+    <string name="title_activity_maps">mapvalue</string>
+    <string name="emailtext">Email</string>
+    <string name="mobilenotext">Mobile</string>
+    <string name="citytext">City</string>
+    <string name="ownernametext">Owner Name</string>
+    <string name="mobileNo">Mobile</string>
+    <string name="city">City</string>
+    <string name="companyName">Company Name</string>
+    <string name="ownerName">Owner Name</string>
+    <string name="cabOwnerDetails">Cab owner Details</string>
+    <string name="entervehicletext">Enter Vehicle</string>
+    <string name="companynametext">Company Name</string>
+    <string name="editcabownerdetails">Cab Owner Detail</string>
+    <string name="editownername">Edit owner</string>
 
+    <string name="btnregistercabowner">Register Cab Owner</string>
+    <string name="btncabownerlist">Cab Owners</string>
+    <string name="btnupdateview">Update</string>
+    <string name="btnviewbooking">VIEW BOOKING</string>
+    <string name="customernameview">CUSTOMER NAME</string>
+    <string name="pickuplocationview">PICKUP LOCATION</string>
+    <string name="destinationview">DESTINATION</string>
+    <string name="pickupdateview">PICKUP DATE</string>
+    <string name="picktimeview">pickup time</string>
+    <string name="pickuptimeview">PICKUP TIME</string>
+    <string name="mobilenoview">MOBILE NO</string>
+    <string name="vehicletypeview">VEHICLE TYPE</string>
+    <string name="date">Date</string>
+    <string name="date1">Date</string>
+    <string name="btnviewbooking1">VIEW BOOKING</string>
+    <string name="entercontactnumber">con</string>
+    <string name="entername">nameeee</string>
+    <string name="contactnumber">fadc</string>
 
     <array name="Breakfast">
         <item>Yes</item>

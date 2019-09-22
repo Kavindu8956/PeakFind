@@ -13,21 +13,21 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="612dp"
-        android:text="CAB SERVICE DETAILS"
+        android:layout_width="256dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="668dp"
+        android:text="@string/editcabownerdetails"
         android:textColor="#ED000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -35,9 +35,8 @@
         android:layout_height="24dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="262dp"
-        android:background="#802196F3"
         android:drawableStart="@drawable/ic_person_black_24dp"
-        android:text="  OWNER NAME"
+        android:text="@string/editownername"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -50,9 +49,8 @@
         android:id="@+id/textView4"
         android:layout_width="183dp"
         android:layout_height="25dp"
-        android:background="#802196F3"
         android:drawableStart="@drawable/ic_account_balance_black_24dp"
-        android:text=" COMPANY NAME"
+        android:text="@string/editcompanyname"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -67,9 +65,8 @@
         android:layout_height="25dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="243dp"
-        android:background="#802196F3"
         android:drawableStart="@drawable/ic_place_black_24dp"
-        android:text="CITY"
+        android:text="@string/editcity"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -82,17 +79,17 @@
         android:id="@+id/textView12"
         android:layout_width="183dp"
         android:layout_height="25dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="243dp"
-        android:background="#802196F3"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
         android:drawableStart="@drawable/ic_contact_phone_black_24dp"
-        android:text="MOBILE NO"
+        android:text="@string/editmobileno"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/txtmobile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -101,10 +98,9 @@
         android:layout_height="24dp"
         android:layout_marginStart="33dp"
         android:layout_marginEnd="236dp"
-        android:background="#802196F3"
         android:drawableStart="@drawable/ic_email_black_24dp"
         android:hint="@android:string/defaultVoiceMailAlphaTag"
-        android:text="E-MAIL"
+        android:text="@string/editemail"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -118,74 +114,62 @@
         android:layout_width="400dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="11dp"
         android:background="#2196F3"
-        android:text="SAVE"
+        android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvehicle4update" />
 
     <EditText
         android:id="@+id/txtowner"
-        android:layout_width="173dp"
-        android:layout_height="38dp"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
         android:ems="10"
-        android:hint="owner name"
+        android:hint="@string/edittextownername"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
-
-    <EditText
-        android:id="@+id/txtcompany"
-        android:layout_width="175dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:hint="company name"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <EditText
         android:id="@+id/txtcity"
-        android:layout_width="175dp"
-        android:layout_height="43dp"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:hint="city"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintVertical_bias="0.419" />
 
     <EditText
         android:id="@+id/txtmobile"
-        android:layout_width="172dp"
-        android:layout_height="42dp"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:hint="mobile no"
         android:inputType="phone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintHorizontal_bias="0.978"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <EditText
         android:id="@+id/txtemail"
-        android:layout_width="170dp"
-        android:layout_height="43dp"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
@@ -194,24 +178,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#2196F3"
-        android:drawableStart="@drawable/ic_add_a_photo_black_24dp"
-        android:text="UPLOAD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.623" />
 
     <TextView
         android:id="@+id/textView39"
@@ -229,7 +199,7 @@
         app:layout_constraintVertical_bias="0.742" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/txtvehicle1update"
         android:layout_width="129dp"
         android:layout_height="43dp"
         android:layout_marginStart="35dp"
@@ -239,51 +209,145 @@
         android:ems="10"
         android:hint="enter vehicle"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText8"
-        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextnum1"
+        app:layout_constraintEnd_toStartOf="@+id/txtvehicle2update"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText7"
-        android:layout_width="124dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
+        android:id="@+id/txtvehicle3update"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginEnd="71dp"
         android:layout_marginRight="71dp"
         android:ems="10"
         android:hint="enter vehicle"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
-        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextnum3"
+        app:layout_constraintEnd_toStartOf="@+id/txtvehicle4update"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText8"
-        android:layout_width="126dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="90dp"
+        android:id="@+id/txtvehicle2update"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
         android:layout_marginEnd="53dp"
         android:layout_marginRight="53dp"
-        android:layout_marginBottom="3dp"
         android:ems="10"
         android:hint="enter vehicle"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextnum2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtvehicle4update"
+        android:layout_width="129dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:ems="10"
+        android:hint="enter vehicle"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextnum4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextnum1"
+        android:layout_width="36dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtvehicle2update"
+        app:layout_constraintEnd_toStartOf="@+id/txtvehicle2update"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/txtvehicle1update" />
+
+    <EditText
+        android:id="@+id/editTextnum3"
+        android:layout_width="36dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtvehicle4update"
+        app:layout_constraintEnd_toStartOf="@+id/txtvehicle4update"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/txtvehicle3update" />
+
+    <EditText
+        android:id="@+id/editTextnum2"
+        android:layout_width="36dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtvehicle2update"
         app:layout_constraintTop_toBottomOf="@+id/txtemail" />
 
     <EditText
-        android:id="@+id/editText9"
-        android:layout_width="120dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginRight="59dp"
+        android:id="@+id/editTextnum4"
+        android:layout_width="36dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:layout_marginBottom="7dp"
         android:ems="10"
-        android:hint="enter vehicle"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtvehicle4update"
+        app:layout_constraintTop_toBottomOf="@+id/editTextnum2" />
+
+    <EditText
+        android:id="@+id/txtcompany"
+        android:layout_width="173dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="@string/textcompanyname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtcity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/txtowner"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="135dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtowner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cabimage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

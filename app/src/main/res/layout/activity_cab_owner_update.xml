@@ -4,268 +4,353 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CabOwnerUpdate">
+    tools:context=".CabOwnerUpdate"><![CDATA[
 
 
     tools:context=".CabOwnerUpdate">
-    <TextView
-        android:id="@+id/textView2"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginBottom="612dp"
-        android:text="CAB SERVICE DETAILS"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="92dp"
+        android:background="#2196F3"
+        android:text="@string/common_google_play_services_update_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvehicle3update" />
+
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="92dp"
+        android:background="#2196F3"
+        android:text="@string/btndelete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvehicle4update" />
+
+    <EditText
+        android:id="@+id/txtowner"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="@string/ownernametext"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <EditText
+        android:id="@+id/txtcity"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="@string/citytext"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <EditText
+        android:id="@+id/txtmobile"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="@string/mobilenotext"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/emailtext"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <EditText
+        android:id="@+id/txtvehicle1update"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="@string/entervehicletext"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <EditText
+        android:id="@+id/txtvehicle3update"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="enter vehicle"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <EditText
+        android:id="@+id/txtvehicle2update"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="enter vehicle"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <EditText
+        android:id="@+id/txtvehicle4update"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="enter vehicle"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <EditText
+        android:id="@+id/txtnum1update"
+        android:layout_width="49dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <EditText
+        android:id="@+id/txtnum2update"
+        android:layout_width="49dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <EditText
+        android:id="@+id/txtnum3update"
+        android:layout_width="49dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <EditText
+        android:id="@+id/txtnum4update"
+        android:layout_width="49dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <EditText
+        android:id="@+id/txtcompany"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="@string/companynametext"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="281dp"
+        android:layout_height="34dp"
+        android:text="@string/cabOwnerDetails"
         android:textColor="#ED000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="185dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="262dp"
-        android:background="#802196F3"
+        android:layout_width="179dp"
+        android:layout_height="29dp"
         android:drawableStart="@drawable/ic_person_black_24dp"
-        android:text="  OWNER NAME"
+        android:text="@string/ownerName"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtowner"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="183dp"
-        android:layout_height="25dp"
-        android:background="#802196F3"
+        android:layout_width="179dp"
+        android:layout_height="29dp"
         android:drawableStart="@drawable/ic_account_balance_black_24dp"
-        android:text=" COMPANY NAME"
+        android:text="@string/companyName"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtcompany"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="184dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="243dp"
-        android:background="#802196F3"
+        android:layout_width="179dp"
+        android:layout_height="29dp"
         android:drawableStart="@drawable/ic_place_black_24dp"
-        android:text="CITY"
+        android:text="@string/city"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtcity"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="183dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="243dp"
-        android:background="#802196F3"
+        android:layout_width="179dp"
+        android:layout_height="29dp"
         android:drawableStart="@drawable/ic_contact_phone_black_24dp"
-        android:text="MOBILE NO"
+        android:text="@string/mobileNo"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtmobile"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="186dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="236dp"
-        android:background="#802196F3"
+        android:layout_width="179dp"
+        android:layout_height="29dp"
         android:drawableStart="@drawable/ic_email_black_24dp"
         android:hint="@android:string/defaultVoiceMailAlphaTag"
         android:text="E-MAIL"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtemail"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/txtowner"
-        android:layout_width="173dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:hint="owner name"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
-
-    <EditText
-        android:id="@+id/txtcompany"
-        android:layout_width="175dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:hint="company name"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
-
-    <EditText
-        android:id="@+id/txtcity"
-        android:layout_width="175dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="city"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.991"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-
-    <EditText
-        android:id="@+id/txtmobile"
-        android:layout_width="172dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="mobile no"
-        android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.974"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528" />
-
-    <EditText
-        android:id="@+id/txtemail"
-        android:layout_width="170dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="e-mail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.965"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.619" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#2196F3"
-        android:drawableStart="@drawable/ic_add_a_photo_black_24dp"
-        android:text="UPLOAD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.524" />
 
     <TextView
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="504dp"
+        android:layout_marginTop="408dp"
         android:text="VEHICLE TYPES"
         android:textColor="#070707"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="129dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginEnd="68dp"
-        android:layout_marginRight="68dp"
-        android:ems="10"
-        android:hint="enter vehicle"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText8"
-        app:layout_constraintEnd_toStartOf="@+id/editText8"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editText7"
-        android:layout_width="124dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginRight="71dp"
-        android:ems="10"
-        android:hint="enter vehicle"
-        android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText9"
-        app:layout_constraintEnd_toStartOf="@+id/editText9"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="126dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="53dp"
-        android:layout_marginRight="53dp"
-        android:layout_marginBottom="3dp"
-        android:ems="10"
-        android:hint="enter vehicle"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editText9"
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="151dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
-
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="120dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginRight="59dp"
-        android:ems="10"
-        android:hint="enter vehicle"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="615dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cabimage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

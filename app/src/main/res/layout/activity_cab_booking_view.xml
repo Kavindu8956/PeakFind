@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/listview1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".show_cabownerdetails">
+    tools:context=".CabBookingViewActivity">
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/listviewcustomerbooking"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

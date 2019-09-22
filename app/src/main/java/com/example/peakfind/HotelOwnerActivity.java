@@ -34,7 +34,7 @@ public class HotelOwnerActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu,menu);
+        inflater.inflate(R.menu.menu,menu);
         return true;
     }
     public void hotelowner(View view) {

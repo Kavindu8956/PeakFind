@@ -42,6 +42,10 @@ public class CabOwnerDetailsList extends ArrayAdapter<CabDetails> {
         TextView txtvehicle2 = (TextView) listView.findViewById(R.id.textView46);
         TextView txtvehicle3 = (TextView) listView.findViewById(R.id.textView47);
         TextView txtvehicle4 = (TextView) listView.findViewById(R.id.textView48);
+        TextView txtnum1 = (TextView) listView.findViewById(R.id.textView49);
+        TextView txtnum2 = (TextView) listView.findViewById(R.id.textView50);
+        TextView txtnum3 = (TextView) listView.findViewById(R.id.textView51);
+        TextView txtnum4 = (TextView) listView.findViewById(R.id.textView52);
 
 
         CabDetails cabdetails = cabOwnerDetailsList.get(position);
@@ -60,6 +64,10 @@ public class CabOwnerDetailsList extends ArrayAdapter<CabDetails> {
     txtvehicle2.setText(cabdetails.getVehicle2());
     txtvehicle3.setText(cabdetails.getVehicle3());
     txtvehicle4.setText(cabdetails.getVehicle4());
+    txtnum1.setText(Integer.toString(cabdetails.getNum1()));
+    txtnum2.setText(Integer.toString(cabdetails.getNum2()));
+    txtnum3.setText(Integer.toString(cabdetails.getNum3()));
+    txtnum4.setText(Integer.toString(cabdetails.getNum4()));
 
 
 

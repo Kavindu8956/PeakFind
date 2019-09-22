@@ -2,6 +2,7 @@ package com.example.peakfind;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,9 +19,9 @@ import java.util.List;
 public class CabOwnerEditActivity extends AppCompatActivity {
 
 
-    EditText OwnerName,CompanyName,City,MobileNo,Email,vehicle1,vehicle2,vehicle3,vehicle4;
-    Button BtnSave;
-    DatabaseReference dbref;
+    EditText OwnerName,CompanyName,City,MobileNo,Email,vehicle1,vehicle2,vehicle3,vehicle4,num1,num2,num3,num4;
+    Button BtnSave,BtnUpload;
+    DatabaseReference dbref222;
     CabDetails cbd;
 
     ListView listViewcab;
@@ -28,7 +29,9 @@ public class CabOwnerEditActivity extends AppCompatActivity {
     List<CabDetails>cabDetails;
 
 
-    private void clearControls() {
+
+
+   private void clearControls() {
         OwnerName.setText("");
         CompanyName.setText("");
         City.setText("");
@@ -38,6 +41,10 @@ public class CabOwnerEditActivity extends AppCompatActivity {
         vehicle2.setText("");
         vehicle3.setText("");
         vehicle4.setText("");
+        num1.setText("");
+        num2.setText("");
+        num3.setText("");
+        num4.setText("");
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,19 +53,25 @@ public class CabOwnerEditActivity extends AppCompatActivity {
 
 
 
-            dbref = FirebaseDatabase.getInstance().getReference("CabDetails");
+            dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails");
 
             OwnerName = (EditText)findViewById(R.id.txtowner);
             CompanyName = (EditText)findViewById(R.id.txtcompany);
             City = (EditText)findViewById(R.id.txtcity);
             MobileNo = (EditText)findViewById(R.id.txtmobile);
             Email = (EditText)findViewById(R.id.txtemail);
-            vehicle1 = (EditText)findViewById(R.id.editText6);
-            vehicle2 = (EditText)findViewById(R.id.editText7);
-            vehicle3 = (EditText)findViewById(R.id.editText8);
-            vehicle4 = (EditText)findViewById(R.id.editText9);
+            vehicle1 = (EditText)findViewById(R.id.txtvehicle1update);
+            vehicle2 = (EditText)findViewById(R.id.txtvehicle3update);
+            vehicle3 = (EditText)findViewById(R.id.txtvehicle2update);
+            vehicle4 = (EditText)findViewById(R.id.txtvehicle4update);
+            num1 = (EditText)findViewById(R.id.editTextnum1);
+            num2 = (EditText)findViewById(R.id.editTextnum2);
+            num3 = (EditText)findViewById(R.id.editTextnum3);
+            num4 = (EditText)findViewById(R.id.editTextnum4);
 
             BtnSave = (Button)findViewById(R.id.button);
+            BtnUpload = (Button)findViewById(R.id.button10) ;
+
 
             cbd = new CabDetails();
 
@@ -69,31 +82,72 @@ public class CabOwnerEditActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
 
-                    //cbd.setKey(dbref.push().getKey());
-                    cbd.setOwnerName(OwnerName.getText().toString().trim());
-                    cbd.setCompanyName(CompanyName.getText().toString().trim());
-                    cbd.setCity(City.getText().toString().trim());
-                    cbd.setMobileNo(Integer.parseInt(MobileNo.getText().toString().trim()));
-                    cbd.setEmail(Email.getText().toString().trim());
-                    cbd.setVehicle1(vehicle1.getText().toString().trim());
-                    cbd.setVehicle2(vehicle2.getText().toString().trim());
-                    cbd.setVehicle3(vehicle3.getText().toString().trim());
-                    cbd.setVehicle4(vehicle4.getText().toString().trim());
+                    dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails");
+
+                    if (TextUtils.isEmpty(OwnerName.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Owner Name",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(CompanyName.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Company Name",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(City.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter City",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(MobileNo.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Mobile No",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(Email.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Email",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(vehicle1.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Vehicle",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(vehicle2.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Vehicle",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(vehicle3.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Vehicle",Toast.LENGTH_SHORT).show();
+                    }
+                    else if(TextUtils.isEmpty(vehicle4.getText().toString())){
+                        Toast.makeText(getApplicationContext(),"Please Enter Vehicle",Toast.LENGTH_SHORT).show();
+                    }
+
+                    else {
+
+                        cbd.setKey(dbref222.push().getKey());
+                        cbd.setOwnerName(OwnerName.getText().toString().trim());
+                        cbd.setCompanyName(CompanyName.getText().toString().trim());
+                        cbd.setCity(City.getText().toString().trim());
+                        cbd.setMobileNo(Integer.parseInt(MobileNo.getText().toString().trim()));
+                        cbd.setEmail(Email.getText().toString().trim());
+                        cbd.setVehicle1(vehicle1.getText().toString().trim());
+                        cbd.setVehicle2(vehicle2.getText().toString().trim());
+                        cbd.setVehicle3(vehicle3.getText().toString().trim());
+                        cbd.setVehicle4(vehicle4.getText().toString().trim());
+                        cbd.setNum1(Integer.parseInt(num1.getText().toString().trim()));
+                        cbd.setNum2(Integer.parseInt(num2.getText().toString().trim()));
+                        cbd.setNum3(Integer.parseInt(num3.getText().toString().trim()));
+                        cbd.setNum4(Integer.parseInt(num4.getText().toString().trim()));
 
 
-                    dbref.push().setValue(cbd);
-                    Toast.makeText(getApplicationContext(),"Adding Success",Toast.LENGTH_LONG).show();
+                        dbref222.child(cbd.getKey()).setValue(cbd);
+                        Toast.makeText(getApplicationContext(), "Adding Success", Toast.LENGTH_LONG).show();
+                        cleanData();
+                    }
 
-                    cleanData();
 
-                    Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);
-                    startActivity(intent);
+                    //Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);
+                    //startActivity(intent);
                 }
             });
 
+
         }
 
-
+    public void uploadbutton(View view) {
+        Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);
+        startActivity(intent);
+    }
 
     public void cleanData(){
             OwnerName.setText("");
@@ -105,12 +159,21 @@ public class CabOwnerEditActivity extends AppCompatActivity {
             vehicle2.setText("");
             vehicle3.setText("");
             vehicle4.setText("");
+            num1.setText("");
+            num2.setText("");
+            num3.setText("");
+            num4.setText("");
         }
 
-      /*  Button button = (Button)findViewById(R.id.button4);
+
+
+
+}
+
+      /* Button button = (Button)findViewById(R.id.button10);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(CabOwnerEditActivity.this, CabOwnerUpload.class);
+                Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);
                 startActivity(intent);
             }
         });
@@ -123,5 +186,5 @@ public class CabOwnerEditActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });*/
-    }
+
 

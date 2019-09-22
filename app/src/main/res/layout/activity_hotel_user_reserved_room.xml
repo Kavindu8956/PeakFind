@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservationFormActivity">
+
+
+    <TextView
+        android:id="@+id/Hname"
+        android:layout_width="361dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="364dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="364dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/custom_button2"
+        android:text="@string/text21"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="361dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="225dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="182dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/text27"
+        android:background="@drawable/input_shape"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/input_shape"
+        android:text="@string/text29"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/input_shape"
+        android:text="@string/text30"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nights"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/input_shape"
+        android:text="@string/nights"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/buttonupdate"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="490dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btnUpdate"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/custombutton"
+        android:text="@string/btnDelete"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

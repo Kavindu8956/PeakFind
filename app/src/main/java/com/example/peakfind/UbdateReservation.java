@@ -37,14 +37,13 @@ public class UbdateReservation extends AppCompatActivity {
 
         ArrayAdapter<String> my1=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Adults));
         ArrayAdapter<String> my3=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Rooms));
-        ArrayAdapter<String> my2=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.Children));
         ArrayAdapter<String> my4=new ArrayAdapter<String>(UbdateReservation.this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.roomNo));
         my1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        my2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         my3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         my4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(my1);
-        spinner2.setAdapter(my2);
+
         spinner3.setAdapter(my3);
         spinner4.setAdapter(my4);
 

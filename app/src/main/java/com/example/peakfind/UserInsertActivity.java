@@ -2,6 +2,7 @@ package com.example.peakfind;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -12,6 +13,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,10 +34,16 @@ public class UserInsertActivity extends AppCompatActivity {
     ListView listViewUserDetails; //retriev
     List<UserDetailsModel> userList;
 
+    FirebaseUser userid;
+    String uid;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_insert);
+
+        userid = FirebaseAuth.getInstance().getCurrentUser();
+        uid = userid.getUid();
 
         databaseUsers = FirebaseDatabase.getInstance().getReference("UserDetails");
 
@@ -81,17 +90,18 @@ public class UserInsertActivity extends AppCompatActivity {
         });
     }
 
+
     private void addDetails() {
         String name = editTextName.getText().toString().trim();
 
         if(!TextUtils.isEmpty(name)) {
             String id = databaseUsers.push().getKey();
 
-            UserDetailsModel user = new UserDetailsModel(id,name);
+            UserDetailsModel userd = new UserDetailsModel(uid,name,name);
 
-            databaseUsers.child(id).setValue(user);
+            databaseUsers.child(id).setValue(userd);
 
-            Toast.makeText(this, "Details added", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Details Added Successfully", Toast.LENGTH_SHORT).show();
 
         } else{
             Toast.makeText(this,"You should enter name", Toast.LENGTH_SHORT).show();

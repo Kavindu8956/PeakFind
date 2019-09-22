@@ -17,7 +17,7 @@ public class CabOwnerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cabowner);
 
 
-        Button button = (Button)findViewById(R.id.button3);
+        Button button = (Button)findViewById(R.id.btnRegister);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(CabOwnerActivity.this, CabOwnerEditActivity.class);

@@ -1,4 +1,16 @@
 <resources>
+    <array name="StarHotel">
+        <item>One Star</item>
+        <item>Two Star</item>
+        <item>Three Star</item>
+        <item>Four Star</item>
+        <item>Five Star</item>
+    </array>
+
+    <array name="Breakfast">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
     <string name="app_name">Peak&amp;Find</string>
 
     <string name="text1">Amari Galle</string>
@@ -25,6 +37,7 @@
     <string name="text22">Check-out-date</string>
     <string name="text23">Customer Name:</string>
     <string name="text24">Contact Number:</string>
+
     <string name="text25">S.D.L.Nanayakkara</string>
     <string name="text26">0775602520</string>
 
@@ -81,6 +94,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
+
     <string name="customer">Customert</string>
     <string name="cab">Cab</string>
     <string name="hotel">Hotel</string>
@@ -101,9 +115,55 @@
 
     <string name="TimeSelect">Select Time</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="Peopleselect">Select People</string>
 
     <string name="Reservation">Make Reservation</string>
+
+    <string name="UpdateBtn">Update Reservation</string>
+
+    <string name="deletebtn">Delete Reservation</string>
+
+    <string name="nights">Number Of Nights</string>
+    <string name="title_activity_hotel_customer_reserved_list">HotelCustomerReservedList</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="btnbook">ROOM BOOKING</string>
+    <string name="btntable">TABLE RESERVATION</string>
+
+
+    <string name="btnUpdate">UPDATE RESERVATION</string>
+    <string name="btnDelete">CANCEL RESERVATION</string>
+    <string-array name="Adults">
+        <item>One person</item>
+        <item>Two persons</item>
+        <item>Tree persons</item>
+        <item>More than 4 persons</item>
+    </string-array>
+    <string-array name="Rooms">
+        <item>Single Room</item>
+        <item>Double Room</item>
+        <item>Family Room</item>
+        <item>Luxury Room</item>
+    </string-array>
+    <string-array name="roomNo">
+        <item>One Room</item>
+        <item>Two Rooms</item>
+        <item>Tree Rooms</item>
+        <item>Four Rooms</item>
+    </string-array>
+    <string-array name="Name">
+        <item>One</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
+    <string-array name="Nights">
+        <item>One Night</item>
+        <item>two Nights</item>
+        <item>three Nights</item>
+        <item>More Than Three Nights</item>
+    </string-array>
     <string-array name="TableTime">
         <item>Breakfast</item>
         <item>Lunch</item>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/unnamed"
+    android:background="@drawable/testwall"
     tools:context=".HotelSelect">
 
     <Button
@@ -42,6 +42,19 @@
         android:layout_marginTop="500dp"
         android:background="@drawable/custombutton"
         android:text="Skip"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="248dp"
+        android:layout_height="37dp"
+
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/custombutton"
+        android:text="List"
         android:textSize="20dp"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="96dp" />

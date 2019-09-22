@@ -45,7 +45,7 @@ public class Resturent_Owner_Form2 {
         this.mail = mail;
         this.phoneNum = phoneNum;
         this.location = location;
-        HotelName = hotelName;
+        this.HotelName = hotelName;
         this.website = website;
         this.starOfHotel = starOfHotel;
         this.breakfast = breakfast;
@@ -67,6 +67,11 @@ public class Resturent_Owner_Form2 {
 
 
 
+    }
+
+
+    public void setHotelName(String hotelName) {
+        HotelName = hotelName;
     }
 
     public String getResId() {

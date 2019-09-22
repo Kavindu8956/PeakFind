@@ -1,291 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
     android:background="@drawable/unnamed"
-    tools:context=".HotelInfoActivity" >
+    tools:context=".HotelUserTableReservation">
 
 
-
-
-    <ViewFlipper
-        android:layout_marginTop="0dp"
-        android:id="@+id/v_flipper"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="185dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/HotelTopic"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent1"
+                android:textSize="24sp" />
+
+        </LinearLayout>
 
 
-    </ViewFlipper>
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="413dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/amari" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/LocationView"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorAccent1"
+            android:textSize="16dp" />
 
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="10dp"
-        android:text="Galadari Hotel"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/darkblue"
+            android:textSize="16dp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="145dp"
-        android:layout_marginLeft="10dp"
-        app:srcCompat="@drawable/star" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="215dp"
-        android:text="@string/text2"
-        android:textColor="@color/bb1"
-        android:textSize="18sp" />
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:drawableLeft="@drawable/ic_web_black_24dp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/darkblue"
+                android:textSize="16dp" />
+            //print facilities
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="270dp"
-        android:background="?android:attr/listDivider"
-        android:visibility="visible" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
-        android:layout_marginLeft="10dp"
-        android:text="@string/text3"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="215dp"
-        android:layout_marginBottom="300dp"
-        android:autoLink="web"
-        android:background="#00641F1F"
-        android:singleLine="false"
-        android:text="@string/text4"
-        android:textColor="@color/darkblue"
-        android:textIsSelectable="false"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="270dp"
-        android:text="@string/text5"
-        android:textColor="@color/darkblue"
-        android:textSize="22sp" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="41dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginLeft="10dp"
-        app:srcCompat="@drawable/parking" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="30dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="215dp"
-        android:layout_marginTop="300dp"
-        app:srcCompat="@drawable/food" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="38dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="335dp"
-        android:layout_marginLeft="10dp"
-        app:srcCompat="@drawable/wifi" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="28dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="215dp"
-        android:layout_marginTop="335dp"
-        app:srcCompat="@drawable/car" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="305dp"
-        android:text="@string/text6"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="340dp"
-        android:text="@string/text8"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="255dp"
-        android:layout_marginTop="305dp"
-        android:text="@string/text7"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="255dp"
-        android:layout_marginTop="340dp"
-        android:text="@string/text9"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <View
-        android:id="@+id/divider3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="370dp"
-        android:background="?android:attr/listDivider"
-        android:visibility="visible" />
-
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="371dp"
-        android:text="@string/text10"
-        android:textColor="@color/darkblue"
+        <TextView
+            android:id="@+id/phoneView"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:drawableLeft="@drawable/ic_phone_forwarded_black_24dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/darkblue"
+            android:textSize="16dp" />
         android:textSize="22sp" />
 
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:layout_marginLeft="10dp"
-        android:text="@string/text11"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
+        <Button
+            android:id="@+id/roomBooking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btnbook"
+            android:background="@drawable/custombutton"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/tableRearve"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/btntable"
+            android:background="@drawable/custombutton"
+            android:textSize="18dp" />
+
+    </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="215dp"
-        android:layout_marginTop="400dp"
-        android:text="@string/text12"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="422dp"
-        android:layout_marginLeft="10dp"
-        android:text="@string/text13"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="215dp"
-        android:layout_marginTop="422dp"
-        android:text="@string/text14"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <View
-        android:id="@+id/divider4"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="450dp"
-        android:background="?android:attr/listDivider"
-        android:visibility="visible" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="560dp"
-        android:text="@string/text15"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
-        android:layout_marginLeft="10dp"
-        android:text="@string/text17"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="480dp"
-        android:text="@string/text18"
-        android:layout_marginLeft="10dp"
-        android:textColor="@android:color/background_dark"
-        android:textSize="18sp" />
-
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="575dp"
-        android:text="@string/text19"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="211dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="505dp"
-        android:background="@drawable/custombutton"
-        android:text="@string/text20"
-        android:textColor="@color/darkblue"
-        android:textSize="24sp" />
-
-
-</RelativeLayout>
+</ScrollView>
 
 
 

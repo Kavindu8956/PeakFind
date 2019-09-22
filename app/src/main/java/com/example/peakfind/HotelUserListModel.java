@@ -6,17 +6,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.List;
 
-public class HotelUserListModel extends ArrayAdapter<HotelUserDetailsModel> {
+public class HotelUserListModel extends ArrayAdapter<Resturent_Owner_Form2> {
     private Activity context;
-    private List<HotelUserDetailsModel> hotelList;
+    private List<Resturent_Owner_Form2> hotelList;
 
-    public HotelUserListModel(Activity context, List<HotelUserDetailsModel> hotelList){
+    public HotelUserListModel(Activity context, List<Resturent_Owner_Form2> hotelList){
         super(context,R.layout.hoteluser_listdetails,hotelList);
         this.context=context;
         this.hotelList=hotelList;
@@ -30,11 +31,13 @@ public class HotelUserListModel extends ArrayAdapter<HotelUserDetailsModel> {
 
         TextView TextHotelName=(TextView) ListViewItem.findViewById(R.id.NameOfHotel);
         TextView TextHotelLocation=(TextView) ListViewItem.findViewById(R.id.NameOfLoaction);
+        TextView TextHotelEmail=(TextView) ListViewItem.findViewById(R.id.emailView);
 
-        HotelUserDetailsModel hotel=hotelList.get(position);
+        Resturent_Owner_Form2 hotel=hotelList.get(position);
 
         TextHotelName.setText(hotel.getHotelName());
-        TextHotelLocation.setText(hotel.getHotelLocation());
+        TextHotelLocation.setText(hotel.getLocation());
+        TextHotelEmail.setText(hotel.getMail());
 
         return ListViewItem;
     }

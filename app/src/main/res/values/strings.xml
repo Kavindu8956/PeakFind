@@ -1,4 +1,48 @@
 <resources>
+    <string name="app_name">Peak&amp;Find</string>
+
+    <string-array name="Children">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Rooms">
+        <item>Single</item>
+        <item>Double</item>
+        <item>Family</item>
+        <item>Luxury</item>
+    </string-array>
+
+    <string-array name="roomNo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Name">
+        <item>One</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+    </string-array>
+
+    <string-array name="TableTime">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Tea Time</item>
+    </string-array>
+    <string-array name="People">
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>3 Persons</item>
+        <item>4 Persons</item>
+        <item>More than 5 persons</item>
+    </string-array>
+
     <array name="StarHotel">
         <item>One Star</item>
         <item>Two Star</item>
@@ -11,75 +55,17 @@
         <item>Yes</item>
         <item>No</item>
     </array>
-    <string name="app_name">Peak&amp;Find</string>
 
-    <string name="text1">Amari Galle</string>
-    <string name="text2">Galle, 4.2Km from center:</string>
-    <string name="text3">Breakfast Included</string>
-    <string name="text4">Show on map</string>
-    <string name="text5">Facilities</string>
-    <string name="text6">Free Parking</string>
-    <string name="text7">Food And Drink</string>
-    <string name="text8">Free WiFi</string>
-    <string name="text9">Car Hire</string>
-    <string name="text10">Activity And Entertainment</string>
-    <string name="text11"> * Fitness Centre</string>
-    <string name="text12"> * Spa Centre</string>
-    <string name="text13"> * Massage Centre</string>
-    <string name="text14"> * Outdoor Pool</string>
-    <string name="text15">+0912244667</string>
-    <string name="text16">No account needed! Booking takes just two minutes</string>
-    <string name="text17">Confirmation is immediate.</string>
-    <string name="text18">No booking fees!</string>
-    <string name="text19">523c Colombo - Galle Main Rd, Galle</string>
-    <string name="text20">RESERVE</string>
-    <string name="text21">Check-in-date</string>
-    <string name="text22">Check-out-date</string>
-    <string name="text23">Customer Name:</string>
-    <string name="text24">Contact Number:</string>
+    <string-array name="Adults">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
 
-    <string name="text25">S.D.L.Nanayakkara</string>
-    <string name="text26">0775602520</string>
+    <string name="btnbooknow">Book Now</string>
 
-    <string name="text27">Adults</string>
-    <string name="text28">Children</string>
-    <string name="text29">Select Your Room</string>
-    <string name="text30">Number Of Rooms</string>
-    <string name="text31">1 extra-large double bed</string>
 
-    <string name="text32">Has a balcony</string>
-    <string name="text33">Price for:</string>
-    <string name="text34">Price of one room for one night</string>
-    <string name="text35">LKR 15,500</string>
-    <string name="text36">+LKR 1,200 taxes and charges</string>
-    <string name="text40">Nanayakkara123@gmail.com</string>
-    <string name="NAME">NAME</string>
-    <string name="button2">DELETE</string>
-    <string name="textp1">Name:</string>
-    <string name="textp2">E-mail:</string>
-    <string name="texy3">Phone Number:</string>
-    <string name="btn">Save Change</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="register">Register</string>
-    <string name="customer">Customert</string>
-    <string name="cab">Cab</string>
-    <string name="hotel">Hotel</string>
-    <string name="login">Login</string>
-    <string name="cabOwnerDetails">Cab Owner Details</string>
-    <string name="ownerName">OWNER NAME</string>
-    <string name="companyName">COMPANY NAME</string>
-    <string name="city">CITY</string>
-    <string name="mobileNo">MOBILE NO</string>
-    <string name="ownernametext">owner name</string>
-    <string name="companynametext">company name</string>
-    <string name="citytext">city</string>
-    <string name="mobilenotext">mobile no</string>
-
-    <string name="emailtext">e-mail</string>
-    <string name="entervehicletext">enter vehicle</string>
-    <string name="deletebtn">Delete</string>
-    <string name="editownername">OWNER NAME</string>
     <string name="editcompanyname">COMPANY NAME</string>
     <string name="editcity">CITY</string>
     <string name="editmobileno">MOBILE NO</string>
@@ -109,31 +95,97 @@
     <string name="picktimetext">Pickup Time</string>
     <string name="mobilenumbertext">Mobile No</string>
     <string name="vehicletypetext">Vehicle Type</string>
-    <string name="btnbooknow">Book Now</string>
 
+
+    <string name="text1">Amari Galle</string>
+    <string name="text2">Galle, 4.2Km from center:</string>
+    <string name="text3">Breakfast Included</string>
+    <string name="text4">Show on map</string>
+    <string name="text5">Facilities</string>
+    <string name="text6">Free Parking</string>
+    <string name="text7">Food And Drink</string>
+    <string name="text8">Free WiFi</string>
+    <string name="text9">Car Hire</string>
+    <string name="text10">Activity And Entertainment</string>
+    <string name="text11"> * Fitness Centre</string>
+    <string name="text12"> * Spa Centre</string>
+    <string name="text13"> * Massage Centre</string>
+    <string name="text14"> * Outdoor Pool</string>
+    <string name="text15">+0912244667</string>
+    <string name="text16">No account needed! Booking takes just two minutes</string>
+    <string name="text17">Confirmation is immediate.</string>
+    <string name="text18">No booking fees!</string>
+    <string name="text19">523c Colombo - Galle Main Rd, Galle</string>
+    <string name="text20">RESERVE</string>
+    <string name="text21">Check-in-date</string>
+    <string name="text22">Check-out-date</string>
+    <string name="text23">Customer Name:</string>
+    <string name="text24">Contact Number:</string>
+    <string name="text25">S.D.L.Nanayakkara</string>
+    <string name="text26">0775602520</string>
+    <string name="text27">Adults</string>
+    <string name="text28">Children</string>
+    <string name="text29">Select Your Room</string>
+    <string name="text30">Number Of Rooms</string>
+    <string name="text31">1 extra-large double bed</string>
+    <string name="text32">Has a balcony</string>
+    <string name="text33">Price for:</string>
+    <string name="text34">Price of one room for one night</string>
+    <string name="text35">LKR 15,500</string>
+    <string name="text36">+LKR 1,200 taxes and charges</string>
+    <string name="text40">Nanayakkara123@gmail.com</string>
+
+    <string name="NAME">NAME</string>
+    <string name="button2">DELETE</string>
+    <string name="textp1">Name:</string>
+    <string name="textp2">E-mail:</string>
+    <string name="texy3">Phone Number:</string>
+    <string name="btn">Save Change</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="customer">Customert</string>
+    <string name="cab">Cab</string>
+    <string name="hotel">Hotel</string>
+    <string name="login">Login</string>
     <string name="add">Add</string>
-
     <string name="setHotel">Enter Hotel Name</string>
-
     <string name="setLoction">Enter Hotel Location</string>
-
     <string name="GetHotelName">Hotel Name</string>
     <string name="GetLocation">Hotel Location</string>
     <string name="SaveButton">Save Details</string>
     <string name="nextActivity">View List</string>
     <string name="TableReserve">Reserve Table</string>
     <string name="EventReserve">Reserve Event</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="datebutton">Select Date</string>
-    <string name="TimeSelect">Select Time</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="datebutton">Select Date</string>
+
+    <string name="TimeSelect">Select Time</string>
+
     <string name="Peopleselect">Select People</string>
+
     <string name="Reservation">Make Reservation</string>
 
     <string name="UpdateBtn">Update Reservation</string>
-
     <string name="deletebtn">Delete Reservation</string>
+    <string name="title_activity_maps">mapvalue</string>
+    <string name="emailtext">Email</string>
+    <string name="mobilenotext">Mobile</string>
+    <string name="citytext">City</string>
+    <string name="ownernametext">Owner Name</string>
+    <string name="mobileNo">Mobile</string>
+    <string name="city">City</string>
+    <string name="companyName">Company Name</string>
+    <string name="ownerName">Owner Name</string>
+    <string name="cabOwnerDetails">Cab owner Details</string>
+    <string name="entervehicletext">Enter Vehicle</string>
+    <string name="companynametext">Company Name</string>
+    <string name="editcabownerdetails">Cab Owner Detail</string>
+    <string name="editownername">Edit owner</string>
+
     <string name="btnregistercabowner">Register Cab Owner</string>
     <string name="btncabownerlist">Cab Owners</string>
     <string name="btnupdateview">Update</string>
@@ -149,51 +201,9 @@
     <string name="date">Date</string>
     <string name="date1">Date</string>
     <string name="btnviewbooking1">VIEW BOOKING</string>
-    <string name="btndelete">Delete</string>
-
-    <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="Rooms">
-        <item>Single</item>
-        <item>Double</item>
-        <item>Family</item>
-        <item>Luxury</item>
-    </string-array>
-    <string-array name="roomNo">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string-array name="Name">
-        <item>One</item>
-        <item>two</item>
-        <item>three</item>
-        <item>four</item>
-    </string-array>
-    <string-array name="TableTime">
-        <item>Breakfast</item>
-        <item>Lunch</item>
-        <item>Dinner</item>
-        <item>Tea Time</item>
-    </string-array>
+    <string name="entercontactnumber">con</string>
+    <string name="entername">nameeee</string>
+    <string name="contactnumber">fadc</string>
 
 
-    <string-array name="People">
-        <item>One Person</item>
-        <item>Couple</item>
-        <item>3 Persons</item>
-        <item>4 Persons</item>
-        <item>More than 5 persons</item>
-    </string-array>
 </resources>

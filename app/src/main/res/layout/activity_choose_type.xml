@@ -8,41 +8,39 @@
     tools:context=".ChooseTypeActivity">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonCab"
         android:layout_width="106dp"
         android:layout_height="63dp"
-        android:onClick="cabbtn"
+        android:background="@drawable/custombutton"
+        android:onClick="shoppingmall"
         android:text="@string/cab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688"
-        android:background="@drawable/custombutton"/>
+        app:layout_constraintVertical_bias="0.688" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonCustomer"
         android:layout_width="111dp"
         android:layout_height="61dp"
-        android:onClick="customerbtn"
+        android:background="@drawable/custombutton"
         android:text="@string/customer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317"
-        android:background="@drawable/custombutton"/>
+        app:layout_constraintVertical_bias="0.317" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonHotel"
         android:layout_width="111dp"
         android:layout_height="56dp"
-        android:onClick="hotelbtn"
+        android:background="@drawable/custombutton"
         android:text="@string/hotel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        android:background="@drawable/custombutton"/>
+        app:layout_constraintVertical_bias="0.499" />
 </androidx.constraintlayout.widget.ConstraintLayout>

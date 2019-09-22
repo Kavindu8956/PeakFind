@@ -26,6 +26,8 @@
             />
 
 
+
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtName1"
             android:layout_width="match_parent"
@@ -49,9 +51,15 @@
 
 
 
+
+
+
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:errorEnabled="true"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtMail"
@@ -63,17 +71,24 @@
                 android:text="Amaya@gmail.com"
                 android:textColor="@color/colorAccent1"
                 android:textSize="15dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
 
 
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
 
+
+
+/>
+
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/txtPhoneNum"
@@ -85,7 +100,8 @@
                 android:text="081-2265896"
                 android:textColor="@color/colorAccent1"
                 android:textSize="15dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
 
 
@@ -177,6 +193,7 @@
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
+
             />
 
 
@@ -499,10 +516,11 @@
             android:id="@+id/btnSave"
             android:layout_width="425dp"
             android:layout_height="wrap_content"
-            android:text="Sava Deatails"
+            android:text="Sava Details"
             android:background="@drawable/custombutton"
             android:textSize="15dp"
             android:layout_marginTop="15dp"
+            android:onClick="SaveDetails"
 
 
             />

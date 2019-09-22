@@ -17,16 +17,16 @@
             android:id="@+id/imageView7"
             android:layout_width="413dp"
             android:layout_height="300dp"
-            app:srcCompat="@drawable/hotel"
+            app:srcCompat="@drawable/h2"
             android:layout_marginTop="10dp"
             android:scaleType="fitXY"
             />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/txtHotelN2"
             android:layout_width="match_parent"
             android:layout_height="51dp"
-            android:text="Amaya Hotel"
+            android:text=""
             android:textSize="30dp"
             android:textColor="@color/colorAccent1"
             android:textStyle="bold"
@@ -45,48 +45,60 @@
             />
 
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:text="    \n    kandy 5.2km from center park"
-            android:textSize="15dp"
-            android:textColor="@color/colorAccent1"
-            android:textStyle="normal"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_location_on_black_24dp"
-            android:layout_marginLeft="20dp"/>
+
+
+
 
 
         <TextView
-            android:id="@+id/textVie24"
-            android:layout_width="wrap_content"
-            android:layout_height="51dp"
-            android:text="          \n     081-2265896"
-            android:textSize="15dp"
-            android:textColor="@color/colorAccent1"
-            android:textStyle="normal"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="20dp"
-            android:drawableLeft="@drawable/ic_phone_forwarded_black_24dp"/>
-
-
-        <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/txtLocation2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="    AmayaHotel14@gmail.com"
+            android:text="    "
+            android:textSize="15dp"
+            android:textColor="@color/colorAccent1"
+            android:drawableLeft="@drawable/location"
+            android:layout_marginLeft="20dp"
+
+
+
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/txtphoneNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    "
+            android:textSize="15dp"
+            android:textColor="@color/colorAccent1"
+            android:drawableLeft="@drawable/ic_phone_forwarded_black_24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_email_black_24dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
 
             />
         <TextView
-            android:id="@+id/textView26"
+            android:id="@+id/txtWebsite2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  WWW.AMAYAHOTEL.LK"
+            android:text="  "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_web_black_24dp"
@@ -95,18 +107,45 @@
 
             />
 
+        <TextView
+            android:id="@+id/txtbreakfast2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  "
+            android:textSize="15dp"
+            android:textColor="@color/colorAccent1"
+            android:drawableLeft="@drawable/ic_restaurant_black_24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHighlight="@color/red"
+
+            />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/StarOfHotel2"
             android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="3dp"
-            android:drawableLeft="@drawable/ic_restaurant_black_24dp"
-            android:text="         \n     Breakfast included"
-            android:textColor="@color/red"
+            android:layout_height="wrap_content"
+            android:text="  "
             android:textSize="15dp"
-            android:textStyle="normal" />
+            android:textColor="@color/colorAccent1"
+            android:drawableLeft="@drawable/hotelstar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColorHighlight="@color/red"
+
+            />
+
+        <Button
+            android:id="@+id/MenuBtn2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Menu LIST"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            />
+
 
         <TextView
             android:id="@+id/textView4"
@@ -121,10 +160,10 @@
 
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/Parking"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Parking"
+            android:text="  "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_local_parking_black_24dp"
@@ -133,10 +172,10 @@
             />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/freeWifi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  Free Wifi"
+            android:text="  "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_wifi_black_24dp"
@@ -146,10 +185,10 @@
 
             />
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/Food"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Food and Drink"
+            android:text="  "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_free_breakfast_black_24dp"
@@ -158,13 +197,13 @@
             />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/carHire"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Car Hire"
+            android:text=" "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
-            android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+            android:drawableLeft="@drawable/car"
             android:layout_marginLeft="200dp"
             android:layout_marginTop="-25dp"
 
@@ -185,10 +224,10 @@
 
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/Fitness"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Fitness and Center "
+            android:text="   "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -197,10 +236,10 @@
             />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/playGround2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Spar Center"
+            android:text=" "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -211,10 +250,10 @@
             />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/Massage2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Massage Center"
+            android:text="  "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -223,10 +262,10 @@
             />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/pool"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" out Door Pool"
+            android:text=" "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -253,10 +292,10 @@
 
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/single"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Single "
+            android:text="   "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -265,10 +304,10 @@
             />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/Double1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Double"
+            android:text=" "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -280,10 +319,10 @@
 
 
         <TextView
-            android:id="@+id/textView21"
+            android:id="@+id/Luxury"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Luxury "
+            android:text="   "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -292,10 +331,10 @@
             />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/Family"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Family"
+            android:text=" "
             android:textSize="15dp"
             android:textColor="@color/colorAccent1"
             android:drawableLeft="@drawable/ic_star_black_24dp"
@@ -329,6 +368,10 @@
             />
 
 
+
+
+
+
         <Button
             android:id="@+id/btnEdit"
             android:layout_width="match_parent"
@@ -336,6 +379,7 @@
             android:onClick="hotelowner"
             android:text="Edit Profile"
             android:background="@drawable/custombutton"
+            android:layout_marginTop="20dp"
 
             android:textSize="20dp" />
 

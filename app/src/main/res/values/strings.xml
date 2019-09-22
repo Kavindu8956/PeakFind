@@ -129,7 +129,7 @@
 
 
     <array name="Breakfast">
-        <item>Yes</item>
-        <item>No</item>
+        <item>Breakfast Include</item>
+        <item>Breakfast not Included</item>
     </array>
 </resources>

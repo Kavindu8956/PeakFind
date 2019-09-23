@@ -130,28 +130,8 @@
     <string name="text25">S.D.L.Nanayakkara</string>
     <string name="text26">0775602520</string>
 
-    <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text27">Adults</string>
 
-    <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
-    <string name="text28">Children</string>
-    <string name="text29">Select Your Room</string>
-    <string-array name="Rooms">
-        <item>Single</item>
-        <item>Double</item>
-        <item>Family</item>
-        <item>Luxury</item>
-    </string-array>
     <string name="text30">Number Of Rooms</string>
 
     <string name="text31">1 extra-large double bed</string>
@@ -214,9 +194,6 @@
     <string name="btnUpdate">UPDATE RESERVATION</string>
     <string name="btnDelete">CANCEL RESERVATION</string>
 
-    <string name="UpdateBtn">Update Reservation</string>
-    <string name="deletebtn">Delete Reservation</string>
-
     <string name="title_activity_maps">mapvalue</string>
     <string name="emailtext">Email</string>
     <string name="mobilenotext">Mobile</string>
@@ -247,10 +224,7 @@
     <string name="date">Date</string>
     <string name="date1">Date</string>
     <string name="btnviewbooking1">VIEW BOOKING</string>
-    <string name="entercontactnumber">con</string>
-    <string name="entername">nameeee</string>
-    <string name="contactnumber">fadc</string>
-    <string name="btndelete">Delete</string>
+
     <string name="QuantityRoom">No Of Rooms</string>
     <string name="quantityPeople">No Of People</string>
     <string name="peopleQuantity">No Of People</string>
@@ -267,5 +241,5 @@
     <string name="enteraddress">Enter Address</string>
     <string name="updatedetails">Update Details</string>
 
-    <string name="btndelete">Delete</string>
+
 </resources>

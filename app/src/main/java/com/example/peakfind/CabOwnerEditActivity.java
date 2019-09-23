@@ -127,7 +127,7 @@ public class CabOwnerEditActivity extends AppCompatActivity {
             }
         });
 
-        Button btn = (Button)findViewById(R.id.button2);
+        Button btn = (Button)findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);

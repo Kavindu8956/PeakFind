@@ -90,7 +90,7 @@ public class LoginCabOwnerActivity extends AppCompatActivity implements View.OnC
                 progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(LoginCabOwnerActivity.this, CabOwnerUpdate.class);
+                    Intent intent = new Intent(LoginCabOwnerActivity.this, CabOwnerEditActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }else {

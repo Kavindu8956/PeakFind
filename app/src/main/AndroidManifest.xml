@@ -64,6 +64,8 @@
         <activity android:name=".show_cabownerdetails" />
         <activity android:name=".CabOwnerUpdate" />
         <activity android:name=".CabUserListShowActivity"></activity>
+        <activity android:name=".CabBookingViewActivity" />
+
 
         <activity android:name=".HotelOwnerActivity"></activity>
         <activity android:name=".Resturent_Form" />

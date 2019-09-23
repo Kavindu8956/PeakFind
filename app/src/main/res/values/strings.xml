@@ -55,19 +55,6 @@
         <item>More than 5 persons</item>
     </string-array>
 
-    <array name="StarHotel">
-        <item>One Star</item>
-        <item>Two Star</item>
-        <item>Three Star</item>
-        <item>Four Star</item>
-        <item>Five Star</item>
-    </array>
-
-    <array name="Breakfast">
-        <item>Yes</item>
-        <item>No</item>
-    </array>
-
     <string-array name="Adults">
         <item>1</item>
         <item>2</item>
@@ -77,12 +64,10 @@
 
     <string name="btnbooknow">Book Now</string>
 
-
     <string name="editcompanyname">COMPANY NAME</string>
     <string name="editcity">CITY</string>
     <string name="editmobileno">MOBILE NO</string>
     <string name="editemail">E-MAIL</string>
-    <string name="editcabownerdetails">CAB SERVICE DETAILS</string>
     <string name="save">SAVE</string>
     <string name="edittextownername">owner name</string>
     <string name="textcompanyname">company name</string>
@@ -107,7 +92,6 @@
     <string name="picktimetext">Pickup Time</string>
     <string name="mobilenumbertext">Mobile No</string>
     <string name="vehicletypetext">Vehicle Type</string>
-
 
     <string name="text1">Amari Galle</string>
     <string name="text2">Galle, 4.2Km from center:</string>
@@ -137,35 +121,18 @@
     <string name="text25">S.D.L.Nanayakkara</string>
     <string name="text26">0775602520</string>
 
-    <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text27">Adults</string>
 
-    <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-    </string-array>
     <string name="text28">Children</string>
     <string name="text29">Select Your Room</string>
-    <string-array name="Rooms">
-        <item>Single</item>
-        <item>Double</item>
-        <item>Family</item>
-        <item>Luxury</item>
-    </string-array>
+
     <string name="text30">Number Of Rooms</string>
 
-    <string-array name="roomNo">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+    <string-array name="Nights">
+        <item>One Night</item>
+        <item>two Nights</item>
+        <item>three Nights</item>
+        <item>More Than Three Nights</item>
     </string-array>
     <string name="text31">1 extra-large double bed</string>
     <string name="text32">Has a balcony</string>
@@ -179,8 +146,8 @@
     <string name="button2">DELETE</string>
     <string name="textp1">Name:</string>
     <string name="textp2">E-mail:</string>
-    <string name="texy3">Phone Number:</string>
-    <string name="btn">Save Change</string>
+
+    <string name="btn">Save Details</string>
 
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -223,54 +190,9 @@
     <string name="btnbook">ROOM BOOKING</string>
     <string name="btntable">TABLE RESERVATION</string>
 
-
     <string name="btnUpdate">UPDATE RESERVATION</string>
     <string name="btnDelete">CANCEL RESERVATION</string>
-    <string-array name="Adults">
-        <item>One person</item>
-        <item>Two persons</item>
-        <item>Tree persons</item>
-        <item>More than 4 persons</item>
-    </string-array>
-    <string-array name="Rooms">
-        <item>Single Room</item>
-        <item>Double Room</item>
-        <item>Family Room</item>
-        <item>Luxury Room</item>
-    </string-array>
-    <string-array name="roomNo">
-        <item>One Room</item>
-        <item>Two Rooms</item>
-        <item>Tree Rooms</item>
-        <item>Four Rooms</item>
-    </string-array>
-    <string-array name="Name">
-        <item>One</item>
-        <item>two</item>
-        <item>three</item>
-        <item>four</item>
-    </string-array>
-    <string-array name="Nights">
-        <item>One Night</item>
-        <item>two Nights</item>
-        <item>three Nights</item>
-        <item>More Than Three Nights</item>
-    </string-array>
-    <string-array name="TableTime">
-        <item>Breakfast</item>
-        <item>Lunch</item>
-        <item>Dinner</item>
-        <item>Tea Time</item>
-    </string-array>
-    <string-array name="People">
-        <item>One Person</item>
-        <item>Couple</item>
-        <item>3 Persons</item>
-        <item>4 Persons</item>
-        <item>More than 5 persons</item>
-    </string-array>
-    <string name="UpdateBtn">Update Reservation</string>
-    <string name="deletebtn">Delete Reservation</string>
+
     <string name="title_activity_maps">mapvalue</string>
     <string name="emailtext">Email</string>
     <string name="mobilenotext">Mobile</string>
@@ -301,12 +223,15 @@
     <string name="date">Date</string>
     <string name="date1">Date</string>
     <string name="btnviewbooking1">VIEW BOOKING</string>
-    <string name="entercontactnumber">con</string>
-    <string name="entername">nameeee</string>
-    <string name="contactnumber">fadc</string>
 
-    <array name="Breakfast">
-        <item>Breakfast Include</item>
-        <item>Breakfast not Included</item>
-    </array>
+    <string name="btndelete">Delete</string>
+    <string name="typehere">Type Any Place Name Here</string>
+    <string name="search">Search</string>
+    <string name="entername">Enter Name</string>
+    <string name="contactnumber">Contact Number</string>
+    <string name="entercontactnumber">Enter Contact Number</string>
+    <string name="uaddress">Address</string>
+    <string name="enteraddress">Enter Address</string>
+    <string name="updatedetails">Update Details</string>
+
 </resources>

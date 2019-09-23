@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/unnamed"
-    tools:ignore="ExtraText">
-    tools:context=".UserInsertActivity">
-
+    android:background="@drawable/unnamed">
+    tools:context=".UserProfileDetailsShowActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -93,7 +91,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="520dp"
         android:background="@drawable/custombutton"
-        android:text="@string/btn"
+        android:text="@string/updatedetails"
         android:textSize="18sp" />
 
     <TextView

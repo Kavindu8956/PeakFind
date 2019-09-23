@@ -1,4 +1,5 @@
 package com.example.peakfind;
+
 import android.util.Log;
 
 import java.io.BufferedReader;
@@ -11,29 +12,29 @@ import java.net.URL;
 
 public class MapDownloadURL {
 
-    public String readUrl(String myUrl) throws IOException
+    public String readUrl(String placeURL) throws IOException
     {
         String data = "";
         InputStream inputStream = null;
-        HttpURLConnection urlConnection = null;
+        HttpURLConnection httpURLConnection = null;
 
         try {
-            URL url = new URL(myUrl);
-            urlConnection=(HttpURLConnection) url.openConnection();
-            urlConnection.connect();
+            URL url = new URL(placeURL);
+            httpURLConnection=(HttpURLConnection) url.openConnection();
+            httpURLConnection.connect();
 
-            inputStream = urlConnection.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
-            StringBuffer sb = new StringBuffer();
+            inputStream = httpURLConnection.getInputStream();
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuffer stringBuffer = new StringBuffer();
 
             String line = "";
-            while((line = br.readLine()) != null)
+            while((line = bufferedReader.readLine()) != null)
             {
-                sb.append(line);
+                stringBuffer.append(line);
             }
 
-            data = sb.toString();
-            br.close();
+            data = stringBuffer.toString();
+            bufferedReader.close();
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -42,9 +43,8 @@ public class MapDownloadURL {
         }
         finally {
             inputStream.close();
-            urlConnection.disconnect();
+            httpURLConnection.disconnect();
         }
-        Log.d("DownloadURL","Returning data= "+data);
 
         return data;
     }

@@ -180,10 +180,6 @@ public class Resturent_Owner_Form2 {
         this.location = location;
     }
 
-    public void setHotelName(String hotelName) {
-        HotelName = hotelName;
-    }
-
     public void setWebsite(String website) {
         this.website = website;
     }

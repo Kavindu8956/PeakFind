@@ -237,7 +237,7 @@ public class Resturent_Form extends AppCompatActivity {
 
            Toast.makeText(this,"Successfully added", Toast.LENGTH_SHORT).show();
 
-           Intent hintent = new Intent(Resturent_Form.this,HotelOwnerActivity.class);
+           Intent hintent = new Intent(Resturent_Form.this,LoginHotelOwnerActivity.class);
            startActivity(hintent);
 
         }else{

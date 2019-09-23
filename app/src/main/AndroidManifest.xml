@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.peakfind">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -28,9 +34,13 @@
         <activity android:name=".LoginHotelOwnerActivity" />
         <activity android:name=".LoginCabOwnerActivity" />
         <activity android:name=".RegisterUserActivity" ></activity>
+        <activity android:name=".RegisterCabOwnerActivity" />
+        <activity android:name=".RegisterHotelOwnerActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".MapActivity" />
-        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".UserProfileActivity">
+
+        </activity>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".HotelSelect" />
@@ -41,7 +51,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserInsertActivity"></activity>
+        <activity android:name=".UserInsertActivity">
+
+        </activity>
+        <activity android:name=".UserProfileDetailsShowActivity">
+
+        </activity>
 
         <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
@@ -51,14 +66,15 @@
         <activity android:name=".HotelUserReservedTable"></activity>
         <activity android:name=".HotelUserTableReservation" />
         <activity android:name=".HotelUserListView" />
+        <activity android:name=".HotelCustomerReservedList" />
+        <activity android:name=".HotelUserReservedRoom" />
+
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
-        <activity android:name=".CabUserActivity"></activity>
-        <activity android:name=".CabOwnerUpload" />
+
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".show_cabownerdetails" />
-        <activity android:name=".CabOwnerActivity"></activity>
         <activity android:name=".CabOwnerUpdate" />
         <activity android:name=".CabUserListShowActivity"></activity>
 
@@ -72,5 +88,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

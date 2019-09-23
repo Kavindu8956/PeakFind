@@ -1,10 +1,6 @@
 package com.example.peakfind;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Menu;
@@ -17,17 +13,26 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserProfileActivity extends AppCompatActivity {
+public class UserProfileDetailsShowActivity extends AppCompatActivity {
 
     EditText EditTextName, EditTextNumber, EditTextAddress;
+    Button btnUpdate;
+    UserDetailsModel usermodel;
     ImageView imageView;
     private static final int CHOOSE_IMAGE = 101;
 
@@ -42,9 +47,12 @@ public class UserProfileActivity extends AppCompatActivity {
     //String profileImageUrl;
 
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
+        setContentView(R.layout.activity_user_profiledetails_show);
+
+        usermodel = new UserDetailsModel();
 
         userid = FirebaseAuth.getInstance().getCurrentUser();
         uid = userid.getUid();
@@ -53,58 +61,36 @@ public class UserProfileActivity extends AppCompatActivity {
 
         databaseUsers = FirebaseDatabase.getInstance().getReference("UserDetails");
 
-        EditTextName =  findViewById(R.id.editTextDisplayName);
-        EditTextNumber =  findViewById(R.id.editTextContactNumber);
-        EditTextAddress =  findViewById(R.id.editTextAddress);
+        EditTextName = findViewById(R.id.editTextDisplayName);
+        EditTextNumber = findViewById(R.id.editTextContactNumber);
+        EditTextAddress = findViewById(R.id.editTextAddress);
 
-        imageView =  findViewById(R.id.imageViewProfilePic);
+        btnUpdate = findViewById(R.id.btnSaveDetails);
+
+        imageView = findViewById(R.id.imageViewProfilePic);
 
         userList = new ArrayList<>();
 
         progressBar = findViewById(R.id.progressBarUpload);
-/*
-        oneretriew Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
+
+        Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
         query.addListenerForSingleValueEvent(valueEventListener);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showImageChooser();
+                String id = databaseUsers.push().getKey();
+
+                usermodel.setUserId(uid);
+                usermodel.setUserName(EditTextName.getText().toString());
+                usermodel.setUserNumber(EditTextNumber.getText().toString());
+                usermodel.setUserAddress(EditTextAddress.getText().toString());
+
+                databaseUsers.child(id).setValue(usermodel);
+
+                Toast.makeText(getApplicationContext(), "Details Added Successfully", Toast.LENGTH_SHORT).show();
             }
         });
-
-        loadUserInformation();
-*/
-        findViewById(R.id.btnSaveDetails).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                addDetails();
-            }
-        });
-
-
-    }
-
-    private void addDetails() {
-        String name = EditTextName.getText().toString().trim();
-        String cnumber = EditTextNumber.getText().toString().trim();
-        String address = EditTextAddress.getText().toString().trim();
-
-        if(!TextUtils.isEmpty(name)) {
-            String id = databaseUsers.push().getKey();
-
-            UserDetailsModel userd = new UserDetailsModel(id,uid,name,cnumber,address);
-
-            databaseUsers.child(id).setValue(userd);
-
-            Toast.makeText(this, "Details Added Successfully", Toast.LENGTH_SHORT).show();
-
-            Intent intentcus = new Intent(UserProfileActivity.this,LoginActivity.class);
-            startActivity(intentcus);
-
-        } else{
-            Toast.makeText(this,"You should enter name", Toast.LENGTH_SHORT).show();
-        }
     }
 
     @Override
@@ -130,7 +116,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
         return true;
     }
-/*
+
     ValueEventListener valueEventListener = new ValueEventListener() {
         @Override
         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -138,6 +124,8 @@ public class UserProfileActivity extends AppCompatActivity {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     UserDetailsModel userDetailsModel = snapshot.getValue(UserDetailsModel.class);
                     EditTextName.setText(userDetailsModel.getUserName());
+                    EditTextNumber.setText(userDetailsModel.getUserNumber());
+                    EditTextAddress.setText(userDetailsModel.getUserAddress());
                 }
             }
         }
@@ -147,6 +135,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
         }
     };
+
 
 
     /*

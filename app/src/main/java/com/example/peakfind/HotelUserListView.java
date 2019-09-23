@@ -2,8 +2,12 @@ package com.example.peakfind;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -31,14 +35,19 @@ public class HotelUserListView extends AppCompatActivity {
     private List<Resturent_Owner_Form2> hotelList;
     DatabaseReference databaseHotel;
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoteluser_listview);
 
         databaseHotel= FirebaseDatabase.getInstance().getReference("ResFormDetails");
 
-        hotelListView=(ListView) findViewById(R.id.hotelList) ;
+
         hotelList=new ArrayList<>();
+
+        hotelListView=(ListView) findViewById(R.id.hotelList) ;
+
+
 
         hotelListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -64,7 +73,7 @@ public class HotelUserListView extends AppCompatActivity {
 
         databaseHotel.addValueEventListener(new ValueEventListener() {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
+                hotelList.clear();
                 for(DataSnapshot hotelSnapshot:dataSnapshot.getChildren()){
                     Resturent_Owner_Form2 hotel=hotelSnapshot.getValue(Resturent_Owner_Form2.class);
                     hotelList.add(hotel);

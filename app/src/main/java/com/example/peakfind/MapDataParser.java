@@ -21,9 +21,6 @@ public class MapDataParser {
         String longitude="";
         String reference="";
 
-        Log.d("DataParser","jsonobject ="+googlePlaceJson.toString());
-
-
         try {
             if (!googlePlaceJson.isNull("name")) {
                 placeName = googlePlaceJson.getString("name");

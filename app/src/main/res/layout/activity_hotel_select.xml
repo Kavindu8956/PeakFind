@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/testwall"
+    android:background="@drawable/unnamed"
     tools:context=".HotelSelect">
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="257dp"
-        android:layout_height="35dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="475dp"
         android:background="@drawable/custombutton"
         android:text="View All Hotels"
         android:textSize="20dp"
@@ -22,8 +22,8 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
 
         android:layout_marginLeft="70dp"
         android:layout_marginTop="400dp"
@@ -34,22 +34,9 @@
         tools:layout_editor_absoluteY="96dp" />
 
     <Button
-        android:id="@+id/Skip"
-        android:layout_width="248dp"
-        android:layout_height="37dp"
-
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/custombutton"
-        android:text="Skip"
-        android:textSize="20dp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="96dp" />
-
-    <Button
         android:id="@+id/list"
-        android:layout_width="248dp"
-        android:layout_height="37dp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
 
         android:layout_marginLeft="70dp"
         android:layout_marginTop="550dp"

@@ -39,9 +39,6 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
 
     }
 
-    public void Register2(View view) {
-    }
-
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -87,7 +84,7 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(),"User Registered Successfull", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RegisterUserActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(RegisterUserActivity.this, UserProfileActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }else{

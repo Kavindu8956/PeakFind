@@ -13,11 +13,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-class MapGetNearbyPlacesData extends AsyncTask<Object, String, String> {
+public class MapGetNearbyPlacesData extends AsyncTask<Object, String, String> {
 
     private String googlePlacesData;
     private GoogleMap mMap;
-    String url;
+    private String url;
 
     @Override
     protected String doInBackground(Object... objects){
@@ -37,7 +37,7 @@ class MapGetNearbyPlacesData extends AsyncTask<Object, String, String> {
     @Override
     protected void onPostExecute(String s){
 
-        List<HashMap<String, String>> nearbyPlaceList;
+        List<HashMap<String, String>> nearbyPlaceList=null;
         MapDataParser parser = new MapDataParser();
         nearbyPlaceList = parser.parse(s);
         Log.d("nearbyplacesdata","called parse method");

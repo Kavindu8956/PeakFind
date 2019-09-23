@@ -19,6 +19,8 @@ import com.example.peakfind.HotelUserRoomReservationListModel;
 import com.example.peakfind.HotelUserTableReservationDetailsModel;
 import com.example.peakfind.HotelUserTableReservationListModel;
 import com.example.peakfind.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,6 +31,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class frag_Table_Reswervation extends Fragment {
+    FirebaseAuth mAuth;
+    FirebaseUser userid;
+    String uid;
 
     public static final String Id="reservationId";
     public static final String hName="hotelname";
@@ -43,6 +48,9 @@ public class frag_Table_Reswervation extends Fragment {
     DatabaseReference db2;
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             View view= inflater.inflate(R.layout.hotel_user_frag_table,container,false);
+            userid= FirebaseAuth.getInstance().getCurrentUser();
+            uid=userid.getUid();
+            mAuth=FirebaseAuth.getInstance();
             db2=FirebaseDatabase.getInstance().getReference("ReservationTable");
             tableList=view.findViewById(R.id.listView);
             tablebooking=new ArrayList<>();

@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import com.example.peakfind.ui.main.UpdateDatePicker;
 import com.example.peakfind.ui.main.frag_Room_Reswervation;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -38,16 +40,21 @@ public class HotelUserReservedRoom extends AppCompatActivity implements DatePick
     private Button datePick;
     HotelUserRoomModel model;
     DatabaseReference db;
+    FirebaseAuth mAuth;
+    FirebaseUser userid;
+    String uid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hotel_user_reserved_room);
-
+        userid= FirebaseAuth.getInstance().getCurrentUser();
+        uid=userid.getUid();
+        mAuth=FirebaseAuth.getInstance();
         model=new HotelUserRoomModel();
 
         hotName=(TextView)findViewById(R.id.Hname);
-        cusName=(TextView)findViewById(R.id.textView2);
+        cusName=(TextView)findViewById(R.id.textViewName);
         phone=(TextView)findViewById(R.id.textView22);
         date=(TextView)findViewById(R.id.textView);
         Nopeople=(Spinner) findViewById(R.id.spinner);

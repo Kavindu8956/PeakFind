@@ -19,16 +19,9 @@ public class HotelSelect extends AppCompatActivity {
         setContentView(R.layout.activity_hotel_select);
 
         btn=(Button)findViewById(R.id.button7);
-        btn1=(Button)findViewById(R.id.Skip);
+
         btn2=(Button)findViewById(R.id.list) ;
 
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1=new Intent(HotelSelect.this,HotelUserTableReservation.class);
-                startActivity(intent1);
-            }
-        });
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

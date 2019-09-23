@@ -7,6 +7,7 @@
     android:orientation="vertical" >
 
 
+
     <ListView
         android:id="@+id/hotelList"
         android:layout_width="match_parent"

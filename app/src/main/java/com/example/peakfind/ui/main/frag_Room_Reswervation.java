@@ -19,6 +19,7 @@ import com.example.peakfind.HotelUserRoomModel;
 import com.example.peakfind.HotelUserRoomReservationListModel;
 import com.example.peakfind.HotelUserTableReservationListModel;
 import com.example.peakfind.R;
+import com.example.peakfind.UserDetailsModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -59,8 +60,8 @@ public class frag_Room_Reswervation extends Fragment {
         tableList=view.findViewById(R.id.tableList);
         roomBookingList=new ArrayList<>();
 
-       //Query query=FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
-       //query.addListenerForSingleValueEvent();
+        //Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("id").equalTo(uid);
+        //query.addListenerForSingleValueEvent(valueEventListener);
 
         tableList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -87,8 +88,6 @@ public class frag_Room_Reswervation extends Fragment {
     }
 
 
-
-    @Override
     public void onStart() {
         super.onStart();
 
@@ -112,4 +111,5 @@ public class frag_Room_Reswervation extends Fragment {
             }
         });
     }
+
 }

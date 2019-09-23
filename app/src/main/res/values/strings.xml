@@ -69,6 +69,7 @@
     <string name="editcity">CITY</string>
     <string name="editmobileno">MOBILE NO</string>
     <string name="editemail">E-MAIL</string>
+    <string name="editcabownerdetails">CAB SERVICE DETAILS</string>
     <string name="save">SAVE</string>
     <string name="edittextownername">owner name</string>
     <string name="textcompanyname">company name</string>
@@ -192,6 +193,7 @@
     <string name="btnbook">ROOM BOOKING</string>
     <string name="btntable">TABLE RESERVATION</string>
 
+
     <string name="btnUpdate">UPDATE RESERVATION</string>
     <string name="btnDelete">CANCEL RESERVATION</string>
 
@@ -207,7 +209,7 @@
     <string name="cabOwnerDetails">Cab owner Details</string>
     <string name="entervehicletext">Enter Vehicle</string>
     <string name="companynametext">Company Name</string>
-    <string name="editcabownerdetails">Cab Owner Detail</string>
+
     <string name="editownername">Edit owner</string>
 
     <string name="btnregistercabowner">Register Cab Owner</string>
@@ -250,6 +252,5 @@
     <string name="uaddress">Address</string>
     <string name="enteraddress">Enter Address</string>
     <string name="updatedetails">Update Details</string>
-
 
 </resources>

@@ -1,5 +1,6 @@
 package com.example.peakfind;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
@@ -18,8 +19,12 @@ import com.example.peakfind.ui.main.UpdateDatePicker;
 import com.example.peakfind.ui.main.frag_Room_Reswervation;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -52,6 +57,9 @@ public class HotelUserReservedRoom extends AppCompatActivity implements DatePick
         uid=userid.getUid();
         mAuth=FirebaseAuth.getInstance();
         model=new HotelUserRoomModel();
+
+        Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
+        query.addListenerForSingleValueEvent(valueEventListener);
 
         hotName=(TextView)findViewById(R.id.Hname);
         cusName=(TextView)findViewById(R.id.textViewName);
@@ -123,12 +131,12 @@ public class HotelUserReservedRoom extends AppCompatActivity implements DatePick
         phone.setText(phoneV);
         date.setText(dateV);
 
-        db= FirebaseDatabase.getInstance().getReference("RoomReservation1").child(id);
+        db= FirebaseDatabase.getInstance().getReference("RoomReservation1").child(uid);
 
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                model.setId(id);
+                model.setId(uid);
                 model.setHotelName(hotName.getText().toString());
                 model.setCustomerName(cusName.getText().toString());
                 model.setCustomerPhone(phone.getText().toString());
@@ -166,4 +174,22 @@ public class HotelUserReservedRoom extends AppCompatActivity implements DatePick
         textView1.setText(checkInDate);
 
     }
+
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            if(dataSnapshot.exists()){
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    UserDetailsModel userDetailsModel = snapshot.getValue(UserDetailsModel.class);
+                    cusName.setText(userDetailsModel.getUserName());
+                    phone.setText(userDetailsModel.getUserNumber());
+                }
+            }
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+        }
+    };
 }

@@ -19,12 +19,14 @@ import com.example.peakfind.HotelUserRoomReservationListModel;
 import com.example.peakfind.HotelUserTableReservationDetailsModel;
 import com.example.peakfind.HotelUserTableReservationListModel;
 import com.example.peakfind.R;
+import com.example.peakfind.UserDetailsModel;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -54,6 +56,9 @@ public class frag_Table_Reswervation extends Fragment {
             db2=FirebaseDatabase.getInstance().getReference("ReservationTable");
             tableList=view.findViewById(R.id.listView);
             tablebooking=new ArrayList<>();
+        Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
+        query.addListenerForSingleValueEvent(valueEventListener);
+
 
             tableList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -97,4 +102,20 @@ public class frag_Table_Reswervation extends Fragment {
             }
         });
     }
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            if (dataSnapshot.exists()) {
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    UserDetailsModel userDetailsModel = snapshot.getValue(UserDetailsModel.class);
+                }
+            }
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+        }
+
+    };
 }

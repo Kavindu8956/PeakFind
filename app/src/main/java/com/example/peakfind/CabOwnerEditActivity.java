@@ -31,10 +31,6 @@ public class CabOwnerEditActivity extends AppCompatActivity {
 
     List<CabDetails> cabDetails;
 
-    FirebaseAuth mAuth;
-    FirebaseUser userid;
-    String uid;
-
 
     private void clearControls() {
         OwnerName.setText("");
@@ -57,11 +53,6 @@ public class CabOwnerEditActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cabowneredit);
-
-
-        userid = FirebaseAuth.getInstance().getCurrentUser();
-        uid = userid.getUid();
-
 
         dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails");
 
@@ -90,6 +81,7 @@ public class CabOwnerEditActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails");
+
 
                 if (TextUtils.isEmpty(OwnerName.getText().toString())) {
                     Toast.makeText(getApplicationContext(), "Please Enter Owner Name", Toast.LENGTH_SHORT).show();
@@ -126,19 +118,24 @@ public class CabOwnerEditActivity extends AppCompatActivity {
                     cbd.setNum3(Integer.parseInt(num3.getText().toString().trim()));
                     cbd.setNum4(Integer.parseInt(num4.getText().toString().trim()));
 
-
                     dbref222.child(cbd.getKey()).setValue(cbd);
                     Toast.makeText(getApplicationContext(), "Adding Success", Toast.LENGTH_LONG).show();
                     cleanData();
                 }
 
 
-                //Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);
-                //startActivity(intent);
             }
         });
-    }
 
+        Button btn = (Button)findViewById(R.id.button2);
+        btn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                Intent intent = new Intent(CabOwnerEditActivity.this, show_cabownerdetails.class);
+                startActivity(intent);
+            }
+        });
+
+    }
 
     public void cleanData() {
         OwnerName.setText("");
@@ -155,39 +152,6 @@ public class CabOwnerEditActivity extends AppCompatActivity {
         num3.setText("");
         num4.setText("");
     }
-
-
-    private void addDetails() {
-        String ownername_ = OwnerName.getText().toString().trim();
-        String companyname_ = CompanyName.getText().toString().trim();
-        String city_ = City.getText().toString().trim();
-        int mobileno_ = Integer.parseInt(MobileNo.getText().toString().trim());
-        String email_ = Email.getText().toString().trim();
-        String vehicle1_ = vehicle1.getText().toString().trim();
-        String vehicle2_ = vehicle2.getText().toString().trim();
-        String vehicle3_ = vehicle3.getText().toString().trim();
-        String vehicle4_ = vehicle4.getText().toString().trim();
-        int num1_ = Integer.parseInt(num1.getText().toString().trim());
-        int num2_ = Integer.parseInt(num2.getText().toString().trim());
-        int num3_ = Integer.parseInt(num3.getText().toString().trim());
-        int num4_ = Integer.parseInt(num4.getText().toString().trim());
-
-
-        if (!TextUtils.isEmpty(companyname_)) {
-            String id = dbref222.push().getKey();
-
-            CabDetails cabdetailsadd = new CabDetails(uid,ownername_,companyname_,city_,mobileno_,email_,vehicle1_,vehicle2_,vehicle3_,vehicle4_,num1_,num2_,num3_,num4_);
-            dbref222.child(id).setValue(cabdetailsadd);
-
-            Toast.makeText(this,"Details Added Successfully",Toast.LENGTH_SHORT).show();
-
-            Intent intent1 = new Intent(CabOwnerEditActivity.this,CabOwnerDashboardActivity.class);
-            startActivity(intent1);
-        }else{
-            Toast.makeText(this,"You should enter company name",Toast.LENGTH_SHORT).show();
-        }
-    }
-
 }
 
 

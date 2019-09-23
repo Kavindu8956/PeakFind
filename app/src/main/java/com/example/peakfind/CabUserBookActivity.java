@@ -29,6 +29,8 @@ public class CabUserBookActivity extends AppCompatActivity implements DatePicker
     DatabaseReference dbref;
     CabBookDetails cabBD;
 
+
+
     private void clearControls() {
         CustomerName.setText("");
         PickupLocation.setText("");
@@ -48,7 +50,7 @@ public class CabUserBookActivity extends AppCompatActivity implements DatePicker
         dbref = FirebaseDatabase.getInstance().getReference("CabBookingDetails");
 
 
-
+        CompanyName = (TextView)findViewById(R.id.textView58);
         CustomerName = (EditText)findViewById(R.id.cusname);
         PickupLocation = (EditText)findViewById(R.id.picklocation);
         Destination = (EditText)findViewById(R.id.destination);
@@ -61,10 +63,6 @@ public class CabUserBookActivity extends AppCompatActivity implements DatePicker
         btndate = (Button)findViewById(R.id.btndate);
 
         cabBD = new CabBookDetails();
-
-        /*CompanyName = (TextView) findViewById(R.id.CabCompanyName);
-        Intent intent = getIntent();
-        final String Cname = intent.getStringExtra(CabUserListShowActivity.Cab_Company_Name);*/
 
         btnbooknow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +104,8 @@ public class CabUserBookActivity extends AppCompatActivity implements DatePicker
                     dbref.child(cabBD.getKey()).setValue(cabBD);
                     Toast.makeText(getApplicationContext(), "Adding Success", Toast.LENGTH_LONG).show();
                     cleanData();
+
+
                 }
 
 

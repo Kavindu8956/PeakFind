@@ -9,13 +9,12 @@ public class CabBookDetails {
     private String PickupTime;
     private int MobileNo;
     private String VehicleType;
-    //private String companyname;
 
     public CabBookDetails(){
 
     }
 
-    public CabBookDetails(String customerName, String pickupLocation, String destination, String pickupDate, String pickupTime, int mobileNo, String vehicleType,String companyName) {
+    public CabBookDetails(String customerName, String pickupLocation, String destination, String pickupDate, String pickupTime, int mobileNo, String vehicleType) {
         this.key = key;
         this.CustomerName = customerName;
         this.PickupLocation = pickupLocation;
@@ -24,7 +23,6 @@ public class CabBookDetails {
         this.PickupTime = pickupTime;
         this.MobileNo = mobileNo;
         this.VehicleType = vehicleType;
-        //this.companyname = companyName;
     }
 
     public String getKey() {
@@ -91,11 +89,4 @@ public class CabBookDetails {
         VehicleType = vehicleType;
     }
 
-    /*public String getCompanyname() {
-        return companyname;
-    }
-
-    public void setCompanyname(String companyname) {
-        this.companyname = companyname;
-    }*/
 }

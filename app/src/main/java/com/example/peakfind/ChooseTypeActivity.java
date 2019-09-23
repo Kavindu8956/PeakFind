@@ -17,7 +17,7 @@ public class ChooseTypeActivity extends AppCompatActivity {
         findViewById(R.id.buttonCustomer).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentcustomer = new Intent(ChooseTypeActivity.this,LoginActivity.class);
+                Intent intentcustomer = new Intent(ChooseTypeActivity.this,MainActivity.class);
                 startActivity(intentcustomer);
             }
         });

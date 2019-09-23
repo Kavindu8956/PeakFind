@@ -124,7 +124,7 @@
         android:id="@+id/textView58"
         android:layout_width="331dp"
         android:layout_height="51dp"
-        android:text="@string/taxibooking"
+        android:text="@string/taxibooking2"
         android:textColor="#1D4768"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -133,7 +133,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <TextView
         android:id="@+id/textView59"

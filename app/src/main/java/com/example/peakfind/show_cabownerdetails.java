@@ -27,16 +27,11 @@ import java.util.List;
 
 public class show_cabownerdetails extends AppCompatActivity {
 
-
-
     DatabaseReference dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails");
     ListView listView;
 
     List<CabDetails> cabDetails;
     CabDetails cabdetails;
-
-
-
 
     public static final String Owner_Name = "owner name";
     public static final String Data_KEY = "owner_key";
@@ -63,8 +58,6 @@ public class show_cabownerdetails extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
         cabDetails = new ArrayList<>();
-
-
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -9,38 +9,41 @@
 
     <Button
         android:id="@+id/buttonCab"
-        android:layout_width="106dp"
+        android:layout_width="239dp"
         android:layout_height="63dp"
         android:background="@drawable/custombutton"
         android:onClick="shoppingmall"
         android:text="@string/cab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.815" />
 
     <Button
         android:id="@+id/buttonCustomer"
-        android:layout_width="111dp"
-        android:layout_height="61dp"
+        android:layout_width="246dp"
+        android:layout_height="64dp"
         android:background="@drawable/custombutton"
         android:text="@string/customer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.546" />
 
     <Button
         android:id="@+id/buttonHotel"
-        android:layout_width="111dp"
-        android:layout_height="56dp"
+        android:layout_width="241dp"
+        android:layout_height="63dp"
         android:background="@drawable/custombutton"
         android:text="@string/hotel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.68" />
 </androidx.constraintlayout.widget.ConstraintLayout>

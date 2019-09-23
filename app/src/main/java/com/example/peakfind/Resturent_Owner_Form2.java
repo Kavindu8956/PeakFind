@@ -180,6 +180,7 @@ public class Resturent_Owner_Form2 {
         this.location = location;
     }
 
+
     public void setWebsite(String website) {
         this.website = website;
     }

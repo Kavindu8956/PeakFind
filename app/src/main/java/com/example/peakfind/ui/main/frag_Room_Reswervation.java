@@ -19,10 +19,13 @@ import com.example.peakfind.HotelUserRoomModel;
 import com.example.peakfind.HotelUserRoomReservationListModel;
 import com.example.peakfind.HotelUserTableReservationListModel;
 import com.example.peakfind.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -30,6 +33,9 @@ import java.util.List;
 
 public class frag_Room_Reswervation extends Fragment {
 
+    FirebaseAuth mAuth;
+    FirebaseUser userid;
+    String uid;
     public static final String ID="id";
     public static final String Hotel_name="HotelName";
     public static final String Cus_name="customerName";
@@ -47,8 +53,14 @@ public class frag_Room_Reswervation extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.hotel_user_frag_room,container,false);
         db1= FirebaseDatabase.getInstance().getReference("RoomReservation1");
+        userid= FirebaseAuth.getInstance().getCurrentUser();
+        uid=userid.getUid();
+        mAuth=FirebaseAuth.getInstance();
         tableList=view.findViewById(R.id.tableList);
         roomBookingList=new ArrayList<>();
+
+       //Query query=FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
+       //query.addListenerForSingleValueEvent();
 
         tableList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

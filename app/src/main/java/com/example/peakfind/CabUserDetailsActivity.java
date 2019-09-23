@@ -63,14 +63,11 @@ public class CabUserDetailsActivity extends AppCompatActivity {
 
         dbref222 = FirebaseDatabase.getInstance().getReference("CabDetails").child(key);
 
-
-
-
-
-
     }
 
     public void BtnBook(View view){
+
+
         Intent intent = new Intent(CabUserDetailsActivity.this, CabUserBookActivity.class);
         startActivity(intent);
     }

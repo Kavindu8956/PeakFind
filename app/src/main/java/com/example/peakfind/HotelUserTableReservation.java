@@ -18,6 +18,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -27,6 +29,9 @@ import java.util.Calendar;
 
 public class HotelUserTableReservation extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
+    FirebaseAuth mAuth;
+    FirebaseUser userid;
+    String uid;
 
     private Button btn1;
     private TextView tv1;
@@ -42,7 +47,9 @@ public class HotelUserTableReservation extends AppCompatActivity implements Date
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoteluser_tablereservation);
-
+        userid= FirebaseAuth.getInstance().getCurrentUser();
+        uid=userid.getUid();
+        mAuth=FirebaseAuth.getInstance();
         model=new HotelUserTableReservationDetailsModel();
 
         ReservationDetails1= FirebaseDatabase.getInstance().getReference("ReservationTable");
@@ -53,7 +60,7 @@ public class HotelUserTableReservation extends AppCompatActivity implements Date
         reserve=(Button)findViewById(R.id.MakeReserve) ;
         sp1=(Spinner) findViewById(R.id.spinnerTime);
         sp2=(Spinner)findViewById(R.id.spinnerPeople);
-        tv3=(TextView)findViewById(R.id.textView2);
+        tv3=(TextView)findViewById(R.id.textViewName);
         tv4=(TextView)findViewById(R.id.textView22);
 
         final Intent intent=getIntent();
@@ -116,18 +123,32 @@ public class HotelUserTableReservation extends AppCompatActivity implements Date
         reserve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addTable();
-                AlertDialog.Builder builder=new AlertDialog.Builder(HotelUserTableReservation.this);
-                builder.setMessage("Table reservation created successfully.Our customer support contact you shortly to get complete details of the reservation.").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent=new Intent(HotelUserTableReservation.this, HotelCustomerReservedList.class);
-                        startActivity(intent);
-                    }
-                });
-                AlertDialog alert=builder.create();
-                alert.setTitle("Success!!!");
-                alert.show();
+                if(TextUtils.isEmpty(tv1.getText())){
+                    final AlertDialog.Builder builder=new AlertDialog.Builder(HotelUserTableReservation.this);
+                    builder.setMessage("You should Enter the date.").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+                    AlertDialog alert=builder.create();
+                    alert.setTitle("Error!!!");
+                    alert.show();
+                }else{
+                    addTable();
+                    AlertDialog.Builder builder=new AlertDialog.Builder(HotelUserTableReservation.this);
+                    builder.setMessage("Table reservation created successfully.Our customer support contact you shortly to get complete details of the reservation.").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent=new Intent(HotelUserTableReservation.this, HotelCustomerReservedList.class);
+                            startActivity(intent);
+                        }
+                    });
+                    AlertDialog alert=builder.create();
+                    alert.setTitle("Success!!!");
+                    alert.show();
+                }
+
             }
 
         });
@@ -154,7 +175,7 @@ public class HotelUserTableReservation extends AppCompatActivity implements Date
 
         if(!TextUtils.isEmpty(date)){
             String id=ReservationDetails1.push().getKey();
-            HotelUserTableReservationDetailsModel det=new HotelUserTableReservationDetailsModel(id,cusName,cusPhone,date,time,people,hotName);
+            HotelUserTableReservationDetailsModel det=new HotelUserTableReservationDetailsModel(uid,cusName,cusPhone,date,time,people,hotName);
             ReservationDetails1.child(id).setValue(det);
             Toast.makeText(this,"Reservation Details are added...",Toast.LENGTH_LONG).show();
         }

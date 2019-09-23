@@ -16,6 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
@@ -58,15 +66,19 @@
         <activity android:name=".HotelUserReservedTable"></activity>
         <activity android:name=".HotelUserTableReservation" />
         <activity android:name=".HotelUserListView" />
+        <activity android:name=".HotelCustomerReservedList" />
+        <activity android:name=".HotelUserReservedRoom" />
+
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
 
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".show_cabownerdetails" />
-
         <activity android:name=".CabOwnerUpdate" />
         <activity android:name=".CabUserListShowActivity"></activity>
+        <activity android:name=".CabBookingViewActivity" />
+
 
         <activity android:name=".HotelOwnerActivity"></activity>
         <activity android:name=".Resturent_Form" />
@@ -78,5 +90,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>

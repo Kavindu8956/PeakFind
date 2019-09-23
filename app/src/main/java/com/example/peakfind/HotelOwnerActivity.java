@@ -127,7 +127,7 @@ public class HotelOwnerActivity extends AppCompatActivity {
         return true;
     }
     public void hotelowner(View view) {
-        Intent intentHotelowner = new Intent(HotelOwnerActivity.this,Resturent_Form.class);
+        Intent intentHotelowner = new Intent(HotelOwnerActivity.this,Menu_Resturent.class);
         startActivity(intentHotelowner);
     }
 

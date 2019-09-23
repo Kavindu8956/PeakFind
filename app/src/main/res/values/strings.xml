@@ -8,16 +8,16 @@
     </array>
 
     <array name="Breakfast">
-        <item>Breakfast included</item>
-        <item>breakfast not included</item>
+        <item>Breakfast Included</item>
+        <item>Breakfast not Included</item>
     </array>
     <string name="app_name">Peak&amp;Find</string>
 
     <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>Three Persons</item>
+        <item>More Than Three Persons</item>
     </string-array>
 
     <string-array name="Rooms">
@@ -56,13 +56,14 @@
     </string-array>
 
     <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>Three Persons</item>
+        <item>More Than Three Persons</item>
     </string-array>
 
     <string name="btnbooknow">Book Now</string>
+
 
     <string name="editcompanyname">COMPANY NAME</string>
     <string name="editcity">CITY</string>
@@ -75,7 +76,7 @@
     <string name="mobilelayout">Mobile:</string>
     <string name="emaillayout">Email:</string>
     <string name="buttobBook">BOOK</string>
-    <string name="vehicletype">VEHICLE TYPES</string>
+
     <string name="taxibooking">TAXI BOOKING</string>
     <string name="customername">CUSTOMER NAME</string>
     <string name="pickuplocation">PICKUP LOCATION</string>
@@ -92,6 +93,7 @@
     <string name="picktimetext">Pickup Time</string>
     <string name="mobilenumbertext">Mobile No</string>
     <string name="vehicletypetext">Vehicle Type</string>
+
 
     <string name="text1">Amari Galle</string>
     <string name="text2">Galle, 4.2Km from center:</string>
@@ -146,8 +148,8 @@
     <string name="button2">DELETE</string>
     <string name="textp1">Name:</string>
     <string name="textp2">E-mail:</string>
-
-    <string name="btn">Save Details</string>
+    <string name="texy3">Phone Number:</string>
+    <string name="btn">Save Change</string>
 
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -224,7 +226,22 @@
     <string name="date1">Date</string>
     <string name="btnviewbooking1">VIEW BOOKING</string>
 
+    <string name="QuantityRoom">No Of Rooms</string>
+    <string name="quantityPeople">No Of People</string>
+    <string name="peopleQuantity">No Of People</string>
+    <string name="typeRoom">Room Type</string>
+    <string name="quanRoom">No Of Rooms</string>
     <string name="btndelete">Delete</string>
+    <string name="viewbtn">VIEW</string>
+    <string name="viewbtn1">VIEW</string>
+    <string name="btnviewnew">VIEW</string>
+    <string name="ownername">OWNER NAME</string>
+    <string name="vehicletype">VEHICLE TYPES</string>
+    <string name="bookingbtn">BOOKING</string>
+    <string name="taxibooking1">TAXI BOOKING</string>
+    <string name="taxibooking2">TAXI BOOKING</string>
+
+
     <string name="typehere">Type Any Place Name Here</string>
     <string name="search">Search</string>
     <string name="entername">Enter Name</string>
@@ -233,5 +250,6 @@
     <string name="uaddress">Address</string>
     <string name="enteraddress">Enter Address</string>
     <string name="updatedetails">Update Details</string>
+
 
 </resources>

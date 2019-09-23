@@ -1,6 +1,8 @@
 package com.example.peakfind;
 
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,17 +14,29 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Queue;
 
 public class ReservationFormActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
+
+    FirebaseAuth mAuth;
+    FirebaseUser userid;
+    String uid;
 
     private Button button1;
     TextView hotelName;
@@ -39,16 +53,19 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservationform);
-
+        userid= FirebaseAuth.getInstance().getCurrentUser();
+        uid=userid.getUid();
+        mAuth=FirebaseAuth.getInstance();
         dbRoomReserve1= FirebaseDatabase.getInstance().getReference("RoomReservation1");
 
         hotelName=(TextView)findViewById(R.id.Hname) ;
-        cusName=(TextView)findViewById(R.id.textView2);
+        cusName=(TextView)findViewById(R.id.textViewName);
         phone=(TextView)findViewById(R.id.textView22) ;
         date=(TextView)findViewById(R.id.textView);
         noPeople=(Spinner)findViewById(R.id.spinner);
         room=(Spinner)findViewById(R.id.spinner3);
         noRoom=(Spinner)findViewById(R.id.spinner4) ;
+
 
         final Intent intent=getIntent();
         final String HotelName=intent.getStringExtra(HotelUserListView.Hotel_Name);
@@ -62,6 +79,10 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
                 datePicker.show(getSupportFragmentManager(),"date picker1");
             }
         });
+
+        Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
+        query.addListenerForSingleValueEvent(valueEventListener);
+
         Spinner spinner1=(Spinner)findViewById(R.id.spinner);
         Spinner spinner3=(Spinner)findViewById(R.id.spinner3);
         Spinner spinner4=(Spinner)findViewById(R.id.spinner4);
@@ -83,13 +104,42 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
         button1=(Button)findViewById(R.id.buttonDelete);
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                addRoom();
-                Intent intent3=new Intent(ReservationFormActivity.this, HotelCustomerReservedList.class);
-                startActivity(intent3);
+                if(TextUtils.isEmpty(date.getText())){
+                    final AlertDialog.Builder builder=new AlertDialog.Builder(ReservationFormActivity.this);
+                    builder.setMessage("You should Enter the date.").setCancelable(false).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
 
+                        }
+                    });
+                    AlertDialog alert=builder.create();
+                    alert.setTitle("Error!!!");
+                    alert.show();
+                }else{
+                    addRoom();
+                    Intent intent2=new Intent(ReservationFormActivity.this, HotelCustomerReservedList.class);
+                    startActivity(intent2);
+                }
             }
         });
     }
+
+    ValueEventListener valueEventListener = new ValueEventListener() {
+        @Override
+        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            if(dataSnapshot.exists()){
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    UserDetailsModel userDetailsModel = snapshot.getValue(UserDetailsModel.class);
+                    cusName.setText(userDetailsModel.getUserName());
+                }
+            }
+        }
+
+        @Override
+        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+        }
+    };
 
     @Override
     public void onDateSet(DatePicker datePicker, int year, int month, int day) {
@@ -115,7 +165,7 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
 
         if((!TextUtils.isEmpty(dateReserve))){
                 String id=dbRoomReserve1.push().getKey();
-                HotelUserRoomModel room1=new HotelUserRoomModel(hotName,customerName,CusPhone,dateReserve,numberPeople,roomType,numberRoom,id,numberNights);
+                HotelUserRoomModel room1=new HotelUserRoomModel(hotName,customerName,CusPhone,dateReserve,numberPeople,roomType,numberRoom,uid,numberNights);
                 dbRoomReserve1.child(id).setValue(room1);
 
             Toast.makeText(this,"Reserved",Toast.LENGTH_LONG).show();

@@ -144,6 +144,7 @@
             android:layout_marginTop="20dp"
             android:background="@color/colorPrimary"
             android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/menulist"
             />
 
 
@@ -377,7 +378,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="hotelowner"
-            android:text="Edit Profile"
+            android:text="Edit Menu"
             android:background="@drawable/custombutton"
             android:layout_marginTop="20dp"
 

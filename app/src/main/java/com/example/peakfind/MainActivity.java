@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentCab);
     }
     public void shoppingmall(View v) {
-        Intent intentShoppingMall = new Intent(MainActivity.this,UserDetailsActivity.class);
+        Intent intentShoppingMall = new Intent(MainActivity.this,UserProfileDetailsShowActivity.class);
         startActivity(intentShoppingMall);
     }
     public void weather(View v) {
-        Intent intentWeather = new Intent(MainActivity.this,WeatherActivity.class);
+        Intent intentWeather = new Intent(MainActivity.this,Resturent_Form.class);
         startActivity(intentWeather);
     }
 }

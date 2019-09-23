@@ -5,59 +5,148 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HotelUserReservedTable"
+    android:padding="5dp"
+    android:background="@drawable/unnamed"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/HotelTopic"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent1"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/input_shape"
+            android:text="@string/text25"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_shape"
+            android:text="@string/text26"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="40dp">
+
+            android:layout_width="400dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/DatePicker"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button2"
+                android:text="@string/datebutton"
+                android:textColor="@android:color/background_light" />
 
             <TextView
-                android:id="@+id/HotelTopic"
-                android:layout_width="400dp"
-                android:layout_height="40dp"
-                android:text="Hotel Name"
+                android:id="@+id/viewDate"
+                android:layout_width="280dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/DisplayTime"
+                android:layout_width="119dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/input_shape"
+                android:text="@string/TimeSelect"
                 android:textAlignment="center"
-                android:textColor="@color/colorAccent1"
-                android:textSize="24sp" />
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerTime"
+                android:layout_width="267dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/input_shape"
+                android:textAlignment="center" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/DisplayPeople"
+                android:layout_width="119dp"
+                android:layout_height="41dp"
+                android:background="@drawable/input_shape"
+                android:text="@string/Peopleselect"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerPeople"
+                android:layout_width="267dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/input_shape"
+                android:textAlignment="center" />
+
 
         </LinearLayout>
 
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="413dp"
-            android:layout_height="225dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/backg"
-            android:scaleType="fitXY"
-            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
 
-        <TextView
-            android:id="@+id/ReservedDetails"
-            android:layout_width="match_parent"
-            android:layout_height="133dp"
-            android:layout_marginTop="5dp" />
 
         <Button
             android:id="@+id/UpdateBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary"
-            android:text="@string/UpdateBtn" />
+            android:background="@drawable/custombutton"
+            android:text="@string/btnUpdate"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/Deletebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary"
-            android:text="@string/deletebtn" />
+            android:background="@drawable/custombutton"
+            android:text="@string/btnDelete"
+            android:textSize="18dp" />
 
     </LinearLayout>
 

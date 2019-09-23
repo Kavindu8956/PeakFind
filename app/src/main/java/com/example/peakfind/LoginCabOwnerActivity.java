@@ -43,7 +43,7 @@ public class LoginCabOwnerActivity extends AppCompatActivity implements View.OnC
         switch (view.getId()) {
             case R.id.btnRegister:
                 finish();
-                startActivity(new Intent(this, RegisterUserActivity.class));
+                startActivity(new Intent(this, RegisterCabOwnerActivity.class));
                 break;
 
             case R.id.btnLogin:
@@ -90,7 +90,7 @@ public class LoginCabOwnerActivity extends AppCompatActivity implements View.OnC
                 progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(LoginCabOwnerActivity.this, CabOwnerEditActivity.class);
+                    Intent intent = new Intent(LoginCabOwnerActivity.this, show_cabownerdetails.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }else {

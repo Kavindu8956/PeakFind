@@ -33,19 +33,19 @@ public class Resturent_Owner_Form2 {
 
 
 
-
     public Resturent_Owner_Form2(String resId, String name, String mail, String phoneNum, String location, String hotelName, String website,
                                  String starOfHotel, String breakfast, String cbParking, String cbFood, String cbCar, String cbWifi , String cbGym, String playground
-                                    , String children , String massage , String outpool, String cbSingal, String cbDouble, String cbLuxuary, String cbFamliy , String txtClose, String txtOpen)
+                                    , String children , String massage , String outpool, String cbSingal, String cbDouble, String cbLuxuary, String cbFamliy , String txtClose, String txtOpen )
 
 
     {
+
         ResId = resId;
         this.name = name;
         this.mail = mail;
         this.phoneNum = phoneNum;
         this.location = location;
-        HotelName = hotelName;
+        this.HotelName = hotelName;
         this.website = website;
         this.starOfHotel = starOfHotel;
         this.breakfast = breakfast;
@@ -67,6 +67,11 @@ public class Resturent_Owner_Form2 {
 
 
 
+    }
+
+
+    public void setHotelName(String hotelName) {
+        HotelName = hotelName;
     }
 
     public String getResId() {
@@ -92,6 +97,8 @@ public class Resturent_Owner_Form2 {
     public String getHotelName() {
         return HotelName;
     }
+
+
 
     public String getWebsite() {
         return website;
@@ -151,6 +158,102 @@ public class Resturent_Owner_Form2 {
 
     public String getCbLuxuary() {
         return cbLuxuary;
+    }
+
+    public void setResId(String resId) {
+        ResId = resId;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setHotelName(String hotelName) {
+        HotelName = hotelName;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public void setStarOfHotel(String starOfHotel) {
+        this.starOfHotel = starOfHotel;
+    }
+
+    public void setBreakfast(String breakfast) {
+        this.breakfast = breakfast;
+    }
+
+    public void setCbParking(String cbParking) {
+        this.cbParking = cbParking;
+    }
+
+    public void setCbFood(String cbFood) {
+        this.cbFood = cbFood;
+    }
+
+    public void setCbCar(String cbCar) {
+        this.cbCar = cbCar;
+    }
+
+    public void setCbWifi(String cbWifi) {
+        this.cbWifi = cbWifi;
+    }
+
+    public void setCbGym(String cbGym) {
+        this.cbGym = cbGym;
+    }
+
+    public void setPlayground(String playground) {
+        this.playground = playground;
+    }
+
+    public void setChildren(String children) {
+        this.children = children;
+    }
+
+    public void setMassage(String massage) {
+        this.massage = massage;
+    }
+
+    public void setOutpool(String outpool) {
+        this.outpool = outpool;
+    }
+
+    public void setCbSingal(String cbSingal) {
+        this.cbSingal = cbSingal;
+    }
+
+    public void setCbDouble(String cbDouble) {
+        this.cbDouble = cbDouble;
+    }
+
+    public void setCbLuxuary(String cbLuxuary) {
+        this.cbLuxuary = cbLuxuary;
+    }
+
+    public void setCbFamliy(String cbFamliy) {
+        this.cbFamliy = cbFamliy;
+    }
+
+    public void setTxtOpen(String txtOpen) {
+        this.txtOpen = txtOpen;
+    }
+
+    public void setTxtClose(String txtClose) {
+        this.txtClose = txtClose;
     }
 
     public String getCbFamliy() {

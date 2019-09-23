@@ -4,19 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/room3"
+    android:background="@drawable/unnamed"
     tools:context=".ReservationFormActivity">
-    
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Hname"
+        android:layout_width="361dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <TextView
+        android:id="@+id/textViewName"
         android:layout_width="364dp"
         android:layout_height="41dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="110dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text25"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
@@ -26,9 +36,8 @@
         android:layout_width="364dp"
         android:layout_height="43dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="160dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text26"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
@@ -38,7 +47,7 @@
         android:layout_width="363dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="210dp"
         android:background="@drawable/custom_button2"
         android:text="@string/text21"
         android:textColor="@android:color/background_light"
@@ -51,7 +60,7 @@
         android:layout_width="361dp"
         android:layout_height="49dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="265dp"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp"
@@ -61,53 +70,32 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="54dp"
+        android:layout_width="182dp"
         android:layout_height="36dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="320dp"
         android:background="@drawable/input_shape"
         android:textAlignment="center" />
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="76dp"
-        android:layout_height="38dp"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="320dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text27"
-        android:textAlignment="center"
+        android:text="@string/peopleQuantity"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="77dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/input_shape"
-        android:text="@string/text28"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="52dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/input_shape" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="171dp"
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="370dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text29"
+        android:text="@string/typeRoom"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
@@ -117,7 +105,7 @@
         android:layout_width="182dp"
         android:layout_height="40dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="370dp"
         android:background="@drawable/input_shape"
         android:textAlignment="center" />
 
@@ -126,9 +114,30 @@
         android:layout_width="171dp"
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="420dp"
         android:background="@drawable/input_shape"
-        android:text="@string/text30"
+        android:text="@string/quanRoom"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/input_shape"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/nights"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/input_shape"
+        android:text="@string/nights"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="20sp" />
@@ -138,96 +147,18 @@
         android:layout_width="182dp"
         android:layout_height="40dp"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="420dp"
         android:background="@drawable/input_shape"
         android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="98dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="370dp"
-        android:text="@string/text33"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="370dp"
-        app:srcCompat="@drawable/twopersons" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="400dp"
-        android:text="@string/text31"
-        android:textAlignment="textStart"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="27dp"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="400dp"
-        app:srcCompat="@drawable/doublebed" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="369dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="430dp"
-        android:text="@string/text34"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="450dp"
-        android:text="@string/text35"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="36sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="363dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="490dp"
-        android:text="@string/text36"
-        android:textAlignment="center"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="367dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="515dp"
-        android:text="@string/text15"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonDelete"
         android:layout_width="366dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="550dp"
         android:background="@drawable/custombutton"
         android:text="@string/text20"
         android:textColor="@android:color/background_dark"

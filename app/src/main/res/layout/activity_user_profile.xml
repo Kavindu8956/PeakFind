@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/unnamed">
-    tools:context=".UserProfileActivity">
+    android:background="@drawable/unnamed"
+    tools:ignore="ExtraText">
+    tools:context=".UserInsertActivity">
 
 
     <RelativeLayout
@@ -76,16 +77,17 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/editTextAddress"
         android:layout_width="374dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="460dp"
         android:ems="10"
+        android:hint="@string/enteraddress"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/btnSaveProfile"
+        android:id="@+id/btnSaveDetails"
         android:layout_width="218dp"
         android:layout_height="40dp"
         android:layout_marginLeft="100dp"
@@ -94,24 +96,13 @@
         android:text="@string/btn"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="218dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="560dp"
-        android:background="@drawable/custombutton"
-        android:onClick="Register2"
-        android:text="LogOut"
-        android:textSize="16sp" />
-
     <TextView
         android:id="@+id/textView38"
         android:layout_width="287dp"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="420dp"
-        android:text="@string/texy3"
+        android:text="@string/uaddress"
         android:textColor="@color/colorAccent1"
         android:textSize="24sp" />
 

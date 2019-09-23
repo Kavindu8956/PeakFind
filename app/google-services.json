@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "106631113254-gm14tf2684biqrhugooo5islftiblej2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peakfind",
+            "certificate_hash": "bb47c277a1013ac27599693f49e7f7f6e3cc04e6"
+          }
+        },
+        {
           "client_id": "106631113254-arortj9iq45o0h5her34gbq2dv40eipn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

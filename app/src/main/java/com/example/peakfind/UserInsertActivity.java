@@ -97,7 +97,7 @@ public class UserInsertActivity extends AppCompatActivity {
         if(!TextUtils.isEmpty(name)) {
             String id = databaseUsers.push().getKey();
 
-            UserDetailsModel userd = new UserDetailsModel(uid,name,name);
+            UserDetailsModel userd = new UserDetailsModel(id,uid,name,name,name);
 
             databaseUsers.child(id).setValue(userd);
 

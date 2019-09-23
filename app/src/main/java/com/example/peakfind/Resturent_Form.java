@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -40,6 +42,7 @@ public class Resturent_Form extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resturent__form);
+
 
         databaseResOwner = FirebaseDatabase.getInstance().getReference("ResFormDetails");
 
@@ -80,27 +83,6 @@ public class Resturent_Form extends AppCompatActivity {
             }
         });
 
-
-        /*
-        b=findViewById(R.id.btnEdit);
-        b.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Resturent_Form.this,ImageUpdate.class);
-                startActivity(i);
-            }
-        });
-
-
-        b=findViewById(R.id.btnSave);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Resturent_Form.this,HotelOwnerActivity.class);
-                startActivity(i);
-            }
-        });*/
 
 
         b=(Button)findViewById(R.id.MenuBtn);
@@ -237,7 +219,7 @@ public class Resturent_Form extends AppCompatActivity {
 
            Toast.makeText(this,"Successfully added", Toast.LENGTH_SHORT).show();
 
-           Intent hintent = new Intent(Resturent_Form.this,HotelOwnerActivity.class);
+           Intent hintent = new Intent(Resturent_Form.this,LoginHotelOwnerActivity.class);
            startActivity(hintent);
 
         }else{

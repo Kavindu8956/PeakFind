@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -26,12 +27,9 @@ import java.util.List;
 
 public class UserProfileActivity extends AppCompatActivity {
 
-    EditText EditTextName, EditTextNumber;
+    EditText EditTextName, EditTextNumber, EditTextAddress;
     ImageView imageView;
     private static final int CHOOSE_IMAGE = 101;
-    Uri uriProfileImage;
-    ProgressBar progressBar;
-    String profileImageUrl;
 
     FirebaseAuth mAuth;
     DatabaseReference databaseUsers;
@@ -39,6 +37,9 @@ public class UserProfileActivity extends AppCompatActivity {
 
     FirebaseUser userid;
     String uid;
+    //Uri uriProfileImage;
+    ProgressBar progressBar;
+    //String profileImageUrl;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +55,14 @@ public class UserProfileActivity extends AppCompatActivity {
 
         EditTextName =  findViewById(R.id.editTextDisplayName);
         EditTextNumber =  findViewById(R.id.editTextContactNumber);
+        EditTextAddress =  findViewById(R.id.editTextAddress);
+
         imageView =  findViewById(R.id.imageViewProfilePic);
 
         userList = new ArrayList<>();
 
         progressBar = findViewById(R.id.progressBarUpload);
-        /*
+/*
         oneretriew Query query = FirebaseDatabase.getInstance().getReference("UserDetails").orderByChild("userId").equalTo(uid);
         query.addListenerForSingleValueEvent(valueEventListener);
 
@@ -69,10 +72,10 @@ public class UserProfileActivity extends AppCompatActivity {
                 showImageChooser();
             }
         });
-        */
-        //loadUserInformation();
 
-        findViewById(R.id.btnSaveProfile).setOnClickListener(new View.OnClickListener() {
+        loadUserInformation();
+*/
+        findViewById(R.id.btnSaveDetails).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 addDetails();
@@ -85,22 +88,47 @@ public class UserProfileActivity extends AppCompatActivity {
     private void addDetails() {
         String name = EditTextName.getText().toString().trim();
         String cnumber = EditTextNumber.getText().toString().trim();
+        String address = EditTextAddress.getText().toString().trim();
 
         if(!TextUtils.isEmpty(name)) {
             String id = databaseUsers.push().getKey();
 
-            UserDetailsModel userd = new UserDetailsModel(uid,name,cnumber);
+            UserDetailsModel userd = new UserDetailsModel(id,uid,name,cnumber,address);
 
             databaseUsers.child(id).setValue(userd);
 
             Toast.makeText(this, "Details Added Successfully", Toast.LENGTH_SHORT).show();
 
-            Intent intentcus = new Intent(UserProfileActivity.this,MainActivity.class);
+            Intent intentcus = new Intent(UserProfileActivity.this,LoginActivity.class);
             startActivity(intentcus);
 
         } else{
             Toast.makeText(this,"You should enter name", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.item2:
+
+                FirebaseAuth.getInstance().signOut();
+                finish();
+                startActivity(new Intent(this, LoginActivity.class));
+                break;
+        }
+
+        return true;
     }
 /*
     ValueEventListener valueEventListener = new ValueEventListener() {
@@ -217,31 +245,8 @@ public class UserProfileActivity extends AppCompatActivity {
                         }
                     });
         }
-    }*/
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.item2:
-
-                FirebaseAuth.getInstance().signOut();
-                finish();
-                startActivity(new Intent(this, LoginActivity.class));
-                break;
-        }
-
-        return true;
     }
 
     private void showImageChooser() {
@@ -255,6 +260,11 @@ public class UserProfileActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
         finish();
         startActivity(new Intent(this, LoginActivity.class));
-    }
+    }*/
+
+
+
+
+
 
 }

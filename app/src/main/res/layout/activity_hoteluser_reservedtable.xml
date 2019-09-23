@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HotelUserReservedTable"
+    android:padding="5dp"
+    android:background="@drawable/unnamed"
     android:orientation="vertical">
 
     <LinearLayout
@@ -22,7 +24,7 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewName"
             android:layout_width="match_parent"
             android:layout_height="41dp"
             android:layout_marginTop="50dp"
@@ -62,7 +64,8 @@
                 android:id="@+id/viewDate"
                 android:layout_width="280dp"
                 android:layout_height="41dp"
-                android:layout_marginLeft="5dp" />
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorAccent1" />
 
 
         </LinearLayout>
@@ -97,7 +100,7 @@
 
         <LinearLayout
             android:layout_width="400dp"
-            android:layout_height="41dp"
+            android:layout_height="45dp"
             android:layout_marginTop="10dp">
 
             <TextView
@@ -113,12 +116,10 @@
             <Spinner
                 android:id="@+id/spinnerPeople"
                 android:layout_width="267dp"
-                android:layout_height="match_parent"
+                android:layout_height="41dp"
                 android:layout_marginLeft="5dp"
                 android:background="@drawable/input_shape"
                 android:textAlignment="center" />
-
-
 
 
         </LinearLayout>

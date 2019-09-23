@@ -14,10 +14,10 @@
     <string name="app_name">Peak&amp;Find</string>
 
     <string-array name="Children">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>Three Persons</item>
+        <item>More Than Three Persons</item>
     </string-array>
 
     <string-array name="Rooms">
@@ -28,10 +28,10 @@
     </string-array>
 
     <string-array name="roomNo">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>One Room</item>
+        <item>Two Rooms</item>
+        <item>Three Rooms</item>
+        <item>More Than Three Rooms</item>
     </string-array>
 
     <string-array name="Name">
@@ -63,10 +63,10 @@
     </string-array>
 
     <string-array name="Adults">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
+        <item>One Person</item>
+        <item>Couple</item>
+        <item>Three Persons</item>
+        <item>More Than Three Persons</item>
     </string-array>
 
     <string name="btnbooknow">Book Now</string>

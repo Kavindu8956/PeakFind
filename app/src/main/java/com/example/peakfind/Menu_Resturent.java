@@ -125,7 +125,7 @@ public class Menu_Resturent extends AppCompatActivity {
 
 
 
-    private  void uploadFile() {
+    private void uploadFile() {
         if(mImageUri != null){
              StorageReference fileReference = mStorageRef.child(System.currentTimeMillis()
              +"."+getFileExtension(mImageUri));

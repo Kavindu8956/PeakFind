@@ -12,7 +12,7 @@
     tools:context=".CabOwnerEditActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewName"
         android:layout_width="256dp"
         android:layout_height="29dp"
         android:layout_marginStart="37dp"

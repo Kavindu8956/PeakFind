@@ -16,6 +16,8 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.peakfind.ui.main.UpdateDatePicker;
 import com.example.peakfind.ui.main.frag_Table_Reswervation;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -36,16 +38,22 @@ public class HotelUserReservedTable extends AppCompatActivity implements DatePic
     private Button delete;
     private Button dtePick;
     HotelUserTableReservationDetailsModel model;
+    FirebaseAuth mAuth;
+    FirebaseUser userid;
+    String uid;
 
     DatabaseReference db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hoteluser_reservedtable);
+        userid= FirebaseAuth.getInstance().getCurrentUser();
+        uid=userid.getUid();
+        mAuth=FirebaseAuth.getInstance();
         model=new HotelUserTableReservationDetailsModel();
 
         hotName=(TextView)findViewById(R.id.HotelTopic);
-        cusName=(TextView)findViewById(R.id.textView2);
+        cusName=(TextView)findViewById(R.id.textViewName);
         cusPhone=(TextView)findViewById(R.id.textView22);
         dateReserved=(TextView)findViewById(R.id.viewDate);
         timeReserved=(Spinner) findViewById(R.id.spinnerTime);

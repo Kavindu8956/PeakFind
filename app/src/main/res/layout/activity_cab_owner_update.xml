@@ -231,7 +231,7 @@
         app:layout_constraintVertical_bias="0.304" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewName"
         android:layout_width="281dp"
         android:layout_height="34dp"
         android:text="@string/cabOwnerDetails"

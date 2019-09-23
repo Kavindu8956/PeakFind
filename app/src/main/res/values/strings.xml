@@ -8,8 +8,8 @@
     </array>
 
     <array name="Breakfast">
-        <item>Yes</item>
-        <item>No</item>
+        <item>Breakfast included</item>
+        <item>breakfast not included</item>
     </array>
     <string name="app_name">Peak&amp;Find</string>
 

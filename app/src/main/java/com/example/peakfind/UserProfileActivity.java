@@ -51,7 +51,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        databaseUsers = FirebaseDatabase.getInstance().getReference("UserDetails");
+        databaseUsers = FirebaseDatabase.getInstance().getReference("UserDetails").child(uid);
 
         EditTextName =  findViewById(R.id.editTextDisplayName);
         EditTextNumber =  findViewById(R.id.editTextContactNumber);
@@ -95,7 +95,7 @@ public class UserProfileActivity extends AppCompatActivity {
 
             UserDetailsModel userd = new UserDetailsModel(id,uid,name,cnumber,address);
 
-            databaseUsers.child(id).setValue(userd);
+            databaseUsers.setValue(userd);
 
             Toast.makeText(this, "Details Added Successfully", Toast.LENGTH_SHORT).show();
 

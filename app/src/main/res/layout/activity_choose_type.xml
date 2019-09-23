@@ -7,24 +7,40 @@
     android:background="@drawable/back"
     tools:context=".ChooseTypeActivity">
 
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="291dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCustomer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/peakfind4" />
+
     <Button
         android:id="@+id/buttonCab"
-        android:layout_width="239dp"
+        android:layout_width="240dp"
         android:layout_height="63dp"
         android:background="@drawable/custombutton"
         android:onClick="shoppingmall"
         android:text="@string/cab"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.815" />
 
     <Button
         android:id="@+id/buttonCustomer"
-        android:layout_width="246dp"
-        android:layout_height="64dp"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
         android:background="@drawable/custombutton"
         android:text="@string/customer"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,14 +52,14 @@
 
     <Button
         android:id="@+id/buttonHotel"
-        android:layout_width="241dp"
+        android:layout_width="240dp"
         android:layout_height="63dp"
         android:background="@drawable/custombutton"
         android:text="@string/hotel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintVertical_bias="0.682" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -56,7 +56,7 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
         userid= FirebaseAuth.getInstance().getCurrentUser();
         uid=userid.getUid();
         mAuth=FirebaseAuth.getInstance();
-        dbRoomReserve1= FirebaseDatabase.getInstance().getReference("RoomReservation1");
+        dbRoomReserve1= FirebaseDatabase.getInstance().getReference("RoomReservation1").child(uid);
 
         hotelName=(TextView)findViewById(R.id.Hname) ;
         cusName=(TextView)findViewById(R.id.textViewName);
@@ -131,6 +131,7 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     UserDetailsModel userDetailsModel = snapshot.getValue(UserDetailsModel.class);
                     cusName.setText(userDetailsModel.getUserName());
+                    phone.setText(userDetailsModel.getUserNumber());
                 }
             }
         }
@@ -166,7 +167,7 @@ public class ReservationFormActivity extends AppCompatActivity implements DatePi
         if((!TextUtils.isEmpty(dateReserve))){
                 String id=dbRoomReserve1.push().getKey();
                 HotelUserRoomModel room1=new HotelUserRoomModel(hotName,customerName,CusPhone,dateReserve,numberPeople,roomType,numberRoom,uid,numberNights);
-                dbRoomReserve1.child(id).setValue(room1);
+                dbRoomReserve1.setValue(room1);
 
             Toast.makeText(this,"Reserved",Toast.LENGTH_LONG).show();
         }else {

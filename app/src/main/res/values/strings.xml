@@ -76,7 +76,7 @@
     <string name="editcity">CITY</string>
     <string name="editmobileno">MOBILE NO</string>
     <string name="editemail">E-MAIL</string>
-    <string name="editcabownerdetails">CAB SERVICE DETAILS</string>
+
     <string name="save">SAVE</string>
     <string name="edittextownername">owner name</string>
     <string name="textcompanyname">company name</string>
@@ -138,12 +138,7 @@
 
     <string name="text30">Number Of Rooms</string>
 
-    <string-array name="Nights">
-        <item>One Night</item>
-        <item>two Nights</item>
-        <item>three Nights</item>
-        <item>More Than Three Nights</item>
-    </string-array>
+
     <string name="text31">1 extra-large double bed</string>
     <string name="text32">Has a balcony</string>
     <string name="text33">Price for:</string>
@@ -163,9 +158,9 @@
     <string name="password">Password</string>
     <string name="register">Register</string>
 
-    <string name="customer">Customert</string>
-    <string name="cab">Cab</string>
-    <string name="hotel">Hotel</string>
+    <string name="customer">Customer</string>
+    <string name="cab">Cab Owner</string>
+    <string name="hotel">Hotel Owner</string>
     <string name="login">Login</string>
     <string name="add">Add</string>
     <string name="setHotel">Enter Hotel Name</string>
@@ -204,8 +199,6 @@
     <string name="btnUpdate">UPDATE RESERVATION</string>
     <string name="btnDelete">CANCEL RESERVATION</string>
 
-    <string name="UpdateBtn">Update Reservation</string>
-    <string name="deletebtn">Delete Reservation</string>
 
     <string name="title_activity_maps">mapvalue</string>
     <string name="emailtext">Email</string>
@@ -237,10 +230,7 @@
     <string name="date">Date</string>
     <string name="date1">Date</string>
     <string name="btnviewbooking1">VIEW BOOKING</string>
-    <string name="entercontactnumber">con</string>
-    <string name="entername">nameeee</string>
-    <string name="contactnumber">fadc</string>
-    <string name="btndelete">Delete</string>
+
     <string name="QuantityRoom">No Of Rooms</string>
     <string name="quantityPeople">No Of People</string>
     <string name="peopleQuantity">No Of People</string>

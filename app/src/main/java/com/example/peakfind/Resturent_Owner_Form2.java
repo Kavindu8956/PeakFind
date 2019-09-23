@@ -33,13 +33,13 @@ public class Resturent_Owner_Form2 {
 
 
 
+
     public Resturent_Owner_Form2(String resId, String name, String mail, String phoneNum, String location, String hotelName, String website,
                                  String starOfHotel, String breakfast, String cbParking, String cbFood, String cbCar, String cbWifi , String cbGym, String playground
-                                    , String children , String massage , String outpool, String cbSingal, String cbDouble, String cbLuxuary, String cbFamliy , String txtClose, String txtOpen )
+                                    , String children , String massage , String outpool, String cbSingal, String cbDouble, String cbLuxuary, String cbFamliy , String txtClose, String txtOpen)
 
 
     {
-
         ResId = resId;
         this.name = name;
         this.mail = mail;
@@ -97,8 +97,6 @@ public class Resturent_Owner_Form2 {
     public String getHotelName() {
         return HotelName;
     }
-
-
 
     public String getWebsite() {
         return website;
@@ -179,8 +177,6 @@ public class Resturent_Owner_Form2 {
     public void setLocation(String location) {
         this.location = location;
     }
-
-
 
     public void setWebsite(String website) {
         this.website = website;

@@ -28,10 +28,10 @@
     </string-array>
 
     <string-array name="roomNo">
-        <item>One Room</item>
-        <item>Two Rooms</item>
-        <item>Three Rooms</item>
-        <item>More Than Three Rooms</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 
     <string-array name="Name">
@@ -76,6 +76,7 @@
     <string name="editcity">CITY</string>
     <string name="editmobileno">MOBILE NO</string>
     <string name="editemail">E-MAIL</string>
+    <string name="editcabownerdetails">CAB SERVICE DETAILS</string>
     <string name="save">SAVE</string>
     <string name="edittextownername">owner name</string>
     <string name="textcompanyname">company name</string>
@@ -100,6 +101,7 @@
     <string name="picktimetext">Pickup Time</string>
     <string name="mobilenumbertext">Mobile No</string>
     <string name="vehicletypetext">Vehicle Type</string>
+
 
     <string name="text1">Amari Galle</string>
     <string name="text2">Galle, 4.2Km from center:</string>
@@ -129,6 +131,19 @@
     <string name="text25">S.D.L.Nanayakkara</string>
     <string name="text26">0775602520</string>
 
+    <string name="text27">Adults</string>
+
+    <string name="text28">Children</string>
+    <string name="text29">Select Your Room</string>
+
+    <string name="text30">Number Of Rooms</string>
+
+    <string-array name="Nights">
+        <item>One Night</item>
+        <item>two Nights</item>
+        <item>three Nights</item>
+        <item>More Than Three Nights</item>
+    </string-array>
     <string name="text31">1 extra-large double bed</string>
     <string name="text32">Has a balcony</string>
     <string name="text33">Price for:</string>
@@ -173,6 +188,11 @@
 
     <string name="Reservation">Make Reservation</string>
 
+
+    <string name="UpdateBtn">Update Reservation</string>
+
+    <string name="deletebtn">Delete Reservation</string>
+
     <string name="nights">Number Of Nights</string>
     <string name="title_activity_hotel_customer_reserved_list">HotelCustomerReservedList</string>
     <string name="tab_text_1">Tab 1</string>
@@ -180,11 +200,13 @@
     <string name="btnbook">ROOM BOOKING</string>
     <string name="btntable">TABLE RESERVATION</string>
 
+
     <string name="btnUpdate">UPDATE RESERVATION</string>
     <string name="btnDelete">CANCEL RESERVATION</string>
 
     <string name="UpdateBtn">Update Reservation</string>
     <string name="deletebtn">Delete Reservation</string>
+
     <string name="title_activity_maps">mapvalue</string>
     <string name="emailtext">Email</string>
     <string name="mobilenotext">Mobile</string>
@@ -224,5 +246,15 @@
     <string name="peopleQuantity">No Of People</string>
     <string name="typeRoom">Room Type</string>
     <string name="quanRoom">No Of Rooms</string>
+
+    <string name="btndelete">Delete</string>
+    <string name="typehere">Type Any Place Name Here</string>
+    <string name="search">Search</string>
+    <string name="entername">Enter Name</string>
+    <string name="contactnumber">Contact Number</string>
+    <string name="entercontactnumber">Enter Contact Number</string>
+    <string name="uaddress">Address</string>
+    <string name="enteraddress">Enter Address</string>
+    <string name="updatedetails">Update Details</string>
 
 </resources>

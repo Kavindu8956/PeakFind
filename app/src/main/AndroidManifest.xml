@@ -2,11 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.peakfind">
 
-    <!--
-         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
-         Google Maps Android API v2, but you must specify either coarse or fine
-         location permissions for the 'MyLocation' functionality.
-    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -33,9 +34,13 @@
         <activity android:name=".LoginHotelOwnerActivity" />
         <activity android:name=".LoginCabOwnerActivity" />
         <activity android:name=".RegisterUserActivity" ></activity>
+        <activity android:name=".RegisterCabOwnerActivity" />
+        <activity android:name=".RegisterHotelOwnerActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".MapActivity" />
-        <activity android:name=".UserProfileActivity"></activity>
+        <activity android:name=".UserProfileActivity">
+
+        </activity>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ShoppingMallActivity" />
         <activity android:name=".HotelSelect" />
@@ -46,8 +51,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserInsertActivity"></activity>
+        <activity android:name=".UserInsertActivity">
 
+        </activity>
+        <activity android:name=".UserProfileDetailsShowActivity">
+
+        </activity>
+
+        <activity android:name=".UbdateReservation" />
         <activity android:name=".HotelActivity" />
         <activity android:name=".UserDetailsActivity" />
         <activity android:name=".ReservationFormActivity" />
@@ -61,6 +72,7 @@
 
         <activity android:name=".CabUserBookActivity" />
         <activity android:name=".CabUserDetailsActivity" />
+
         <activity android:name=".CabOwnerEditActivity" />
         <activity android:name=".show_cabownerdetails" />
         <activity android:name=".CabOwnerUpdate" />

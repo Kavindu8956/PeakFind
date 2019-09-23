@@ -43,7 +43,7 @@ public class LoginCabOwnerActivity extends AppCompatActivity implements View.OnC
         switch (view.getId()) {
             case R.id.btnRegister:
                 finish();
-                startActivity(new Intent(this, RegisterUserActivity.class));
+                startActivity(new Intent(this, RegisterCabOwnerActivity.class));
                 break;
 
             case R.id.btnLogin:
@@ -90,7 +90,7 @@ public class LoginCabOwnerActivity extends AppCompatActivity implements View.OnC
                 progressBar.setVisibility(View.GONE);
                 if(task.isSuccessful()) {
                     finish();
-                    Intent intent = new Intent(LoginCabOwnerActivity.this, CabOwnerUpdate.class);
+                    Intent intent = new Intent(LoginCabOwnerActivity.this, show_cabownerdetails.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 }else {
@@ -109,31 +109,7 @@ public class LoginCabOwnerActivity extends AppCompatActivity implements View.OnC
             startActivity(new Intent(this,UserProfileActivity.class));
         }
     }
-
-    /*
-    public void onLogin(View view) {
-        tv1 = findViewById(R.id.txtEmail);
-
-        str1 = tv1.getText().toString();
-
-        //num1 = Integer.parseInt(str1);
-
-        if (str1.equals("customer") ) {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-            startActivity(intent);
-        } else if (str1.equals("hotel")) {
-            Intent intent2 = new Intent(LoginActivity.this, HotelOwnerActivity.class);
-            startActivity(intent2);
-        } else if (str1.equals("cab")) {
-            Intent intent3 = new Intent(LoginActivity.this, CabOwnerEditActivity.class);
-            startActivity(intent3);
-        }
-    }
-
-    public void Register2(View view) {
-        Intent register = new Intent(LoginActivity.this,RegisterUserActivity.class);
-        startActivity(register);
-    }*/
+*/
 
 
 }

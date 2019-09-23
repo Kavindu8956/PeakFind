@@ -1,75 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <EditText
-        android:id="@+id/TF_location"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/B_search"
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
         android:layout_toEndOf="@+id/TF_location"
         android:onClick="onClick"
-        android:text="Search" />
+        android:text="@string/search" />
 
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:map="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <EditText
+        android:id="@+id/TF_location"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/typehere"
+        android:inputType="textPersonName" />
+
+    <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".MapsActivity"
+        android:layout_width="411dp"
+        android:layout_height="679dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/B_hopistals"/>
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="0dp"
+        tools:context=".MapsActivity" />
 
     <Button
-        android:id="@+id/B_hopistals"
+        android:id="@+id/B_hospital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/TF_location"
+        android:layout_alignBottom="@+id/B_restaurants"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/B_restaurants"
         android:onClick="onClick"
         android:text="Hospitals" />
-
-    <Button
-        android:id="@+id/B_schools"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TF_location"
-        android:layout_toEndOf="@+id/B_hopistals"
-        android:onClick="onClick"
-        android:text="Schools" />
 
     <Button
         android:id="@+id/B_restaurants"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/TF_location"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="38dp"
         android:layout_toEndOf="@+id/B_schools"
         android:onClick="onClick"
         android:text="Restautants" />
 
     <Button
-        android:id="@+id/B_to"
+        android:id="@+id/B_hotels"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/B_restaurants"
-        android:layout_toEndOf="@+id/B_restaurants"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="38dp"
         android:onClick="onClick"
-        android:text="To" />
+        android:text="Hotels" />
+
+    <Button
+        android:id="@+id/B_schools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="38dp"
+        android:layout_toEndOf="@+id/B_hotels"
+        android:onClick="onClick"
+        android:text="Schools" />
 
 
 </RelativeLayout>
